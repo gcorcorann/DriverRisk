@@ -28,24 +28,39 @@ def create_labels(labels):
 
 def draw_graph(w,h, label):
     graph = np.ones((h, 300, 3), dtype=np.uint8) * 255
-    graph[(4-label)*h//4:, :] = (30,30,150)
+    if label == 1:
+        graph[3*h//4:, :] = (150, 215, 215)
+    elif label == 2:
+        graph[2*h//4:, :] = (0, 255, 255)
+        graph[3*h//4:, :] = (150, 215, 215)
+    elif label == 3:
+        graph[h//4:, :] = (0, 100, 255)
+        graph[2*h//4:, :] = (0, 255, 255)
+        graph[3*h//4:, :] = (150, 215, 215)
+    else:
+        graph[:, :] = (0, 0, 255)
+        graph[h//4:, :] = (0, 100, 255)
+        graph[2*h//4:, :] = (0, 255, 255)
+        graph[3*h//4:, :] = (150, 215, 215)
+
+
     cv2.line(graph, (0, h//4), (300,h//4), (0,0,0), 2)
     cv2.line(graph, (0, 2*h//4), (300,2*h//4), (0,0,0), 2)
     cv2.line(graph, (0, 3*h//4), (300,3*h//4), (0,0,0), 2)
     cv2.putText(graph, 'Low Risk', (75,7*h//8),
             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2)
-    cv2.putText(graph, 'Medium Risk', (45,5*h//8),
+    cv2.putText(graph, 'Moderate Risk', (40,5*h//8),
             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2)
     cv2.putText(graph, 'High Risk', (70,3*h//8),
             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2)
-    cv2.putText(graph, 'Incident', (85,1*h//8),
+    cv2.putText(graph, 'Critical Risk', (55,1*h//8),
             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2)
     return graph
 
 def main():
     """Main Function."""
     fps = 20
-    data_path = 'data/labels.txt'
+    data_path = 'data/labels_done.txt'
     try:
         with open(data_path, 'r') as f:
             data = f.read().split()
