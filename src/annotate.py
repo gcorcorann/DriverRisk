@@ -68,19 +68,19 @@ class Annotate:
         print('#' + ' '*58 + '#')
         print('#' * 60)
         print('#' + ' '*58 + '#')
-        print('# Low Risk: Ideal driving conditions where visual scenes   #')
-        print('#\tdo not include any hazards.                        #')
+        print('# Low Risk: Visual scenes that do not include any          #')
+        print('#\thazards (i.e. ideal driving setting).              #')
         print('#' + ' '*58 + '#')
-        print('# Medium Risk: Visual scenes that include potential        #')
+        print('# Moderate Risk: Visual scenes that include potential      #')
         print('#\thazards with a low-to-medium probability to cause  #')
-        print('#\tan incident.                                       #')
+        print('#\tan incident (i.e. normal driving setting).         #')
         print('#' + ' '*58 + '#')
         print('# High Risk: Visual scenes that include hazards with a     #')
         print('#\thigh probability to cause an incident              #')
-        print('#\t(i.e. impending doom).                             #')
+        print('#\t(i.e. unsafe driving setting).                     #')
         print('#' + ' '*58 + '#')
-        print('# Incident: Visual scences that depict an incident         #')
-        print('#\t(e.g. accident) and aftermath.                     #')
+        print('# Critical Risk: Visual scences that depict a sure         #')
+        print('#\tincident (i.e. impending doom).                    #')
         print('#' + ' '*58 + '#')
         print('#' * 60)
         print('#' + ' '*58 + '#')
@@ -91,9 +91,9 @@ class Annotate:
         print('#' + ' '*58 + '#')
         print('#' + ' '*18 + 'Video Annotation Table' + ' '*18 + '#')
         print('#' + ' '*17 + 'Level 1 - Low Risk' + ' '*23 + '#')
-        print('#' + ' '*17 + 'Level 2 - Medium Risk' + ' '*20 + '#')
+        print('#' + ' '*17 + 'Level 2 - Moderate Risk' + ' '*18 + '#')
         print('#' + ' '*17 + 'Level 3 - High Risk' + ' '*22 + '#')
-        print('#' + ' '*17 + 'Level 4 - Incident' + ' '*23 + '#')
+        print('#' + ' '*17 + 'Level 4 - Critical Risk' + ' '*18 + '#')
         print('#' + ' '*58 + '#')
         print('#' * 60)
 
@@ -122,7 +122,8 @@ class Annotate:
             # repeat until user's input is correct
             while True:
                 label = input('Please enter input: ')
-                if label == '1' or label == '2' or label == '3' or label == '4':
+                if label == '1' or label == '2' or label == '3' \
+                        or label == '4':
                     # store in annotations list
                     self.annotations.append(label)
                     return False
