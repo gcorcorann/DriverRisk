@@ -188,8 +188,31 @@ class Annotate:
         if self.frame_idx == 100:
             # save labels
             vid_path = self.video_paths[self.vid_idx]
-            self.f.write(vid_path + ' ' + ''.join(self.annotations) + '\n')
-            
+            # interpolate missing values
+            labels = self.__fill_missing()
+            self.f.write(vid_path + ' ' + ''.join(labels) + '\n')
+    
+    def __interpolate(self, p1, p2):
+        m = (p2 - p1) / 10
+        interp = [p1 + i * m for i in range(10)]
+        return np.array(interp)
+
+    def __fill_missing(self):
+        labels = self.annotations
+        labels = [int(c) for c in labels]
+        print(labels)
+        labels_interp = np.zeros(len(labels)*10)
+        labels_interp[:10] = labels[0]
+        for i in range(len(labels)-1):
+            labels_interp[(i+1)*10: (i+2)*10] = self.__interpolate(labels[i],
+                    labels[i+1])
+
+        # remove floating point precision errors with rounding
+        labels_interp = np.round(labels_interp+0.01)
+        labels_interp = labels_interp.astype(int)
+        labels_interp = [str(c) for c in labels_interp]
+        return labels_interp
+
     def run(self):
         """Run video annotator."""
         num_videos = len(self.video_paths)
