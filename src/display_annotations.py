@@ -2,30 +2,6 @@ import sys
 import cv2
 import numpy as np
 
-def interpolate(p1, p2):
-    m = (p2-p1)/10
-    interp = [p1 + i * m for i in range(1,11)]
-    return np.array(interp)
-
-def create_labels(labels):
-    """Interpolate missing labels.
-    Args:
-        labels (list):      labels every 10 frames apart
-    
-    Returns:
-        list:               interpolated labels for 100 frames
-    """
-    labels_interp = np.zeros(len(labels)*10)
-    labels_interp[:10] = labels[0]
-    for i in range(len(labels)-1):
-        labels_interp[(i+1)*10:(i+1)*10+10] = interpolate(labels[i], 
-                labels[i+1])
-    
-    # remove floating point percision errors with rounding
-    labels_interp = np.round(labels_interp+0.01)
-    labels_interp = labels_interp.astype(int)
-    return labels_interp
-
 def draw_graph(w,h, label):
     graph = np.ones((h, 300, 3), dtype=np.uint8) * 255
     if label == 1:
@@ -75,8 +51,6 @@ def main():
             data.shape[0]))
         # convert to list of integers
         labels = [int(c) for c in labels]
-        # create dense labels (interpolate missing values)
-        labels = create_labels(labels)
         # open video
         cap = cv2.VideoCapture(vid_path)
         for i in range(100):
