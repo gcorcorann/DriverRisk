@@ -1,100 +1,100 @@
-1 []
-2 []
-3 [['motorbike: 83%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538']]
-4 [['motorbike: 84%', 'Left=463,', 'Top=419,', 'Right=547,', 'Bottom=538']]
-5 [['motorbike: 84%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=538']]
-6 [['motorbike: 83%', 'Left=463,', 'Top=419,', 'Right=547,', 'Bottom=538']]
-7 [['motorbike: 82%', 'Left=463,', 'Top=419,', 'Right=547,', 'Bottom=538']]
-8 [['motorbike: 84%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538']]
-9 [['motorbike: 85%', 'Left=463,', 'Top=418,', 'Right=546,', 'Bottom=538']]
-10 [['motorbike: 87%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538']]
-11 [['motorbike: 85%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538']]
-12 [['motorbike: 85%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538'], ['car: 55%', 'Left=147,', 'Top=412,', 'Right=168,', 'Bottom=424']]
-13 [['motorbike: 83%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538']]
-14 [['motorbike: 82%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538']]
-15 [['motorbike: 81%', 'Left=462,', 'Top=418,', 'Right=547,', 'Bottom=539']]
-16 [['motorbike: 80%', 'Left=462,', 'Top=418,', 'Right=547,', 'Bottom=539']]
-17 [['motorbike: 79%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=539']]
-18 [['motorbike: 81%', 'Left=463,', 'Top=419,', 'Right=547,', 'Bottom=539']]
-19 [['motorbike: 81%', 'Left=462,', 'Top=419,', 'Right=547,', 'Bottom=538']]
-20 [['motorbike: 82%', 'Left=462,', 'Top=419,', 'Right=548,', 'Bottom=538'], ['car: 53%', 'Left=88,', 'Top=409,', 'Right=113,', 'Bottom=435']]
-21 [['motorbike: 83%', 'Left=462,', 'Top=418,', 'Right=548,', 'Bottom=538'], ['car: 54%', 'Left=88,', 'Top=410,', 'Right=113,', 'Bottom=435']]
-22 [['motorbike: 85%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538'], ['car: 55%', 'Left=88,', 'Top=410,', 'Right=113,', 'Bottom=435']]
-23 [['motorbike: 86%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538'], ['car: 57%', 'Left=88,', 'Top=410,', 'Right=113,', 'Bottom=435']]
-24 [['motorbike: 86%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538'], ['car: 59%', 'Left=87,', 'Top=409,', 'Right=113,', 'Bottom=435']]
-25 [['motorbike: 86%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538'], ['car: 59%', 'Left=86,', 'Top=408,', 'Right=113,', 'Bottom=435']]
-26 [['motorbike: 86%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538'], ['car: 60%', 'Left=86,', 'Top=408,', 'Right=113,', 'Bottom=435']]
-27 [['motorbike: 85%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=538'], ['car: 58%', 'Left=85,', 'Top=408,', 'Right=113,', 'Bottom=435']]
-28 [['motorbike: 84%', 'Left=463,', 'Top=418,', 'Right=546,', 'Bottom=538'], ['car: 56%', 'Left=85,', 'Top=408,', 'Right=113,', 'Bottom=435']]
-29 [['motorbike: 85%', 'Left=463,', 'Top=417,', 'Right=547,', 'Bottom=538'], ['car: 57%', 'Left=86,', 'Top=409,', 'Right=113,', 'Bottom=435']]
-30 [['motorbike: 85%', 'Left=463,', 'Top=417,', 'Right=547,', 'Bottom=538'], ['car: 60%', 'Left=86,', 'Top=409,', 'Right=113,', 'Bottom=434']]
-31 [['motorbike: 87%', 'Left=463,', 'Top=417,', 'Right=547,', 'Bottom=538'], ['car: 61%', 'Left=86,', 'Top=410,', 'Right=113,', 'Bottom=434']]
-32 [['motorbike: 88%', 'Left=463,', 'Top=417,', 'Right=548,', 'Bottom=538'], ['car: 60%', 'Left=85,', 'Top=410,', 'Right=112,', 'Bottom=434'], ['car: 54%', 'Left=168,', 'Top=412,', 'Right=183,', 'Bottom=423']]
-33 [['motorbike: 88%', 'Left=463,', 'Top=417,', 'Right=548,', 'Bottom=538'], ['car: 57%', 'Left=85,', 'Top=410,', 'Right=112,', 'Bottom=434'], ['car: 57%', 'Left=168,', 'Top=412,', 'Right=183,', 'Bottom=423']]
-34 [['motorbike: 87%', 'Left=463,', 'Top=417,', 'Right=548,', 'Bottom=538'], ['car: 60%', 'Left=85,', 'Top=409,', 'Right=112,', 'Bottom=434'], ['car: 57%', 'Left=168,', 'Top=412,', 'Right=183,', 'Bottom=424']]
-35 [['motorbike: 88%', 'Left=463,', 'Top=418,', 'Right=548,', 'Bottom=538'], ['car: 60%', 'Left=85,', 'Top=409,', 'Right=112,', 'Bottom=434'], ['car: 56%', 'Left=169,', 'Top=412,', 'Right=183,', 'Bottom=424']]
-36 [['motorbike: 89%', 'Left=463,', 'Top=418,', 'Right=549,', 'Bottom=538'], ['car: 61%', 'Left=86,', 'Top=409,', 'Right=112,', 'Bottom=434'], ['car: 57%', 'Left=169,', 'Top=412,', 'Right=184,', 'Bottom=424']]
-37 [['motorbike: 89%', 'Left=463,', 'Top=418,', 'Right=548,', 'Bottom=538'], ['car: 60%', 'Left=86,', 'Top=409,', 'Right=112,', 'Bottom=434'], ['car: 61%', 'Left=169,', 'Top=412,', 'Right=184,', 'Bottom=424']]
-38 [['motorbike: 86%', 'Left=462,', 'Top=418,', 'Right=548,', 'Bottom=538'], ['car: 56%', 'Left=86,', 'Top=409,', 'Right=112,', 'Bottom=434'], ['car: 55%', 'Left=169,', 'Top=412,', 'Right=184,', 'Bottom=424']]
-39 [['motorbike: 84%', 'Left=462,', 'Top=418,', 'Right=548,', 'Bottom=538'], ['car: 55%', 'Left=86,', 'Top=409,', 'Right=111,', 'Bottom=434'], ['car: 52%', 'Left=170,', 'Top=411,', 'Right=184,', 'Bottom=424']]
-40 [['motorbike: 83%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=538'], ['car: 52%', 'Left=86,', 'Top=409,', 'Right=111,', 'Bottom=435'], ['car: 51%', 'Left=170,', 'Top=411,', 'Right=184,', 'Bottom=423']]
-41 [['motorbike: 84%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=538'], ['car: 54%', 'Left=86,', 'Top=407,', 'Right=112,', 'Bottom=435'], ['car: 59%', 'Left=170,', 'Top=411,', 'Right=184,', 'Bottom=424']]
-42 [['motorbike: 85%', 'Left=463,', 'Top=419,', 'Right=547,', 'Bottom=538'], ['car: 65%', 'Left=0,', 'Top=385,', 'Right=16,', 'Bottom=540'], ['car: 60%', 'Left=170,', 'Top=411,', 'Right=184,', 'Bottom=424'], ['car: 53%', 'Left=86,', 'Top=408,', 'Right=112,', 'Bottom=435'], ['motorbike: 51%', 'Left=210,', 'Top=414,', 'Right=247,', 'Bottom=478']]
-43 [['motorbike: 85%', 'Left=463,', 'Top=419,', 'Right=547,', 'Bottom=538'], ['car: 66%', 'Left=0,', 'Top=385,', 'Right=21,', 'Bottom=540'], ['car: 60%', 'Left=169,', 'Top=411,', 'Right=184,', 'Bottom=424'], ['car: 54%', 'Left=86,', 'Top=408,', 'Right=112,', 'Bottom=435'], ['motorbike: 53%', 'Left=210,', 'Top=415,', 'Right=246,', 'Bottom=478']]
-44 [['motorbike: 86%', 'Left=463,', 'Top=419,', 'Right=547,', 'Bottom=539'], ['car: 55%', 'Left=0,', 'Top=390,', 'Right=26,', 'Bottom=536'], ['car: 60%', 'Left=169,', 'Top=411,', 'Right=184,', 'Bottom=423'], ['car: 54%', 'Left=86,', 'Top=408,', 'Right=112,', 'Bottom=435'], ['motorbike: 52%', 'Left=210,', 'Top=414,', 'Right=246,', 'Bottom=478']]
-45 [['motorbike: 86%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=540'], ['car: 62%', 'Left=0,', 'Top=381,', 'Right=34,', 'Bottom=534'], ['car: 62%', 'Left=169,', 'Top=411,', 'Right=184,', 'Bottom=424'], ['car: 55%', 'Left=86,', 'Top=408,', 'Right=111,', 'Bottom=434'], ['motorbike: 52%', 'Left=210,', 'Top=414,', 'Right=247,', 'Bottom=478']]
-46 [['car: 67%', 'Left=0,', 'Top=381,', 'Right=38,', 'Bottom=531'], ['motorbike: 86%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=539'], ['car: 63%', 'Left=169,', 'Top=411,', 'Right=184,', 'Bottom=424'], ['car: 57%', 'Left=86,', 'Top=408,', 'Right=112,', 'Bottom=434']]
-47 [['car: 81%', 'Left=0,', 'Top=381,', 'Right=44,', 'Bottom=529'], ['motorbike: 85%', 'Left=463,', 'Top=420,', 'Right=547,', 'Bottom=538'], ['car: 60%', 'Left=168,', 'Top=411,', 'Right=184,', 'Bottom=424'], ['motorbike: 50%', 'Left=209,', 'Top=414,', 'Right=246,', 'Bottom=478'], ['car: 54%', 'Left=85,', 'Top=408,', 'Right=112,', 'Bottom=434']]
-48 [['car: 89%', 'Left=0,', 'Top=379,', 'Right=49,', 'Bottom=528'], ['motorbike: 86%', 'Left=463,', 'Top=420,', 'Right=546,', 'Bottom=538'], ['car: 62%', 'Left=168,', 'Top=411,', 'Right=184,', 'Bottom=424'], ['car: 54%', 'Left=85,', 'Top=408,', 'Right=112,', 'Bottom=434']]
-49 [['car: 92%', 'Left=0,', 'Top=381,', 'Right=53,', 'Bottom=527'], ['motorbike: 86%', 'Left=462,', 'Top=419,', 'Right=546,', 'Bottom=538'], ['car: 62%', 'Left=168,', 'Top=411,', 'Right=184,', 'Bottom=424'], ['car: 55%', 'Left=84,', 'Top=408,', 'Right=112,', 'Bottom=435']]
-50 [['car: 93%', 'Left=0,', 'Top=378,', 'Right=57,', 'Bottom=527'], ['motorbike: 86%', 'Left=462,', 'Top=419,', 'Right=547,', 'Bottom=538'], ['car: 64%', 'Left=168,', 'Top=411,', 'Right=184,', 'Bottom=424'], ['car: 56%', 'Left=84,', 'Top=407,', 'Right=112,', 'Bottom=435']]
-51 [['car: 91%', 'Left=0,', 'Top=374,', 'Right=60,', 'Bottom=526'], ['motorbike: 86%', 'Left=463,', 'Top=419,', 'Right=547,', 'Bottom=538'], ['car: 57%', 'Left=168,', 'Top=411,', 'Right=184,', 'Bottom=424']]
-52 [['car: 89%', 'Left=0,', 'Top=369,', 'Right=63,', 'Bottom=526'], ['motorbike: 86%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=538'], ['car: 51%', 'Left=168,', 'Top=411,', 'Right=184,', 'Bottom=424']]
-53 [['car: 86%', 'Left=0,', 'Top=369,', 'Right=66,', 'Bottom=526'], ['motorbike: 87%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=539']]
-54 [['car: 81%', 'Left=1,', 'Top=374,', 'Right=78,', 'Bottom=521'], ['motorbike: 86%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=539'], ['car: 52%', 'Left=167,', 'Top=411,', 'Right=183,', 'Bottom=424']]
-55 [['car: 87%', 'Left=0,', 'Top=372,', 'Right=82,', 'Bottom=520'], ['motorbike: 85%', 'Left=463,', 'Top=420,', 'Right=548,', 'Bottom=539'], ['car: 55%', 'Left=167,', 'Top=411,', 'Right=184,', 'Bottom=424'], ['car: 50%', 'Left=85,', 'Top=406,', 'Right=112,', 'Bottom=433']]
-56 [['car: 91%', 'Left=1,', 'Top=370,', 'Right=84,', 'Bottom=519'], ['motorbike: 84%', 'Left=463,', 'Top=420,', 'Right=547,', 'Bottom=537'], ['car: 52%', 'Left=166,', 'Top=411,', 'Right=183,', 'Bottom=424']]
-57 [['car: 89%', 'Left=0,', 'Top=370,', 'Right=86,', 'Bottom=518'], ['motorbike: 85%', 'Left=463,', 'Top=420,', 'Right=547,', 'Bottom=538'], ['car: 51%', 'Left=86,', 'Top=407,', 'Right=112,', 'Bottom=433']]
-58 [['car: 85%', 'Left=0,', 'Top=371,', 'Right=90,', 'Bottom=515'], ['motorbike: 85%', 'Left=463,', 'Top=420,', 'Right=547,', 'Bottom=538'], ['car: 51%', 'Left=86,', 'Top=407,', 'Right=112,', 'Bottom=433']]
-59 [['car: 83%', 'Left=0,', 'Top=371,', 'Right=94,', 'Bottom=513'], ['motorbike: 87%', 'Left=463,', 'Top=419,', 'Right=547,', 'Bottom=539'], ['car: 50%', 'Left=86,', 'Top=408,', 'Right=111,', 'Bottom=433']]
-60 [['car: 81%', 'Left=0,', 'Top=370,', 'Right=97,', 'Bottom=512'], ['motorbike: 89%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=539'], ['motorbike: 51%', 'Left=663,', 'Top=424,', 'Right=749,', 'Bottom=556']]
-61 [['car: 79%', 'Left=0,', 'Top=369,', 'Right=97,', 'Bottom=512'], ['motorbike: 90%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=539'], ['motorbike: 52%', 'Left=663,', 'Top=424,', 'Right=749,', 'Bottom=557']]
-62 [['car: 79%', 'Left=0,', 'Top=370,', 'Right=99,', 'Bottom=512'], ['motorbike: 89%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=539']]
-63 [['car: 77%', 'Left=0,', 'Top=371,', 'Right=100,', 'Bottom=511'], ['motorbike: 85%', 'Left=463,', 'Top=418,', 'Right=547,', 'Bottom=539']]
-64 [['car: 69%', 'Left=0,', 'Top=374,', 'Right=110,', 'Bottom=509'], ['motorbike: 83%', 'Left=463,', 'Top=417,', 'Right=547,', 'Bottom=538']]
-65 [['car: 65%', 'Left=0,', 'Top=373,', 'Right=110,', 'Bottom=508'], ['motorbike: 82%', 'Left=462,', 'Top=417,', 'Right=547,', 'Bottom=538']]
-66 [['truck: 52%', 'Left=0,', 'Top=374,', 'Right=110,', 'Bottom=507'], ['motorbike: 84%', 'Left=462,', 'Top=417,', 'Right=547,', 'Bottom=538']]
-67 [['truck: 60%', 'Left=0,', 'Top=374,', 'Right=110,', 'Bottom=506'], ['motorbike: 85%', 'Left=462,', 'Top=417,', 'Right=547,', 'Bottom=538']]
-68 [['truck: 69%', 'Left=0,', 'Top=374,', 'Right=112,', 'Bottom=505'], ['motorbike: 84%', 'Left=462,', 'Top=417,', 'Right=547,', 'Bottom=539']]
-69 [['truck: 72%', 'Left=0,', 'Top=374,', 'Right=114,', 'Bottom=504'], ['motorbike: 85%', 'Left=462,', 'Top=417,', 'Right=547,', 'Bottom=539']]
-70 [['truck: 73%', 'Left=0,', 'Top=376,', 'Right=116,', 'Bottom=501'], ['motorbike: 84%', 'Left=462,', 'Top=417,', 'Right=548,', 'Bottom=540']]
-71 [['truck: 72%', 'Left=0,', 'Top=377,', 'Right=118,', 'Bottom=498'], ['motorbike: 85%', 'Left=462,', 'Top=418,', 'Right=548,', 'Bottom=540']]
-72 [['truck: 71%', 'Left=0,', 'Top=378,', 'Right=120,', 'Bottom=495'], ['motorbike: 83%', 'Left=462,', 'Top=418,', 'Right=548,', 'Bottom=539']]
-73 [['truck: 62%', 'Left=3,', 'Top=377,', 'Right=123,', 'Bottom=482'], ['motorbike: 83%', 'Left=462,', 'Top=418,', 'Right=547,', 'Bottom=538']]
-74 [['truck: 57%', 'Left=5,', 'Top=379,', 'Right=124,', 'Bottom=480'], ['motorbike: 84%', 'Left=462,', 'Top=419,', 'Right=547,', 'Bottom=539']]
-75 [['truck: 56%', 'Left=6,', 'Top=380,', 'Right=126,', 'Bottom=478'], ['motorbike: 86%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=539']]
-76 [['truck: 59%', 'Left=8,', 'Top=381,', 'Right=127,', 'Bottom=477'], ['motorbike: 86%', 'Left=463,', 'Top=419,', 'Right=549,', 'Bottom=539']]
-77 [['truck: 65%', 'Left=10,', 'Top=382,', 'Right=128,', 'Bottom=476'], ['motorbike: 85%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=539'], ['car: 55%', 'Left=0,', 'Top=396,', 'Right=16,', 'Bottom=446']]
-78 [['truck: 62%', 'Left=23,', 'Top=384,', 'Right=133,', 'Bottom=475'], ['motorbike: 83%', 'Left=463,', 'Top=419,', 'Right=548,', 'Bottom=539'], ['car: 60%', 'Left=0,', 'Top=396,', 'Right=17,', 'Bottom=447']]
-79 [['truck: 56%', 'Left=26,', 'Top=384,', 'Right=134,', 'Bottom=475'], ['motorbike: 83%', 'Left=463,', 'Top=418,', 'Right=548,', 'Bottom=540'], ['car: 66%', 'Left=0,', 'Top=396,', 'Right=18,', 'Bottom=447']]
-80 [['truck: 58%', 'Left=29,', 'Top=384,', 'Right=136,', 'Bottom=474'], ['motorbike: 83%', 'Left=462,', 'Top=418,', 'Right=548,', 'Bottom=539'], ['car: 64%', 'Left=0,', 'Top=397,', 'Right=18,', 'Bottom=447'], ['car: 56%', 'Left=128,', 'Top=409,', 'Right=158,', 'Bottom=429']]
-81 [['truck: 63%', 'Left=29,', 'Top=384,', 'Right=137,', 'Bottom=474'], ['motorbike: 82%', 'Left=462,', 'Top=418,', 'Right=547,', 'Bottom=539'], ['car: 64%', 'Left=0,', 'Top=397,', 'Right=19,', 'Bottom=447'], ['car: 66%', 'Left=128,', 'Top=410,', 'Right=157,', 'Bottom=428'], ['motorbike: 54%', 'Left=209,', 'Top=411,', 'Right=246,', 'Bottom=479']]
-82 [['truck: 62%', 'Left=32,', 'Top=385,', 'Right=139,', 'Bottom=473'], ['motorbike: 83%', 'Left=462,', 'Top=418,', 'Right=547,', 'Bottom=538'], ['motorbike: 52%', 'Left=209,', 'Top=411,', 'Right=246,', 'Bottom=479'], ['car: 60%', 'Left=0,', 'Top=397,', 'Right=18,', 'Bottom=447'], ['car: 60%', 'Left=130,', 'Top=410,', 'Right=156,', 'Bottom=428'], ['car: 52%', 'Left=164,', 'Top=411,', 'Right=182,', 'Bottom=424']]
-83 [['car: 60%', 'Left=35,', 'Top=387,', 'Right=140,', 'Bottom=472'], ['motorbike: 84%', 'Left=462,', 'Top=418,', 'Right=547,', 'Bottom=538'], ['car: 56%', 'Left=0,', 'Top=398,', 'Right=17,', 'Bottom=447'], ['car: 52%', 'Left=164,', 'Top=411,', 'Right=182,', 'Bottom=424'], ['car: 50%', 'Left=132,', 'Top=411,', 'Right=155,', 'Bottom=428']]
-84 [['car: 67%', 'Left=38,', 'Top=387,', 'Right=141,', 'Bottom=471'], ['motorbike: 87%', 'Left=462,', 'Top=419,', 'Right=547,', 'Bottom=538'], ['person: 66%', 'Left=709,', 'Top=372,', 'Right=745,', 'Bottom=447'], ['car: 51%', 'Left=0,', 'Top=399,', 'Right=16,', 'Bottom=447'], ['car: 55%', 'Left=165,', 'Top=412,', 'Right=182,', 'Bottom=425'], ['car: 50%', 'Left=142,', 'Top=411,', 'Right=163,', 'Bottom=428']]
-85 [['car: 67%', 'Left=40,', 'Top=387,', 'Right=142,', 'Bottom=471'], ['motorbike: 85%', 'Left=462,', 'Top=419,', 'Right=546,', 'Bottom=537'], ['person: 73%', 'Left=708,', 'Top=372,', 'Right=745,', 'Bottom=447'], ['car: 51%', 'Left=0,', 'Top=399,', 'Right=16,', 'Bottom=447'], ['car: 57%', 'Left=164,', 'Top=411,', 'Right=182,', 'Bottom=424'], ['car: 52%', 'Left=143,', 'Top=411,', 'Right=163,', 'Bottom=427']]
-86 [['car: 56%', 'Left=42,', 'Top=386,', 'Right=144,', 'Bottom=472'], ['motorbike: 84%', 'Left=462,', 'Top=419,', 'Right=546,', 'Bottom=538'], ['person: 65%', 'Left=708,', 'Top=372,', 'Right=747,', 'Bottom=447'], ['car: 57%', 'Left=164,', 'Top=411,', 'Right=182,', 'Bottom=425'], ['car: 51%', 'Left=0,', 'Top=399,', 'Right=16,', 'Bottom=447'], ['car: 50%', 'Left=144,', 'Top=412,', 'Right=164,', 'Bottom=427']]
-87 [['motorbike: 83%', 'Left=462,', 'Top=420,', 'Right=547,', 'Bottom=538'], ['car: 52%', 'Left=0,', 'Top=398,', 'Right=16,', 'Bottom=447'], ['person: 58%', 'Left=707,', 'Top=372,', 'Right=748,', 'Bottom=447'], ['car: 55%', 'Left=164,', 'Top=412,', 'Right=182,', 'Bottom=425']]
-88 [['truck: 56%', 'Left=53,', 'Top=391,', 'Right=146,', 'Bottom=470'], ['motorbike: 83%', 'Left=462,', 'Top=420,', 'Right=547,', 'Bottom=538'], ['car: 59%', 'Left=164,', 'Top=412,', 'Right=181,', 'Bottom=425'], ['car: 52%', 'Left=0,', 'Top=398,', 'Right=15,', 'Bottom=448'], ['car: 53%', 'Left=146,', 'Top=412,', 'Right=164,', 'Bottom=428'], ['person: 52%', 'Left=708,', 'Top=372,', 'Right=751,', 'Bottom=446']]
-89 [['truck: 52%', 'Left=56,', 'Top=391,', 'Right=147,', 'Bottom=470'], ['motorbike: 82%', 'Left=462,', 'Top=420,', 'Right=546,', 'Bottom=537'], ['car: 60%', 'Left=164,', 'Top=412,', 'Right=181,', 'Bottom=425'], ['car: 53%', 'Left=0,', 'Top=398,', 'Right=16,', 'Bottom=448'], ['car: 56%', 'Left=146,', 'Top=412,', 'Right=165,', 'Bottom=428'], ['person: 53%', 'Left=708,', 'Top=373,', 'Right=751,', 'Bottom=446']]
-90 [['truck: 58%', 'Left=60,', 'Top=390,', 'Right=146,', 'Bottom=470'], ['motorbike: 82%', 'Left=462,', 'Top=420,', 'Right=546,', 'Bottom=537'], ['car: 67%', 'Left=163,', 'Top=411,', 'Right=181,', 'Bottom=425'], ['car: 61%', 'Left=146,', 'Top=412,', 'Right=165,', 'Bottom=428'], ['car: 52%', 'Left=0,', 'Top=398,', 'Right=16,', 'Bottom=448']]
-91 [['truck: 66%', 'Left=62,', 'Top=390,', 'Right=146,', 'Bottom=469'], ['motorbike: 84%', 'Left=462,', 'Top=420,', 'Right=547,', 'Bottom=539'], ['car: 68%', 'Left=163,', 'Top=411,', 'Right=181,', 'Bottom=425'], ['car: 61%', 'Left=147,', 'Top=412,', 'Right=165,', 'Bottom=428'], ['car: 51%', 'Left=0,', 'Top=397,', 'Right=16,', 'Bottom=448']]
-92 [['truck: 72%', 'Left=65,', 'Top=389,', 'Right=145,', 'Bottom=469'], ['motorbike: 84%', 'Left=462,', 'Top=421,', 'Right=548,', 'Bottom=539'], ['car: 67%', 'Left=163,', 'Top=411,', 'Right=182,', 'Bottom=425'], ['person: 64%', 'Left=722,', 'Top=366,', 'Right=769,', 'Bottom=527'], ['car: 62%', 'Left=147,', 'Top=412,', 'Right=166,', 'Bottom=427'], ['car: 51%', 'Left=0,', 'Top=397,', 'Right=16,', 'Bottom=448']]
-93 [['truck: 71%', 'Left=67,', 'Top=389,', 'Right=146,', 'Bottom=468'], ['motorbike: 83%', 'Left=456,', 'Top=423,', 'Right=555,', 'Bottom=535'], ['person: 80%', 'Left=723,', 'Top=368,', 'Right=770,', 'Bottom=528'], ['car: 64%', 'Left=163,', 'Top=411,', 'Right=182,', 'Bottom=425'], ['car: 61%', 'Left=148,', 'Top=412,', 'Right=167,', 'Bottom=427'], ['car: 51%', 'Left=0,', 'Top=397,', 'Right=16,', 'Bottom=447']]
-94 [['truck: 71%', 'Left=69,', 'Top=387,', 'Right=147,', 'Bottom=467'], ['person: 90%', 'Left=726,', 'Top=368,', 'Right=772,', 'Bottom=529'], ['motorbike: 80%', 'Left=462,', 'Top=421,', 'Right=547,', 'Bottom=538'], ['motorbike: 56%', 'Left=209,', 'Top=410,', 'Right=246,', 'Bottom=479'], ['car: 63%', 'Left=162,', 'Top=411,', 'Right=182,', 'Bottom=425'], ['car: 59%', 'Left=148,', 'Top=411,', 'Right=167,', 'Bottom=427']]
-95 [['truck: 70%', 'Left=73,', 'Top=390,', 'Right=152,', 'Bottom=467'], ['person: 94%', 'Left=728,', 'Top=368,', 'Right=775,', 'Bottom=529'], ['motorbike: 80%', 'Left=462,', 'Top=421,', 'Right=546,', 'Bottom=539'], ['motorbike: 54%', 'Left=208,', 'Top=409,', 'Right=246,', 'Bottom=479'], ['car: 64%', 'Left=161,', 'Top=410,', 'Right=182,', 'Bottom=424'], ['car: 55%', 'Left=148,', 'Top=411,', 'Right=168,', 'Bottom=427']]
-96 [['truck: 69%', 'Left=74,', 'Top=391,', 'Right=152,', 'Bottom=466'], ['person: 94%', 'Left=731,', 'Top=368,', 'Right=777,', 'Bottom=530'], ['motorbike: 80%', 'Left=463,', 'Top=421,', 'Right=547,', 'Bottom=538'], ['car: 67%', 'Left=161,', 'Top=410,', 'Right=182,', 'Bottom=425']]
-97 [['truck: 67%', 'Left=74,', 'Top=392,', 'Right=153,', 'Bottom=464'], ['person: 93%', 'Left=732,', 'Top=367,', 'Right=780,', 'Bottom=531'], ['motorbike: 82%', 'Left=462,', 'Top=421,', 'Right=547,', 'Bottom=538'], ['car: 68%', 'Left=160,', 'Top=410,', 'Right=183,', 'Bottom=425']]
-98 [['truck: 69%', 'Left=76,', 'Top=392,', 'Right=155,', 'Bottom=463'], ['person: 93%', 'Left=735,', 'Top=367,', 'Right=785,', 'Bottom=532'], ['motorbike: 82%', 'Left=462,', 'Top=421,', 'Right=547,', 'Bottom=539'], ['car: 70%', 'Left=159,', 'Top=410,', 'Right=182,', 'Bottom=425']]
-99 [['truck: 72%', 'Left=77,', 'Top=393,', 'Right=155,', 'Bottom=463'], ['person: 94%', 'Left=737,', 'Top=366,', 'Right=789,', 'Bottom=534'], ['motorbike: 82%', 'Left=462,', 'Top=421,', 'Right=547,', 'Bottom=539'], ['car: 70%', 'Left=159,', 'Top=410,', 'Right=182,', 'Bottom=425']]
-100 [['truck: 73%', 'Left=78,', 'Top=393,', 'Right=156,', 'Bottom=463'], ['person: 95%', 'Left=741,', 'Top=368,', 'Right=792,', 'Bottom=534'], ['motorbike: 83%', 'Left=462,', 'Top=420,', 'Right=548,', 'Bottom=540'], ['car: 72%', 'Left=158,', 'Top=410,', 'Right=182,', 'Bottom=425']]
+
+
+463 418 547 538
+463 419 547 538
+463 419 548 538
+463 419 547 538
+463 419 547 538
+463 418 547 538
+463 418 546 538
+463 418 547 538
+463 418 547 538
+463 418 547 538 147 412 168 424
+463 418 547 538
+463 418 547 538
+462 418 547 539
+462 418 547 539
+463 418 547 539
+463 419 547 539
+462 419 547 538
+462 419 548 538 88 409 113 435
+462 418 548 538 88 410 113 435
+463 418 547 538 88 410 113 435
+463 418 547 538 88 410 113 435
+463 418 547 538 87 409 113 435
+463 418 547 538 86 408 113 435
+463 418 547 538 86 408 113 435
+463 418 547 538 85 408 113 435
+463 418 546 538 85 408 113 435
+463 417 547 538 86 409 113 435
+463 417 547 538 86 409 113 434
+463 417 547 538 86 410 113 434
+463 417 548 538 85 410 112 434 168 412 183 423
+463 417 548 538 85 410 112 434 168 412 183 423
+463 417 548 538 85 409 112 434 168 412 183 424
+463 418 548 538 85 409 112 434 169 412 183 424
+463 418 549 538 86 409 112 434 169 412 184 424
+463 418 548 538 86 409 112 434 169 412 184 424
+462 418 548 538 86 409 112 434 169 412 184 424
+462 418 548 538 86 409 111 434 170 411 184 424
+463 419 548 538 86 409 111 435 170 411 184 423
+463 419 548 538 86 407 112 435 170 411 184 424
+463 419 547 538 0 385 16 540 170 411 184 424 86 408 112 435 210 414 247 478
+463 419 547 538 0 385 21 540 169 411 184 424 86 408 112 435 210 415 246 478
+463 419 547 539 0 390 26 536 169 411 184 423 86 408 112 435 210 414 246 478
+463 419 548 540 0 381 34 534 169 411 184 424 86 408 111 434 210 414 247 478
+0 381 38 531 463 419 548 539 169 411 184 424 86 408 112 434
+0 381 44 529 463 420 547 538 168 411 184 424 209 414 246 478 85 408 112 434
+0 379 49 528 463 420 546 538 168 411 184 424 85 408 112 434
+0 381 53 527 462 419 546 538 168 411 184 424 84 408 112 435
+0 378 57 527 462 419 547 538 168 411 184 424 84 407 112 435
+0 374 60 526 463 419 547 538 168 411 184 424
+0 369 63 526 463 419 548 538 168 411 184 424
+0 369 66 526 463 419 548 539
+1 374 78 521 463 419 548 539 167 411 183 424
+0 372 82 520 463 420 548 539 167 411 184 424 85 406 112 433
+1 370 84 519 463 420 547 537 166 411 183 424
+0 370 86 518 463 420 547 538 86 407 112 433
+0 371 90 515 463 420 547 538 86 407 112 433
+0 371 94 513 463 419 547 539 86 408 111 433
+0 370 97 512 463 418 547 539 663 424 749 556
+0 369 97 512 463 418 547 539 663 424 749 557
+0 370 99 512 463 418 547 539
+0 371 100 511 463 418 547 539
+0 374 110 509 463 417 547 538
+0 373 110 508 462 417 547 538
+0 374 110 507 462 417 547 538
+0 374 110 506 462 417 547 538
+0 374 112 505 462 417 547 539
+0 374 114 504 462 417 547 539
+0 376 116 501 462 417 548 540
+0 377 118 498 462 418 548 540
+0 378 120 495 462 418 548 539
+3 377 123 482 462 418 547 538
+5 379 124 480 462 419 547 539
+6 380 126 478 463 419 548 539
+8 381 127 477 463 419 549 539
+10 382 128 476 463 419 548 539 0 396 16 446
+23 384 133 475 463 419 548 539 0 396 17 447
+26 384 134 475 463 418 548 540 0 396 18 447
+29 384 136 474 462 418 548 539 0 397 18 447 128 409 158 429
+29 384 137 474 462 418 547 539 0 397 19 447 128 410 157 428 209 411 246 479
+32 385 139 473 462 418 547 538 209 411 246 479 0 397 18 447 130 410 156 428 164 411 182 424
+35 387 140 472 462 418 547 538 0 398 17 447 164 411 182 424 132 411 155 428
+38 387 141 471 462 419 547 538 709 372 745 447 0 399 16 447 165 412 182 425 142 411 163 428
+40 387 142 471 462 419 546 537 708 372 745 447 0 399 16 447 164 411 182 424 143 411 163 427
+42 386 144 472 462 419 546 538 708 372 747 447 164 411 182 425 0 399 16 447 144 412 164 427
+462 420 547 538 0 398 16 447 707 372 748 447 164 412 182 425
+53 391 146 470 462 420 547 538 164 412 181 425 0 398 15 448 146 412 164 428 708 372 751 446
+56 391 147 470 462 420 546 537 164 412 181 425 0 398 16 448 146 412 165 428 708 373 751 446
+60 390 146 470 462 420 546 537 163 411 181 425 146 412 165 428 0 398 16 448
+62 390 146 469 462 420 547 539 163 411 181 425 147 412 165 428 0 397 16 448
+65 389 145 469 462 421 548 539 163 411 182 425 722 366 769 527 147 412 166 427 0 397 16 448
+67 389 146 468 456 423 555 535 723 368 770 528 163 411 182 425 148 412 167 427 0 397 16 447
+69 387 147 467 726 368 772 529 462 421 547 538 209 410 246 479 162 411 182 425 148 411 167 427
+73 390 152 467 728 368 775 529 462 421 546 539 208 409 246 479 161 410 182 424 148 411 168 427
+74 391 152 466 731 368 777 530 463 421 547 538 161 410 182 425
+74 392 153 464 732 367 780 531 462 421 547 538 160 410 183 425
+76 392 155 463 735 367 785 532 462 421 547 539 159 410 182 425
+77 393 155 463 737 366 789 534 462 421 547 539 159 410 182 425
+78 393 156 463 741 368 792 534 462 420 548 540 158 410 182 425

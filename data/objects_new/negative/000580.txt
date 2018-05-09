@@ -1,100 +1,100 @@
-1 []
-2 []
-3 [['car: 61%', 'Left=454,', 'Top=396,', 'Right=508,', 'Bottom=451'], ['motorbike: 81%', 'Left=0,', 'Top=436,', 'Right=170,', 'Bottom=609'], ['motorbike: 54%', 'Left=920,', 'Top=422,', 'Right=978,', 'Bottom=475'], ['person: 58%', 'Left=281,', 'Top=403,', 'Right=326,', 'Bottom=475']]
-4 [['car: 70%', 'Left=451,', 'Top=396,', 'Right=507,', 'Bottom=451'], ['motorbike: 57%', 'Left=922,', 'Top=422,', 'Right=980,', 'Bottom=475'], ['motorbike: 58%', 'Left=0,', 'Top=435,', 'Right=165,', 'Bottom=607']]
-5 [['car: 72%', 'Left=448,', 'Top=395,', 'Right=506,', 'Bottom=450'], ['motorbike: 59%', 'Left=924,', 'Top=422,', 'Right=982,', 'Bottom=476']]
-6 [['car: 77%', 'Left=447,', 'Top=395,', 'Right=504,', 'Bottom=450'], ['motorbike: 66%', 'Left=926,', 'Top=422,', 'Right=984,', 'Bottom=478']]
-7 [['car: 67%', 'Left=445,', 'Top=394,', 'Right=502,', 'Bottom=449'], ['motorbike: 57%', 'Left=928,', 'Top=422,', 'Right=984,', 'Bottom=479']]
-8 [['car: 62%', 'Left=444,', 'Top=393,', 'Right=499,', 'Bottom=449']]
-9 [['car: 60%', 'Left=443,', 'Top=393,', 'Right=497,', 'Bottom=449'], ['car: 69%', 'Left=733,', 'Top=421,', 'Right=822,', 'Bottom=472'], ['car: 57%', 'Left=706,', 'Top=420,', 'Right=744,', 'Bottom=461'], ['car: 52%', 'Left=638,', 'Top=414,', 'Right=664,', 'Bottom=439'], ['car: 52%', 'Left=679,', 'Top=419,', 'Right=720,', 'Bottom=459']]
-10 [['car: 70%', 'Left=443,', 'Top=394,', 'Right=497,', 'Bottom=449'], ['car: 68%', 'Left=732,', 'Top=422,', 'Right=822,', 'Bottom=472'], ['person: 59%', 'Left=259,', 'Top=401,', 'Right=304,', 'Bottom=476'], ['car: 57%', 'Left=706,', 'Top=420,', 'Right=744,', 'Bottom=462'], ['car: 53%', 'Left=677,', 'Top=419,', 'Right=719,', 'Bottom=460']]
-11 [['car: 77%', 'Left=442,', 'Top=395,', 'Right=497,', 'Bottom=449'], ['car: 74%', 'Left=732,', 'Top=422,', 'Right=823,', 'Bottom=474'], ['person: 64%', 'Left=256,', 'Top=400,', 'Right=303,', 'Bottom=478'], ['car: 60%', 'Left=705,', 'Top=420,', 'Right=744,', 'Bottom=463'], ['car: 54%', 'Left=677,', 'Top=420,', 'Right=719,', 'Bottom=460']]
-12 [['car: 70%', 'Left=442,', 'Top=396,', 'Right=497,', 'Bottom=451'], ['car: 74%', 'Left=744,', 'Top=421,', 'Right=849,', 'Bottom=477'], ['car: 65%', 'Left=706,', 'Top=421,', 'Right=744,', 'Bottom=464'], ['traffic light: 64%', 'Left=559,', 'Top=235,', 'Right=585,', 'Bottom=259'], ['car: 55%', 'Left=662,', 'Top=421,', 'Right=701,', 'Bottom=460'], ['person: 53%', 'Left=253,', 'Top=400,', 'Right=301,', 'Bottom=480']]
-13 [['car: 64%', 'Left=437,', 'Top=398,', 'Right=490,', 'Bottom=449'], ['car: 74%', 'Left=745,', 'Top=422,', 'Right=848,', 'Bottom=479'], ['car: 66%', 'Left=706,', 'Top=422,', 'Right=744,', 'Bottom=465'], ['car: 63%', 'Left=661,', 'Top=421,', 'Right=701,', 'Bottom=461'], ['traffic light: 64%', 'Left=557,', 'Top=235,', 'Right=583,', 'Bottom=259'], ['car: 53%', 'Left=678,', 'Top=422,', 'Right=718,', 'Bottom=462']]
-14 [['car: 59%', 'Left=435,', 'Top=398,', 'Right=489,', 'Bottom=451'], ['car: 75%', 'Left=744,', 'Top=423,', 'Right=848,', 'Bottom=481'], ['car: 65%', 'Left=661,', 'Top=422,', 'Right=700,', 'Bottom=461'], ['car: 63%', 'Left=706,', 'Top=423,', 'Right=743,', 'Bottom=466'], ['motorbike: 51%', 'Left=946,', 'Top=434,', 'Right=1005,', 'Bottom=491'], ['car: 52%', 'Left=678,', 'Top=423,', 'Right=719,', 'Bottom=463']]
-15 [['car: 60%', 'Left=431,', 'Top=399,', 'Right=488,', 'Bottom=453'], ['car: 57%', 'Left=744,', 'Top=422,', 'Right=847,', 'Bottom=483'], ['car: 61%', 'Left=661,', 'Top=422,', 'Right=699,', 'Bottom=461'], ['person: 54%', 'Left=949,', 'Top=419,', 'Right=1008,', 'Bottom=487']]
-16 [['car: 55%', 'Left=428,', 'Top=398,', 'Right=487,', 'Bottom=454'], ['car: 60%', 'Left=660,', 'Top=423,', 'Right=698,', 'Bottom=461'], ['person: 57%', 'Left=952,', 'Top=418,', 'Right=1009,', 'Bottom=488'], ['traffic light: 54%', 'Left=549,', 'Top=232,', 'Right=576,', 'Bottom=256']]
-17 [['traffic light: 72%', 'Left=548,', 'Top=232,', 'Right=576,', 'Bottom=256'], ['car: 64%', 'Left=659,', 'Top=424,', 'Right=697,', 'Bottom=462']]
-18 [['car: 51%', 'Left=423,', 'Top=399,', 'Right=482,', 'Bottom=456'], ['car: 72%', 'Left=658,', 'Top=425,', 'Right=697,', 'Bottom=464'], ['traffic light: 69%', 'Left=546,', 'Top=232,', 'Right=575,', 'Bottom=256']]
-19 [['car: 57%', 'Left=420,', 'Top=401,', 'Right=479,', 'Bottom=457'], ['motorbike: 59%', 'Left=962,', 'Top=434,', 'Right=1020,', 'Bottom=499'], ['car: 68%', 'Left=658,', 'Top=426,', 'Right=698,', 'Bottom=466'], ['traffic light: 62%', 'Left=545,', 'Top=231,', 'Right=572,', 'Bottom=256'], ['person: 54%', 'Left=40,', 'Top=419,', 'Right=84,', 'Bottom=513']]
-20 [['car: 57%', 'Left=417,', 'Top=402,', 'Right=476,', 'Bottom=458'], ['motorbike: 60%', 'Left=964,', 'Top=437,', 'Right=1022,', 'Bottom=502'], ['car: 62%', 'Left=658,', 'Top=427,', 'Right=698,', 'Bottom=467'], ['car: 52%', 'Left=321,', 'Top=401,', 'Right=398,', 'Bottom=453'], ['car: 54%', 'Left=638,', 'Top=426,', 'Right=667,', 'Bottom=461'], ['traffic light: 58%', 'Left=543,', 'Top=231,', 'Right=570,', 'Bottom=257'], ['person: 52%', 'Left=36,', 'Top=421,', 'Right=81,', 'Bottom=513']]
-21 [['car: 56%', 'Left=415,', 'Top=402,', 'Right=475,', 'Bottom=458'], ['traffic light: 65%', 'Left=541,', 'Top=230,', 'Right=569,', 'Bottom=258'], ['car: 57%', 'Left=319,', 'Top=401,', 'Right=397,', 'Bottom=454'], ['car: 56%', 'Left=638,', 'Top=426,', 'Right=668,', 'Bottom=463'], ['car: 56%', 'Left=658,', 'Top=427,', 'Right=696,', 'Bottom=468'], ['person: 56%', 'Left=32,', 'Top=422,', 'Right=79,', 'Bottom=513']]
-22 [['person: 59%', 'Left=30,', 'Top=424,', 'Right=79,', 'Bottom=512'], ['traffic light: 58%', 'Left=540,', 'Top=229,', 'Right=567,', 'Bottom=257']]
-23 [['motorbike: 53%', 'Left=975,', 'Top=442,', 'Right=1032,', 'Bottom=509'], ['car: 56%', 'Left=410,', 'Top=403,', 'Right=465,', 'Bottom=458']]
-24 [['motorbike: 68%', 'Left=977,', 'Top=444,', 'Right=1034,', 'Bottom=510'], ['car: 63%', 'Left=406,', 'Top=403,', 'Right=462,', 'Bottom=459'], ['motorbike: 58%', 'Left=747,', 'Top=434,', 'Right=849,', 'Bottom=503']]
-25 [['motorbike: 61%', 'Left=744,', 'Top=434,', 'Right=851,', 'Bottom=505'], ['motorbike: 64%', 'Left=984,', 'Top=442,', 'Right=1043,', 'Bottom=511'], ['car: 63%', 'Left=403,', 'Top=403,', 'Right=460,', 'Bottom=459'], ['traffic light: 53%', 'Left=536,', 'Top=227,', 'Right=562,', 'Bottom=254']]
-26 [['motorbike: 65%', 'Left=987,', 'Top=443,', 'Right=1046,', 'Bottom=511'], ['motorbike: 58%', 'Left=745,', 'Top=436,', 'Right=850,', 'Bottom=504'], ['car: 63%', 'Left=400,', 'Top=402,', 'Right=458,', 'Bottom=460'], ['traffic light: 60%', 'Left=533,', 'Top=226,', 'Right=561,', 'Bottom=253']]
-27 [['motorbike: 66%', 'Left=992,', 'Top=441,', 'Right=1050,', 'Bottom=513'], ['motorbike: 64%', 'Left=747,', 'Top=436,', 'Right=848,', 'Bottom=505'], ['car: 67%', 'Left=389,', 'Top=401,', 'Right=468,', 'Bottom=460'], ['car: 59%', 'Left=486,', 'Top=410,', 'Right=524,', 'Bottom=442'], ['car: 52%', 'Left=297,', 'Top=404,', 'Right=372,', 'Bottom=456']]
-28 [['motorbike: 65%', 'Left=996,', 'Top=439,', 'Right=1055,', 'Bottom=514'], ['car: 62%', 'Left=388,', 'Top=401,', 'Right=466,', 'Bottom=460'], ['car: 67%', 'Left=484,', 'Top=411,', 'Right=522,', 'Bottom=440'], ['car: 63%', 'Left=295,', 'Top=404,', 'Right=368,', 'Bottom=456']]
-29 [['motorbike: 70%', 'Left=1000,', 'Top=438,', 'Right=1057,', 'Bottom=516'], ['car: 67%', 'Left=293,', 'Top=404,', 'Right=366,', 'Bottom=456'], ['car: 61%', 'Left=484,', 'Top=411,', 'Right=522,', 'Bottom=439']]
-30 [['car: 61%', 'Left=291,', 'Top=403,', 'Right=364,', 'Bottom=456'], ['motorbike: 52%', 'Left=743,', 'Top=433,', 'Right=852,', 'Bottom=507']]
-31 [['motorbike: 71%', 'Left=742,', 'Top=432,', 'Right=854,', 'Bottom=510'], ['motorbike: 51%', 'Left=1013,', 'Top=433,', 'Right=1071,', 'Bottom=517'], ['car: 50%', 'Left=382,', 'Top=401,', 'Right=438,', 'Bottom=460']]
-32 [['motorbike: 78%', 'Left=1015,', 'Top=455,', 'Right=1075,', 'Bottom=524'], ['motorbike: 68%', 'Left=742,', 'Top=432,', 'Right=857,', 'Bottom=513'], ['car: 67%', 'Left=277,', 'Top=402,', 'Right=350,', 'Bottom=457'], ['car: 54%', 'Left=379,', 'Top=400,', 'Right=434,', 'Bottom=460']]
-33 [['motorbike: 84%', 'Left=1020,', 'Top=455,', 'Right=1079,', 'Bottom=526'], ['car: 71%', 'Left=276,', 'Top=402,', 'Right=349,', 'Bottom=457'], ['motorbike: 62%', 'Left=742,', 'Top=431,', 'Right=857,', 'Bottom=515'], ['car: 50%', 'Left=464,', 'Top=411,', 'Right=501,', 'Bottom=442']]
-34 [['motorbike: 69%', 'Left=1024,', 'Top=455,', 'Right=1081,', 'Bottom=528'], ['motorbike: 59%', 'Left=742,', 'Top=430,', 'Right=857,', 'Bottom=517'], ['car: 54%', 'Left=274,', 'Top=402,', 'Right=348,', 'Bottom=457']]
-35 [['motorbike: 64%', 'Left=1035,', 'Top=452,', 'Right=1095,', 'Bottom=531'], ['motorbike: 54%', 'Left=743,', 'Top=430,', 'Right=856,', 'Bottom=517']]
-36 [['motorbike: 73%', 'Left=1039,', 'Top=454,', 'Right=1100,', 'Bottom=532']]
-37 [['motorbike: 72%', 'Left=1043,', 'Top=455,', 'Right=1104,', 'Bottom=531']]
-38 []
-39 [['motorbike: 67%', 'Left=1056,', 'Top=452,', 'Right=1130,', 'Bottom=534']]
-40 [['motorbike: 86%', 'Left=1066,', 'Top=453,', 'Right=1129,', 'Bottom=537'], ['person: 73%', 'Left=556,', 'Top=400,', 'Right=603,', 'Bottom=499'], ['motorbike: 50%', 'Left=628,', 'Top=427,', 'Right=680,', 'Bottom=513']]
-41 [['person: 78%', 'Left=556,', 'Top=399,', 'Right=603,', 'Bottom=499'], ['motorbike: 83%', 'Left=1071,', 'Top=454,', 'Right=1132,', 'Bottom=537']]
-42 [['motorbike: 69%', 'Left=1083,', 'Top=453,', 'Right=1144,', 'Bottom=538'], ['person: 51%', 'Left=556,', 'Top=399,', 'Right=604,', 'Bottom=497'], ['person: 56%', 'Left=359,', 'Top=426,', 'Right=406,', 'Bottom=518']]
-43 [['motorbike: 80%', 'Left=1090,', 'Top=455,', 'Right=1150,', 'Bottom=538'], ['person: 51%', 'Left=360,', 'Top=426,', 'Right=402,', 'Bottom=518']]
-44 [['motorbike: 56%', 'Left=1098,', 'Top=457,', 'Right=1154,', 'Bottom=539'], ['person: 52%', 'Left=360,', 'Top=424,', 'Right=396,', 'Bottom=517']]
-45 [['car: 61%', 'Left=462,', 'Top=408,', 'Right=503,', 'Bottom=444']]
-46 [['car: 75%', 'Left=461,', 'Top=406,', 'Right=504,', 'Bottom=445'], ['car: 65%', 'Left=362,', 'Top=400,', 'Right=440,', 'Bottom=475']]
-47 [['car: 69%', 'Left=361,', 'Top=399,', 'Right=438,', 'Bottom=475'], ['car: 70%', 'Left=462,', 'Top=405,', 'Right=502,', 'Bottom=444']]
-48 [['car: 74%', 'Left=358,', 'Top=397,', 'Right=437,', 'Bottom=475'], ['car: 74%', 'Left=463,', 'Top=405,', 'Right=502,', 'Bottom=443'], ['car: 51%', 'Left=515,', 'Top=409,', 'Right=536,', 'Bottom=430']]
-49 [['car: 76%', 'Left=354,', 'Top=396,', 'Right=438,', 'Bottom=476'], ['car: 75%', 'Left=463,', 'Top=405,', 'Right=501,', 'Bottom=443'], ['motorbike: 65%', 'Left=269,', 'Top=445,', 'Right=368,', 'Bottom=613'], ['car: 62%', 'Left=515,', 'Top=409,', 'Right=536,', 'Bottom=431']]
-50 [['car: 79%', 'Left=347,', 'Top=399,', 'Right=432,', 'Bottom=474'], ['car: 68%', 'Left=463,', 'Top=405,', 'Right=502,', 'Bottom=442'], ['car: 60%', 'Left=515,', 'Top=409,', 'Right=536,', 'Bottom=431'], ['motorbike: 50%', 'Left=267,', 'Top=440,', 'Right=364,', 'Bottom=616']]
-51 [['car: 90%', 'Left=346,', 'Top=396,', 'Right=432,', 'Bottom=466']]
-52 [['car: 91%', 'Left=344,', 'Top=396,', 'Right=432,', 'Bottom=465'], ['motorbike: 70%', 'Left=220,', 'Top=447,', 'Right=322,', 'Bottom=620'], ['person: 53%', 'Left=226,', 'Top=373,', 'Right=330,', 'Bottom=519']]
-53 [['car: 90%', 'Left=343,', 'Top=396,', 'Right=432,', 'Bottom=465'], ['motorbike: 81%', 'Left=210,', 'Top=444,', 'Right=318,', 'Bottom=619'], ['person: 66%', 'Left=216,', 'Top=369,', 'Right=323,', 'Bottom=521'], ['car: 51%', 'Left=483,', 'Top=405,', 'Right=517,', 'Bottom=436']]
-54 [['car: 76%', 'Left=343,', 'Top=398,', 'Right=435,', 'Bottom=474'], ['car: 59%', 'Left=482,', 'Top=405,', 'Right=518,', 'Bottom=436'], ['motorbike: 55%', 'Left=204,', 'Top=440,', 'Right=311,', 'Bottom=619']]
-55 [['car: 83%', 'Left=342,', 'Top=397,', 'Right=436,', 'Bottom=476'], ['car: 67%', 'Left=481,', 'Top=404,', 'Right=519,', 'Bottom=437'], ['car: 50%', 'Left=464,', 'Top=402,', 'Right=502,', 'Bottom=439'], ['person: 55%', 'Left=173,', 'Top=381,', 'Right=281,', 'Bottom=579'], ['traffic light: 56%', 'Left=509,', 'Top=164,', 'Right=545,', 'Bottom=198']]
-56 [['car: 85%', 'Left=341,', 'Top=396,', 'Right=436,', 'Bottom=477'], ['person: 74%', 'Left=159,', 'Top=369,', 'Right=271,', 'Bottom=596'], ['car: 71%', 'Left=483,', 'Top=405,', 'Right=520,', 'Bottom=438']]
-57 [['car: 84%', 'Left=341,', 'Top=396,', 'Right=437,', 'Bottom=478'], ['car: 74%', 'Left=484,', 'Top=406,', 'Right=521,', 'Bottom=439'], ['person: 57%', 'Left=124,', 'Top=375,', 'Right=237,', 'Bottom=587']]
-58 [['car: 85%', 'Left=341,', 'Top=397,', 'Right=438,', 'Bottom=477'], ['car: 67%', 'Left=484,', 'Top=405,', 'Right=521,', 'Bottom=440'], ['person: 59%', 'Left=115,', 'Top=359,', 'Right=226,', 'Bottom=599']]
-59 [['car: 87%', 'Left=340,', 'Top=396,', 'Right=441,', 'Bottom=477'], ['car: 67%', 'Left=480,', 'Top=403,', 'Right=523,', 'Bottom=440'], ['traffic light: 61%', 'Left=512,', 'Top=153,', 'Right=547,', 'Bottom=188']]
-60 [['car: 93%', 'Left=344,', 'Top=396,', 'Right=448,', 'Bottom=476'], ['car: 64%', 'Left=480,', 'Top=403,', 'Right=523,', 'Bottom=441'], ['traffic light: 61%', 'Left=513,', 'Top=150,', 'Right=550,', 'Bottom=186']]
-61 [['car: 95%', 'Left=342,', 'Top=395,', 'Right=449,', 'Bottom=477'], ['motorbike: 65%', 'Left=853,', 'Top=426,', 'Right=1048,', 'Bottom=562'], ['person: 72%', 'Left=1,', 'Top=333,', 'Right=143,', 'Bottom=632'], ['car: 67%', 'Left=481,', 'Top=404,', 'Right=524,', 'Bottom=441']]
-62 [['car: 95%', 'Left=343,', 'Top=395,', 'Right=451,', 'Bottom=478'], ['motorbike: 69%', 'Left=855,', 'Top=433,', 'Right=1052,', 'Bottom=561'], ['car: 67%', 'Left=483,', 'Top=405,', 'Right=523,', 'Bottom=443'], ['car: 55%', 'Left=220,', 'Top=406,', 'Right=308,', 'Bottom=472']]
-63 [['car: 95%', 'Left=343,', 'Top=396,', 'Right=453,', 'Bottom=478'], ['motorbike: 78%', 'Left=858,', 'Top=432,', 'Right=1058,', 'Bottom=563'], ['car: 57%', 'Left=219,', 'Top=406,', 'Right=308,', 'Bottom=473'], ['car: 55%', 'Left=485,', 'Top=405,', 'Right=523,', 'Bottom=443']]
-64 [['car: 94%', 'Left=343,', 'Top=396,', 'Right=457,', 'Bottom=479'], ['motorbike: 54%', 'Left=863,', 'Top=436,', 'Right=1066,', 'Bottom=562'], ['car: 58%', 'Left=485,', 'Top=406,', 'Right=524,', 'Bottom=443'], ['car: 57%', 'Left=541,', 'Top=407,', 'Right=565,', 'Bottom=432']]
-65 [['car: 95%', 'Left=342,', 'Top=395,', 'Right=460,', 'Bottom=478'], ['car: 62%', 'Left=218,', 'Top=401,', 'Right=337,', 'Bottom=474'], ['car: 64%', 'Left=540,', 'Top=407,', 'Right=566,', 'Bottom=432'], ['car: 60%', 'Left=486,', 'Top=406,', 'Right=525,', 'Bottom=444'], ['traffic light: 62%', 'Left=524,', 'Top=135,', 'Right=564,', 'Bottom=171'], ['traffic light: 57%', 'Left=881,', 'Top=309,', 'Right=910,', 'Bottom=349'], ['traffic light: 53%', 'Left=617,', 'Top=365,', 'Right=631,', 'Bottom=382']]
-66 [['car: 96%', 'Left=343,', 'Top=394,', 'Right=464,', 'Bottom=479'], ['traffic light: 72%', 'Left=527,', 'Top=131,', 'Right=567,', 'Bottom=167'], ['car: 70%', 'Left=539,', 'Top=408,', 'Right=565,', 'Bottom=431'], ['car: 68%', 'Left=489,', 'Top=406,', 'Right=524,', 'Bottom=444'], ['car: 57%', 'Left=218,', 'Top=401,', 'Right=336,', 'Bottom=473'], ['traffic light: 56%', 'Left=620,', 'Top=365,', 'Right=633,', 'Bottom=381'], ['car: 53%', 'Left=592,', 'Top=406,', 'Right=620,', 'Bottom=433']]
-67 [['car: 97%', 'Left=343,', 'Top=393,', 'Right=466,', 'Bottom=480'], ['traffic light: 80%', 'Left=530,', 'Top=126,', 'Right=570,', 'Bottom=164'], ['car: 55%', 'Left=219,', 'Top=401,', 'Right=336,', 'Bottom=473'], ['car: 59%', 'Left=491,', 'Top=404,', 'Right=524,', 'Bottom=444'], ['car: 60%', 'Left=539,', 'Top=408,', 'Right=564,', 'Bottom=431'], ['car: 55%', 'Left=592,', 'Top=407,', 'Right=619,', 'Bottom=431'], ['traffic light: 55%', 'Left=622,', 'Top=364,', 'Right=635,', 'Bottom=380'], ['traffic light: 52%', 'Left=909,', 'Top=307,', 'Right=937,', 'Bottom=344']]
-68 [['car: 97%', 'Left=344,', 'Top=393,', 'Right=468,', 'Bottom=481'], ['traffic light: 77%', 'Left=533,', 'Top=122,', 'Right=575,', 'Bottom=162'], ['car: 57%', 'Left=222,', 'Top=393,', 'Right=337,', 'Bottom=464'], ['car: 57%', 'Left=592,', 'Top=408,', 'Right=617,', 'Bottom=429'], ['car: 57%', 'Left=510,', 'Top=406,', 'Right=545,', 'Bottom=438'], ['traffic light: 54%', 'Left=625,', 'Top=363,', 'Right=638,', 'Bottom=379'], ['car: 50%', 'Left=538,', 'Top=408,', 'Right=564,', 'Bottom=431']]
-69 [['car: 97%', 'Left=345,', 'Top=393,', 'Right=469,', 'Bottom=480'], ['car: 55%', 'Left=222,', 'Top=392,', 'Right=338,', 'Bottom=464'], ['car: 59%', 'Left=509,', 'Top=405,', 'Right=547,', 'Bottom=439'], ['car: 54%', 'Left=592,', 'Top=408,', 'Right=616,', 'Bottom=428'], ['traffic light: 52%', 'Left=932,', 'Top=306,', 'Right=960,', 'Bottom=340'], ['traffic light: 51%', 'Left=627,', 'Top=363,', 'Right=640,', 'Bottom=378'], ['traffic light: 51%', 'Left=536,', 'Top=120,', 'Right=578,', 'Bottom=162']]
-70 [['car: 97%', 'Left=347,', 'Top=393,', 'Right=470,', 'Bottom=480'], ['car: 62%', 'Left=510,', 'Top=405,', 'Right=548,', 'Bottom=439'], ['car: 55%', 'Left=220,', 'Top=396,', 'Right=309,', 'Bottom=464']]
-71 [['car: 97%', 'Left=350,', 'Top=392,', 'Right=471,', 'Bottom=481'], ['car: 60%', 'Left=511,', 'Top=404,', 'Right=548,', 'Bottom=440']]
-72 [['car: 97%', 'Left=352,', 'Top=392,', 'Right=472,', 'Bottom=481'], ['car: 64%', 'Left=512,', 'Top=404,', 'Right=548,', 'Bottom=440'], ['car: 56%', 'Left=534,', 'Top=408,', 'Right=566,', 'Bottom=439'], ['car: 51%', 'Left=633,', 'Top=405,', 'Right=668,', 'Bottom=435'], ['traffic light: 52%', 'Left=643,', 'Top=364,', 'Right=655,', 'Bottom=378']]
-73 [['car: 98%', 'Left=354,', 'Top=393,', 'Right=472,', 'Bottom=481'], ['car: 64%', 'Left=512,', 'Top=405,', 'Right=549,', 'Bottom=442'], ['traffic light: 62%', 'Left=644,', 'Top=365,', 'Right=656,', 'Bottom=379']]
-74 [['car: 98%', 'Left=353,', 'Top=395,', 'Right=473,', 'Bottom=482'], ['traffic light: 59%', 'Left=551,', 'Top=100,', 'Right=594,', 'Bottom=144'], ['traffic light: 59%', 'Left=646,', 'Top=365,', 'Right=658,', 'Bottom=381'], ['car: 56%', 'Left=633,', 'Top=403,', 'Right=670,', 'Bottom=436'], ['car: 55%', 'Left=513,', 'Top=404,', 'Right=550,', 'Bottom=443']]
-75 [['car: 98%', 'Left=353,', 'Top=396,', 'Right=472,', 'Bottom=482'], ['traffic light: 65%', 'Left=552,', 'Top=98,', 'Right=597,', 'Bottom=142'], ['car: 52%', 'Left=633,', 'Top=404,', 'Right=669,', 'Bottom=436'], ['car: 53%', 'Left=661,', 'Top=408,', 'Right=689,', 'Bottom=436'], ['traffic light: 53%', 'Left=648,', 'Top=366,', 'Right=660,', 'Bottom=382']]
-76 [['car: 97%', 'Left=352,', 'Top=397,', 'Right=473,', 'Bottom=483'], ['traffic light: 74%', 'Left=553,', 'Top=95,', 'Right=600,', 'Bottom=140'], ['car: 58%', 'Left=660,', 'Top=407,', 'Right=689,', 'Bottom=436'], ['car: 56%', 'Left=566,', 'Top=407,', 'Right=593,', 'Bottom=435'], ['car: 52%', 'Left=634,', 'Top=404,', 'Right=671,', 'Bottom=436']]
-77 [['car: 96%', 'Left=352,', 'Top=397,', 'Right=473,', 'Bottom=484'], ['car: 59%', 'Left=660,', 'Top=407,', 'Right=689,', 'Bottom=436'], ['car: 62%', 'Left=567,', 'Top=408,', 'Right=592,', 'Bottom=435'], ['car: 57%', 'Left=590,', 'Top=408,', 'Right=611,', 'Bottom=430'], ['car: 56%', 'Left=534,', 'Top=406,', 'Right=570,', 'Bottom=445'], ['car: 52%', 'Left=1033,', 'Top=455,', 'Right=1274,', 'Bottom=631'], ['traffic light: 53%', 'Left=652,', 'Top=365,', 'Right=665,', 'Bottom=381'], ['traffic light: 50%', 'Left=554,', 'Top=93,', 'Right=601,', 'Bottom=139']]
-78 [['car: 98%', 'Left=360,', 'Top=394,', 'Right=483,', 'Bottom=486'], ['car: 65%', 'Left=590,', 'Top=409,', 'Right=612,', 'Bottom=431'], ['car: 61%', 'Left=661,', 'Top=406,', 'Right=689,', 'Bottom=435'], ['car: 56%', 'Left=532,', 'Top=405,', 'Right=570,', 'Bottom=444'], ['car: 56%', 'Left=567,', 'Top=409,', 'Right=592,', 'Bottom=435'], ['car: 53%', 'Left=690,', 'Top=412,', 'Right=713,', 'Bottom=434']]
-79 [['car: 98%', 'Left=359,', 'Top=396,', 'Right=486,', 'Bottom=486'], ['car: 63%', 'Left=590,', 'Top=409,', 'Right=614,', 'Bottom=432'], ['car: 56%', 'Left=661,', 'Top=405,', 'Right=690,', 'Bottom=434'], ['car: 52%', 'Left=531,', 'Top=404,', 'Right=570,', 'Bottom=443']]
-80 [['car: 99%', 'Left=357,', 'Top=396,', 'Right=488,', 'Bottom=487']]
-81 [['car: 99%', 'Left=357,', 'Top=397,', 'Right=490,', 'Bottom=487']]
-82 [['car: 98%', 'Left=356,', 'Top=397,', 'Right=490,', 'Bottom=488'], ['traffic light: 59%', 'Left=668,', 'Top=363,', 'Right=680,', 'Bottom=383']]
-83 [['car: 93%', 'Left=336,', 'Top=393,', 'Right=499,', 'Bottom=489'], ['traffic light: 68%', 'Left=669,', 'Top=364,', 'Right=681,', 'Bottom=382'], ['car: 63%', 'Left=564,', 'Top=407,', 'Right=596,', 'Bottom=440'], ['car: 61%', 'Left=534,', 'Top=403,', 'Right=570,', 'Bottom=445'], ['car: 53%', 'Left=689,', 'Top=408,', 'Right=712,', 'Bottom=432'], ['car: 51%', 'Left=662,', 'Top=406,', 'Right=690,', 'Bottom=435']]
-84 [['car: 93%', 'Left=331,', 'Top=393,', 'Right=499,', 'Bottom=487'], ['traffic light: 66%', 'Left=670,', 'Top=364,', 'Right=682,', 'Bottom=382'], ['motorbike: 64%', 'Left=873,', 'Top=441,', 'Right=1050,', 'Bottom=598'], ['car: 63%', 'Left=564,', 'Top=408,', 'Right=595,', 'Bottom=441'], ['car: 62%', 'Left=534,', 'Top=404,', 'Right=570,', 'Bottom=445'], ['motorbike: 52%', 'Left=769,', 'Top=429,', 'Right=881,', 'Bottom=517']]
-85 [['car: 92%', 'Left=330,', 'Top=394,', 'Right=498,', 'Bottom=488'], ['motorbike: 73%', 'Left=872,', 'Top=440,', 'Right=1054,', 'Bottom=598'], ['car: 64%', 'Left=535,', 'Top=403,', 'Right=569,', 'Bottom=445'], ['car: 64%', 'Left=564,', 'Top=408,', 'Right=596,', 'Bottom=441'], ['traffic light: 59%', 'Left=671,', 'Top=365,', 'Right=683,', 'Bottom=382'], ['car: 52%', 'Left=662,', 'Top=407,', 'Right=690,', 'Bottom=436'], ['car: 54%', 'Left=593,', 'Top=406,', 'Right=617,', 'Bottom=433']]
-86 [['car: 90%', 'Left=327,', 'Top=395,', 'Right=498,', 'Bottom=489'], ['car: 61%', 'Left=536,', 'Top=403,', 'Right=569,', 'Bottom=446'], ['motorbike: 61%', 'Left=873,', 'Top=440,', 'Right=1056,', 'Bottom=596'], ['car: 59%', 'Left=565,', 'Top=409,', 'Right=595,', 'Bottom=441'], ['traffic light: 55%', 'Left=671,', 'Top=366,', 'Right=683,', 'Bottom=382'], ['car: 53%', 'Left=593,', 'Top=407,', 'Right=616,', 'Bottom=433']]
-87 [['car: 91%', 'Left=325,', 'Top=395,', 'Right=499,', 'Bottom=489'], ['car: 62%', 'Left=565,', 'Top=409,', 'Right=594,', 'Bottom=441'], ['car: 58%', 'Left=537,', 'Top=405,', 'Right=569,', 'Bottom=446'], ['traffic light: 55%', 'Left=672,', 'Top=366,', 'Right=684,', 'Bottom=382'], ['motorbike: 52%', 'Left=906,', 'Top=437,', 'Right=1103,', 'Bottom=601']]
-88 [['car: 91%', 'Left=322,', 'Top=395,', 'Right=499,', 'Bottom=491'], ['car: 60%', 'Left=565,', 'Top=408,', 'Right=592,', 'Bottom=440'], ['traffic light: 54%', 'Left=673,', 'Top=366,', 'Right=685,', 'Bottom=381'], ['car: 51%', 'Left=537,', 'Top=405,', 'Right=569,', 'Bottom=445'], ['car: 52%', 'Left=593,', 'Top=408,', 'Right=615,', 'Bottom=432']]
-89 [['car: 92%', 'Left=319,', 'Top=395,', 'Right=499,', 'Bottom=491'], ['car: 59%', 'Left=563,', 'Top=407,', 'Right=592,', 'Bottom=439'], ['traffic light: 58%', 'Left=674,', 'Top=364,', 'Right=686,', 'Bottom=380'], ['car: 55%', 'Left=593,', 'Top=407,', 'Right=616,', 'Bottom=431']]
-90 [['car: 92%', 'Left=318,', 'Top=395,', 'Right=499,', 'Bottom=491'], ['traffic light: 62%', 'Left=675,', 'Top=363,', 'Right=687,', 'Bottom=379'], ['car: 60%', 'Left=563,', 'Top=406,', 'Right=593,', 'Bottom=438'], ['car: 55%', 'Left=593,', 'Top=406,', 'Right=617,', 'Bottom=430'], ['car: 52%', 'Left=538,', 'Top=404,', 'Right=569,', 'Bottom=443']]
-91 [['car: 92%', 'Left=316,', 'Top=394,', 'Right=498,', 'Bottom=490'], ['car: 52%', 'Left=714,', 'Top=410,', 'Right=737,', 'Bottom=431'], ['traffic light: 67%', 'Left=676,', 'Top=362,', 'Right=688,', 'Bottom=378'], ['car: 58%', 'Left=538,', 'Top=404,', 'Right=569,', 'Bottom=443'], ['car: 59%', 'Left=563,', 'Top=405,', 'Right=594,', 'Bottom=438'], ['person: 51%', 'Left=288,', 'Top=390,', 'Right=328,', 'Bottom=496']]
-92 [['car: 94%', 'Left=315,', 'Top=393,', 'Right=496,', 'Bottom=490'], ['car: 55%', 'Left=713,', 'Top=408,', 'Right=738,', 'Bottom=431'], ['person: 69%', 'Left=287,', 'Top=390,', 'Right=326,', 'Bottom=498'], ['traffic light: 67%', 'Left=677,', 'Top=361,', 'Right=688,', 'Bottom=377'], ['car: 63%', 'Left=537,', 'Top=403,', 'Right=569,', 'Bottom=444'], ['car: 60%', 'Left=563,', 'Top=404,', 'Right=595,', 'Bottom=438']]
-93 [['car: 94%', 'Left=312,', 'Top=393,', 'Right=494,', 'Bottom=489'], ['car: 58%', 'Left=713,', 'Top=407,', 'Right=740,', 'Bottom=431'], ['person: 73%', 'Left=286,', 'Top=391,', 'Right=323,', 'Bottom=498'], ['traffic light: 65%', 'Left=678,', 'Top=361,', 'Right=689,', 'Bottom=377'], ['car: 63%', 'Left=538,', 'Top=403,', 'Right=570,', 'Bottom=444'], ['car: 56%', 'Left=561,', 'Top=403,', 'Right=594,', 'Bottom=438']]
-94 [['car: 95%', 'Left=308,', 'Top=391,', 'Right=494,', 'Bottom=490'], ['motorbike: 52%', 'Left=713,', 'Top=407,', 'Right=740,', 'Bottom=431'], ['traffic light: 60%', 'Left=678,', 'Top=360,', 'Right=689,', 'Bottom=377'], ['person: 54%', 'Left=284,', 'Top=392,', 'Right=319,', 'Bottom=497']]
-95 [['car: 95%', 'Left=305,', 'Top=389,', 'Right=495,', 'Bottom=493'], ['motorbike: 56%', 'Left=713,', 'Top=406,', 'Right=740,', 'Bottom=431'], ['traffic light: 50%', 'Left=678,', 'Top=360,', 'Right=689,', 'Bottom=377']]
-96 [['car: 96%', 'Left=302,', 'Top=388,', 'Right=496,', 'Bottom=494'], ['motorbike: 63%', 'Left=714,', 'Top=406,', 'Right=739,', 'Bottom=431'], ['motorbike: 52%', 'Left=690,', 'Top=404,', 'Right=714,', 'Bottom=434']]
-97 [['car: 98%', 'Left=291,', 'Top=392,', 'Right=486,', 'Bottom=495'], ['motorbike: 66%', 'Left=714,', 'Top=406,', 'Right=739,', 'Bottom=431'], ['motorbike: 58%', 'Left=691,', 'Top=404,', 'Right=714,', 'Bottom=434']]
-98 [['car: 99%', 'Left=288,', 'Top=391,', 'Right=486,', 'Bottom=495'], ['motorbike: 57%', 'Left=714,', 'Top=406,', 'Right=739,', 'Bottom=430'], ['motorbike: 55%', 'Left=691,', 'Top=405,', 'Right=713,', 'Bottom=433']]
-99 [['car: 99%', 'Left=284,', 'Top=390,', 'Right=483,', 'Bottom=498'], ['car: 59%', 'Left=714,', 'Top=407,', 'Right=739,', 'Bottom=430'], ['motorbike: 58%', 'Left=969,', 'Top=435,', 'Right=1262,', 'Bottom=635'], ['motorbike: 56%', 'Left=822,', 'Top=419,', 'Right=993,', 'Bottom=553']]
-100 [['car: 99%', 'Left=282,', 'Top=390,', 'Right=481,', 'Bottom=500'], ['car: 62%', 'Left=713,', 'Top=407,', 'Right=739,', 'Bottom=430'], ['motorbike: 70%', 'Left=964,', 'Top=438,', 'Right=1264,', 'Bottom=638'], ['car: 51%', 'Left=98,', 'Top=390,', 'Right=244,', 'Bottom=504'], ['motorbike: 55%', 'Left=825,', 'Top=420,', 'Right=993,', 'Bottom=552'], ['car: 52%', 'Left=539,', 'Top=403,', 'Right=573,', 'Bottom=444'], ['traffic light: 52%', 'Left=678,', 'Top=362,', 'Right=689,', 'Bottom=377'], ['car: 50%', 'Left=592,', 'Top=405,', 'Right=619,', 'Bottom=433']]
+
+
+454 396 508 451 0 436 170 609 920 422 978 475 281 403 326 475
+451 396 507 451 922 422 980 475 0 435 165 607
+448 395 506 450 924 422 982 476
+447 395 504 450 926 422 984 478
+445 394 502 449 928 422 984 479
+444 393 499 449
+443 393 497 449 733 421 822 472 706 420 744 461 638 414 664 439 679 419 720 459
+443 394 497 449 732 422 822 472 259 401 304 476 706 420 744 462 677 419 719 460
+442 395 497 449 732 422 823 474 256 400 303 478 705 420 744 463 677 420 719 460
+442 396 497 451 744 421 849 477 706 421 744 464 559 235 585 259 662 421 701 460 253 400 301 480
+437 398 490 449 745 422 848 479 706 422 744 465 661 421 701 461 557 235 583 259 678 422 718 462
+435 398 489 451 744 423 848 481 661 422 700 461 706 423 743 466 946 434 1005 491 678 423 719 463
+431 399 488 453 744 422 847 483 661 422 699 461 949 419 1008 487
+428 398 487 454 660 423 698 461 952 418 1009 488 549 232 576 256
+548 232 576 256 659 424 697 462
+423 399 482 456 658 425 697 464 546 232 575 256
+420 401 479 457 962 434 1020 499 658 426 698 466 545 231 572 256 40 419 84 513
+417 402 476 458 964 437 1022 502 658 427 698 467 321 401 398 453 638 426 667 461 543 231 570 257 36 421 81 513
+415 402 475 458 541 230 569 258 319 401 397 454 638 426 668 463 658 427 696 468 32 422 79 513
+30 424 79 512 540 229 567 257
+975 442 1032 509 410 403 465 458
+977 444 1034 510 406 403 462 459 747 434 849 503
+744 434 851 505 984 442 1043 511 403 403 460 459 536 227 562 254
+987 443 1046 511 745 436 850 504 400 402 458 460 533 226 561 253
+992 441 1050 513 747 436 848 505 389 401 468 460 486 410 524 442 297 404 372 456
+996 439 1055 514 388 401 466 460 484 411 522 440 295 404 368 456
+1000 438 1057 516 293 404 366 456 484 411 522 439
+291 403 364 456 743 433 852 507
+742 432 854 510 1013 433 1071 517 382 401 438 460
+1015 455 1075 524 742 432 857 513 277 402 350 457 379 400 434 460
+1020 455 1079 526 276 402 349 457 742 431 857 515 464 411 501 442
+1024 455 1081 528 742 430 857 517 274 402 348 457
+1035 452 1095 531 743 430 856 517
+1039 454 1100 532
+1043 455 1104 531
+
+1056 452 1130 534
+1066 453 1129 537 556 400 603 499 628 427 680 513
+556 399 603 499 1071 454 1132 537
+1083 453 1144 538 556 399 604 497 359 426 406 518
+1090 455 1150 538 360 426 402 518
+1098 457 1154 539 360 424 396 517
+462 408 503 444
+461 406 504 445 362 400 440 475
+361 399 438 475 462 405 502 444
+358 397 437 475 463 405 502 443 515 409 536 430
+354 396 438 476 463 405 501 443 269 445 368 613 515 409 536 431
+347 399 432 474 463 405 502 442 515 409 536 431 267 440 364 616
+346 396 432 466
+344 396 432 465 220 447 322 620 226 373 330 519
+343 396 432 465 210 444 318 619 216 369 323 521 483 405 517 436
+343 398 435 474 482 405 518 436 204 440 311 619
+342 397 436 476 481 404 519 437 464 402 502 439 173 381 281 579 509 164 545 198
+341 396 436 477 159 369 271 596 483 405 520 438
+341 396 437 478 484 406 521 439 124 375 237 587
+341 397 438 477 484 405 521 440 115 359 226 599
+340 396 441 477 480 403 523 440 512 153 547 188
+344 396 448 476 480 403 523 441 513 150 550 186
+342 395 449 477 853 426 1048 562 1 333 143 632 481 404 524 441
+343 395 451 478 855 433 1052 561 483 405 523 443 220 406 308 472
+343 396 453 478 858 432 1058 563 219 406 308 473 485 405 523 443
+343 396 457 479 863 436 1066 562 485 406 524 443 541 407 565 432
+342 395 460 478 218 401 337 474 540 407 566 432 486 406 525 444 524 135 564 171 881 309 910 349 617 365 631 382
+343 394 464 479 527 131 567 167 539 408 565 431 489 406 524 444 218 401 336 473 620 365 633 381 592 406 620 433
+343 393 466 480 530 126 570 164 219 401 336 473 491 404 524 444 539 408 564 431 592 407 619 431 622 364 635 380 909 307 937 344
+344 393 468 481 533 122 575 162 222 393 337 464 592 408 617 429 510 406 545 438 625 363 638 379 538 408 564 431
+345 393 469 480 222 392 338 464 509 405 547 439 592 408 616 428 932 306 960 340 627 363 640 378 536 120 578 162
+347 393 470 480 510 405 548 439 220 396 309 464
+350 392 471 481 511 404 548 440
+352 392 472 481 512 404 548 440 534 408 566 439 633 405 668 435 643 364 655 378
+354 393 472 481 512 405 549 442 644 365 656 379
+353 395 473 482 551 100 594 144 646 365 658 381 633 403 670 436 513 404 550 443
+353 396 472 482 552 98 597 142 633 404 669 436 661 408 689 436 648 366 660 382
+352 397 473 483 553 95 600 140 660 407 689 436 566 407 593 435 634 404 671 436
+352 397 473 484 660 407 689 436 567 408 592 435 590 408 611 430 534 406 570 445 1033 455 1274 631 652 365 665 381 554 93 601 139
+360 394 483 486 590 409 612 431 661 406 689 435 532 405 570 444 567 409 592 435 690 412 713 434
+359 396 486 486 590 409 614 432 661 405 690 434 531 404 570 443
+357 396 488 487
+357 397 490 487
+356 397 490 488 668 363 680 383
+336 393 499 489 669 364 681 382 564 407 596 440 534 403 570 445 689 408 712 432 662 406 690 435
+331 393 499 487 670 364 682 382 873 441 1050 598 564 408 595 441 534 404 570 445 769 429 881 517
+330 394 498 488 872 440 1054 598 535 403 569 445 564 408 596 441 671 365 683 382 662 407 690 436 593 406 617 433
+327 395 498 489 536 403 569 446 873 440 1056 596 565 409 595 441 671 366 683 382 593 407 616 433
+325 395 499 489 565 409 594 441 537 405 569 446 672 366 684 382 906 437 1103 601
+322 395 499 491 565 408 592 440 673 366 685 381 537 405 569 445 593 408 615 432
+319 395 499 491 563 407 592 439 674 364 686 380 593 407 616 431
+318 395 499 491 675 363 687 379 563 406 593 438 593 406 617 430 538 404 569 443
+316 394 498 490 714 410 737 431 676 362 688 378 538 404 569 443 563 405 594 438 288 390 328 496
+315 393 496 490 713 408 738 431 287 390 326 498 677 361 688 377 537 403 569 444 563 404 595 438
+312 393 494 489 713 407 740 431 286 391 323 498 678 361 689 377 538 403 570 444 561 403 594 438
+308 391 494 490 713 407 740 431 678 360 689 377 284 392 319 497
+305 389 495 493 713 406 740 431 678 360 689 377
+302 388 496 494 714 406 739 431 690 404 714 434
+291 392 486 495 714 406 739 431 691 404 714 434
+288 391 486 495 714 406 739 430 691 405 713 433
+284 390 483 498 714 407 739 430 969 435 1262 635 822 419 993 553
+282 390 481 500 713 407 739 430 964 438 1264 638 98 390 244 504 825 420 993 552 539 403 573 444 678 362 689 377 592 405 619 433

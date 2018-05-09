@@ -1,100 +1,100 @@
-1 []
-2 []
-3 [['car: 96%', 'Left=543,', 'Top=326,', 'Right=601,', 'Bottom=356'], ['traffic light: 79%', 'Left=1047,', 'Top=212,', 'Right=1061,', 'Bottom=242'], ['traffic light: 74%', 'Left=549,', 'Top=250,', 'Right=562,', 'Bottom=267'], ['traffic light: 51%', 'Left=342,', 'Top=255,', 'Right=361,', 'Bottom=307']]
-4 [['car: 96%', 'Left=544,', 'Top=327,', 'Right=600,', 'Bottom=356'], ['traffic light: 79%', 'Left=1047,', 'Top=212,', 'Right=1061,', 'Bottom=242'], ['traffic light: 72%', 'Left=549,', 'Top=250,', 'Right=562,', 'Bottom=267'], ['traffic light: 55%', 'Left=342,', 'Top=255,', 'Right=361,', 'Bottom=307']]
-5 [['car: 96%', 'Left=544,', 'Top=326,', 'Right=602,', 'Bottom=356'], ['traffic light: 80%', 'Left=1047,', 'Top=212,', 'Right=1061,', 'Bottom=242'], ['traffic light: 69%', 'Left=549,', 'Top=250,', 'Right=562,', 'Bottom=267'], ['traffic light: 54%', 'Left=342,', 'Top=255,', 'Right=361,', 'Bottom=307']]
-6 [['car: 96%', 'Left=545,', 'Top=326,', 'Right=599,', 'Bottom=356'], ['traffic light: 81%', 'Left=1047,', 'Top=211,', 'Right=1062,', 'Bottom=243'], ['traffic light: 67%', 'Left=549,', 'Top=250,', 'Right=561,', 'Bottom=267'], ['traffic light: 54%', 'Left=342,', 'Top=253,', 'Right=361,', 'Bottom=307']]
-7 [['car: 96%', 'Left=545,', 'Top=326,', 'Right=600,', 'Bottom=356'], ['traffic light: 81%', 'Left=1047,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 66%', 'Left=548,', 'Top=250,', 'Right=561,', 'Bottom=267'], ['traffic light: 52%', 'Left=342,', 'Top=252,', 'Right=361,', 'Bottom=307']]
-8 [['car: 96%', 'Left=546,', 'Top=327,', 'Right=598,', 'Bottom=355'], ['traffic light: 83%', 'Left=1046,', 'Top=209,', 'Right=1063,', 'Bottom=243'], ['traffic light: 69%', 'Left=548,', 'Top=250,', 'Right=560,', 'Bottom=267'], ['traffic light: 57%', 'Left=343,', 'Top=251,', 'Right=361,', 'Bottom=307']]
-9 [['car: 96%', 'Left=547,', 'Top=327,', 'Right=598,', 'Bottom=355'], ['traffic light: 83%', 'Left=1046,', 'Top=209,', 'Right=1062,', 'Bottom=243'], ['traffic light: 72%', 'Left=549,', 'Top=250,', 'Right=561,', 'Bottom=267'], ['traffic light: 61%', 'Left=343,', 'Top=251,', 'Right=361,', 'Bottom=307']]
-10 [['car: 95%', 'Left=546,', 'Top=326,', 'Right=598,', 'Bottom=353'], ['traffic light: 84%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=242'], ['traffic light: 74%', 'Left=548,', 'Top=250,', 'Right=560,', 'Bottom=266'], ['traffic light: 68%', 'Left=343,', 'Top=251,', 'Right=361,', 'Bottom=306']]
-11 [['car: 95%', 'Left=546,', 'Top=325,', 'Right=598,', 'Bottom=353'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=243'], ['traffic light: 71%', 'Left=548,', 'Top=250,', 'Right=560,', 'Bottom=266'], ['traffic light: 69%', 'Left=342,', 'Top=251,', 'Right=360,', 'Bottom=306']]
-12 [['car: 95%', 'Left=545,', 'Top=324,', 'Right=598,', 'Bottom=352'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=242'], ['traffic light: 70%', 'Left=548,', 'Top=250,', 'Right=559,', 'Bottom=266'], ['traffic light: 68%', 'Left=342,', 'Top=250,', 'Right=360,', 'Bottom=305'], ['car: 54%', 'Left=588,', 'Top=321,', 'Right=617,', 'Bottom=341']]
-13 [['car: 96%', 'Left=546,', 'Top=324,', 'Right=597,', 'Bottom=351'], ['traffic light: 86%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=242'], ['traffic light: 67%', 'Left=548,', 'Top=250,', 'Right=560,', 'Bottom=266'], ['traffic light: 67%', 'Left=342,', 'Top=250,', 'Right=360,', 'Bottom=305'], ['car: 56%', 'Left=588,', 'Top=321,', 'Right=617,', 'Bottom=341']]
-14 [['car: 96%', 'Left=545,', 'Top=324,', 'Right=596,', 'Bottom=351'], ['traffic light: 87%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=243'], ['traffic light: 69%', 'Left=548,', 'Top=250,', 'Right=560,', 'Bottom=266'], ['traffic light: 69%', 'Left=343,', 'Top=251,', 'Right=360,', 'Bottom=305'], ['car: 58%', 'Left=589,', 'Top=321,', 'Right=617,', 'Bottom=341']]
-15 [['car: 96%', 'Left=545,', 'Top=324,', 'Right=596,', 'Bottom=351'], ['traffic light: 88%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=244'], ['traffic light: 73%', 'Left=343,', 'Top=252,', 'Right=360,', 'Bottom=305'], ['traffic light: 70%', 'Left=549,', 'Top=250,', 'Right=560,', 'Bottom=266'], ['car: 58%', 'Left=589,', 'Top=321,', 'Right=617,', 'Bottom=340']]
-16 [['car: 96%', 'Left=544,', 'Top=324,', 'Right=597,', 'Bottom=351'], ['traffic light: 88%', 'Left=1046,', 'Top=209,', 'Right=1062,', 'Bottom=244'], ['traffic light: 76%', 'Left=343,', 'Top=253,', 'Right=360,', 'Bottom=305'], ['traffic light: 70%', 'Left=549,', 'Top=250,', 'Right=560,', 'Bottom=267'], ['car: 57%', 'Left=589,', 'Top=321,', 'Right=616,', 'Bottom=341']]
-17 [['car: 96%', 'Left=544,', 'Top=324,', 'Right=597,', 'Bottom=351'], ['traffic light: 88%', 'Left=1045,', 'Top=209,', 'Right=1063,', 'Bottom=244'], ['traffic light: 76%', 'Left=343,', 'Top=253,', 'Right=360,', 'Bottom=305'], ['traffic light: 68%', 'Left=549,', 'Top=250,', 'Right=560,', 'Bottom=267'], ['car: 58%', 'Left=589,', 'Top=321,', 'Right=616,', 'Bottom=341']]
-18 [['car: 96%', 'Left=545,', 'Top=325,', 'Right=597,', 'Bottom=351'], ['traffic light: 87%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=244'], ['traffic light: 69%', 'Left=343,', 'Top=252,', 'Right=360,', 'Bottom=306'], ['traffic light: 66%', 'Left=548,', 'Top=250,', 'Right=560,', 'Bottom=267'], ['car: 56%', 'Left=587,', 'Top=321,', 'Right=616,', 'Bottom=341']]
-19 [['car: 95%', 'Left=546,', 'Top=325,', 'Right=596,', 'Bottom=351'], ['traffic light: 86%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=244'], ['traffic light: 65%', 'Left=342,', 'Top=252,', 'Right=360,', 'Bottom=307'], ['traffic light: 64%', 'Left=548,', 'Top=250,', 'Right=559,', 'Bottom=267'], ['car: 53%', 'Left=587,', 'Top=322,', 'Right=616,', 'Bottom=341']]
-20 [['car: 95%', 'Left=547,', 'Top=325,', 'Right=597,', 'Bottom=351'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 62%', 'Left=547,', 'Top=250,', 'Right=559,', 'Bottom=267'], ['traffic light: 58%', 'Left=342,', 'Top=252,', 'Right=360,', 'Bottom=308'], ['car: 51%', 'Left=586,', 'Top=322,', 'Right=616,', 'Bottom=341']]
-21 [['car: 95%', 'Left=547,', 'Top=325,', 'Right=597,', 'Bottom=350'], ['traffic light: 86%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 61%', 'Left=547,', 'Top=250,', 'Right=559,', 'Bottom=267'], ['traffic light: 57%', 'Left=342,', 'Top=253,', 'Right=360,', 'Bottom=307'], ['car: 52%', 'Left=585,', 'Top=322,', 'Right=617,', 'Bottom=341']]
-22 [['car: 95%', 'Left=547,', 'Top=325,', 'Right=596,', 'Bottom=351'], ['traffic light: 84%', 'Left=1046,', 'Top=211,', 'Right=1061,', 'Bottom=243'], ['traffic light: 61%', 'Left=548,', 'Top=250,', 'Right=560,', 'Bottom=267'], ['car: 54%', 'Left=586,', 'Top=322,', 'Right=616,', 'Bottom=341'], ['traffic light: 53%', 'Left=342,', 'Top=253,', 'Right=360,', 'Bottom=308']]
-23 [['car: 95%', 'Left=548,', 'Top=325,', 'Right=595,', 'Bottom=351'], ['traffic light: 82%', 'Left=1046,', 'Top=212,', 'Right=1061,', 'Bottom=243'], ['traffic light: 63%', 'Left=548,', 'Top=251,', 'Right=560,', 'Bottom=267'], ['car: 55%', 'Left=587,', 'Top=322,', 'Right=617,', 'Bottom=341'], ['traffic light: 50%', 'Left=342,', 'Top=253,', 'Right=360,', 'Bottom=307']]
-24 [['car: 95%', 'Left=550,', 'Top=326,', 'Right=594,', 'Bottom=352'], ['traffic light: 80%', 'Left=1046,', 'Top=213,', 'Right=1060,', 'Bottom=242'], ['traffic light: 64%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=267']]
-25 [['car: 95%', 'Left=549,', 'Top=326,', 'Right=597,', 'Bottom=353'], ['traffic light: 82%', 'Left=1046,', 'Top=213,', 'Right=1061,', 'Bottom=243'], ['traffic light: 57%', 'Left=548,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['traffic light: 54%', 'Left=342,', 'Top=255,', 'Right=360,', 'Bottom=308']]
-26 [['car: 95%', 'Left=549,', 'Top=327,', 'Right=598,', 'Bottom=355'], ['traffic light: 83%', 'Left=1046,', 'Top=212,', 'Right=1061,', 'Bottom=243'], ['traffic light: 58%', 'Left=342,', 'Top=255,', 'Right=360,', 'Bottom=307'], ['traffic light: 57%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=267']]
-27 [['car: 95%', 'Left=548,', 'Top=327,', 'Right=599,', 'Bottom=355'], ['traffic light: 85%', 'Left=1046,', 'Top=211,', 'Right=1062,', 'Bottom=244'], ['traffic light: 59%', 'Left=549,', 'Top=250,', 'Right=560,', 'Bottom=267'], ['traffic light: 58%', 'Left=343,', 'Top=255,', 'Right=360,', 'Bottom=307']]
-28 [['car: 95%', 'Left=548,', 'Top=327,', 'Right=597,', 'Bottom=355'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=244'], ['traffic light: 69%', 'Left=549,', 'Top=250,', 'Right=560,', 'Bottom=267'], ['traffic light: 57%', 'Left=343,', 'Top=254,', 'Right=361,', 'Bottom=307']]
-29 [['car: 95%', 'Left=548,', 'Top=326,', 'Right=597,', 'Bottom=354'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 72%', 'Left=549,', 'Top=250,', 'Right=560,', 'Bottom=267'], ['traffic light: 62%', 'Left=343,', 'Top=252,', 'Right=360,', 'Bottom=307']]
-30 [['car: 95%', 'Left=548,', 'Top=326,', 'Right=597,', 'Bottom=353'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=242'], ['traffic light: 73%', 'Left=549,', 'Top=250,', 'Right=560,', 'Bottom=266'], ['traffic light: 67%', 'Left=343,', 'Top=252,', 'Right=360,', 'Bottom=306']]
-31 [['car: 95%', 'Left=548,', 'Top=325,', 'Right=597,', 'Bottom=352'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=242'], ['traffic light: 73%', 'Left=342,', 'Top=252,', 'Right=359,', 'Bottom=306'], ['traffic light: 73%', 'Left=549,', 'Top=250,', 'Right=561,', 'Bottom=266']]
-32 [['car: 94%', 'Left=548,', 'Top=325,', 'Right=596,', 'Bottom=351'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=242'], ['traffic light: 72%', 'Left=549,', 'Top=250,', 'Right=561,', 'Bottom=266'], ['traffic light: 68%', 'Left=342,', 'Top=252,', 'Right=359,', 'Bottom=305'], ['car: 51%', 'Left=586,', 'Top=321,', 'Right=615,', 'Bottom=340']]
-33 [['car: 94%', 'Left=548,', 'Top=325,', 'Right=596,', 'Bottom=351'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=242'], ['traffic light: 72%', 'Left=550,', 'Top=250,', 'Right=561,', 'Bottom=266'], ['traffic light: 68%', 'Left=342,', 'Top=252,', 'Right=359,', 'Bottom=305']]
-34 [['car: 93%', 'Left=548,', 'Top=326,', 'Right=596,', 'Bottom=351'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=243'], ['traffic light: 71%', 'Left=550,', 'Top=251,', 'Right=561,', 'Bottom=266'], ['traffic light: 66%', 'Left=342,', 'Top=253,', 'Right=359,', 'Bottom=305']]
-35 [['car: 92%', 'Left=548,', 'Top=325,', 'Right=595,', 'Bottom=351'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=244'], ['traffic light: 72%', 'Left=550,', 'Top=251,', 'Right=561,', 'Bottom=266'], ['traffic light: 65%', 'Left=342,', 'Top=252,', 'Right=359,', 'Bottom=305']]
-36 [['car: 92%', 'Left=548,', 'Top=325,', 'Right=594,', 'Bottom=351'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=244'], ['traffic light: 72%', 'Left=550,', 'Top=251,', 'Right=561,', 'Bottom=266'], ['traffic light: 65%', 'Left=342,', 'Top=253,', 'Right=359,', 'Bottom=304']]
-37 [['car: 93%', 'Left=548,', 'Top=325,', 'Right=594,', 'Bottom=350'], ['traffic light: 84%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 72%', 'Left=550,', 'Top=251,', 'Right=561,', 'Bottom=266'], ['traffic light: 68%', 'Left=342,', 'Top=253,', 'Right=359,', 'Bottom=304']]
-38 [['car: 94%', 'Left=548,', 'Top=326,', 'Right=595,', 'Bottom=351'], ['traffic light: 82%', 'Left=1046,', 'Top=211,', 'Right=1062,', 'Bottom=243'], ['traffic light: 68%', 'Left=550,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['traffic light: 66%', 'Left=342,', 'Top=254,', 'Right=359,', 'Bottom=305']]
-39 [['car: 95%', 'Left=549,', 'Top=327,', 'Right=595,', 'Bottom=352'], ['traffic light: 80%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=243'], ['traffic light: 66%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['traffic light: 62%', 'Left=342,', 'Top=254,', 'Right=360,', 'Bottom=306']]
-40 [['car: 95%', 'Left=550,', 'Top=327,', 'Right=595,', 'Bottom=353'], ['traffic light: 78%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=244'], ['traffic light: 63%', 'Left=549,', 'Top=251,', 'Right=562,', 'Bottom=267'], ['traffic light: 57%', 'Left=342,', 'Top=254,', 'Right=360,', 'Bottom=308']]
-41 [['car: 96%', 'Left=549,', 'Top=328,', 'Right=596,', 'Bottom=354'], ['traffic light: 78%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=244'], ['traffic light: 63%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267'], ['traffic light: 57%', 'Left=342,', 'Top=254,', 'Right=360,', 'Bottom=308']]
-42 [['car: 96%', 'Left=549,', 'Top=327,', 'Right=597,', 'Bottom=355'], ['traffic light: 77%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=244'], ['traffic light: 62%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267'], ['traffic light: 56%', 'Left=342,', 'Top=254,', 'Right=360,', 'Bottom=308']]
-43 [['car: 95%', 'Left=548,', 'Top=327,', 'Right=599,', 'Bottom=355'], ['traffic light: 77%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=243'], ['traffic light: 64%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267'], ['traffic light: 53%', 'Left=342,', 'Top=254,', 'Right=360,', 'Bottom=309']]
-44 [['car: 95%', 'Left=548,', 'Top=327,', 'Right=598,', 'Bottom=355'], ['traffic light: 77%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=243'], ['traffic light: 66%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267'], ['traffic light: 53%', 'Left=343,', 'Top=253,', 'Right=361,', 'Bottom=309']]
-45 [['car: 95%', 'Left=549,', 'Top=327,', 'Right=598,', 'Bottom=355'], ['traffic light: 77%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=243'], ['traffic light: 66%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267'], ['traffic light: 57%', 'Left=343,', 'Top=253,', 'Right=361,', 'Bottom=309']]
-46 [['car: 95%', 'Left=550,', 'Top=327,', 'Right=596,', 'Bottom=354'], ['traffic light: 79%', 'Left=1047,', 'Top=211,', 'Right=1062,', 'Bottom=243'], ['traffic light: 69%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267'], ['traffic light: 62%', 'Left=343,', 'Top=252,', 'Right=360,', 'Bottom=308']]
-47 [['car: 95%', 'Left=551,', 'Top=326,', 'Right=596,', 'Bottom=353'], ['traffic light: 81%', 'Left=1047,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 69%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=266'], ['traffic light: 66%', 'Left=343,', 'Top=251,', 'Right=360,', 'Bottom=308']]
-48 [['car: 94%', 'Left=551,', 'Top=326,', 'Right=596,', 'Bottom=352'], ['traffic light: 82%', 'Left=1047,', 'Top=209,', 'Right=1063,', 'Bottom=243'], ['traffic light: 70%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=266'], ['traffic light: 66%', 'Left=343,', 'Top=250,', 'Right=360,', 'Bottom=307']]
-49 [['car: 94%', 'Left=550,', 'Top=325,', 'Right=596,', 'Bottom=352'], ['traffic light: 83%', 'Left=1046,', 'Top=209,', 'Right=1063,', 'Bottom=243'], ['traffic light: 72%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=266'], ['traffic light: 61%', 'Left=343,', 'Top=249,', 'Right=361,', 'Bottom=307']]
-50 [['car: 94%', 'Left=549,', 'Top=325,', 'Right=596,', 'Bottom=351'], ['traffic light: 83%', 'Left=1046,', 'Top=209,', 'Right=1062,', 'Bottom=243'], ['traffic light: 77%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=266'], ['traffic light: 56%', 'Left=344,', 'Top=248,', 'Right=362,', 'Bottom=306']]
-51 [['car: 94%', 'Left=547,', 'Top=324,', 'Right=595,', 'Bottom=351'], ['traffic light: 83%', 'Left=1046,', 'Top=209,', 'Right=1062,', 'Bottom=243'], ['traffic light: 79%', 'Left=550,', 'Top=251,', 'Right=561,', 'Bottom=266'], ['traffic light: 51%', 'Left=344,', 'Top=248,', 'Right=362,', 'Bottom=305']]
-52 [['car: 93%', 'Left=548,', 'Top=324,', 'Right=594,', 'Bottom=350'], ['traffic light: 82%', 'Left=1047,', 'Top=210,', 'Right=1063,', 'Bottom=243'], ['traffic light: 81%', 'Left=550,', 'Top=251,', 'Right=561,', 'Bottom=265'], ['traffic light: 53%', 'Left=344,', 'Top=248,', 'Right=363,', 'Bottom=305']]
-53 [['car: 93%', 'Left=547,', 'Top=324,', 'Right=595,', 'Bottom=350'], ['traffic light: 82%', 'Left=1047,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 78%', 'Left=550,', 'Top=251,', 'Right=561,', 'Bottom=266'], ['traffic light: 60%', 'Left=343,', 'Top=250,', 'Right=361,', 'Bottom=305']]
-54 [['car: 93%', 'Left=547,', 'Top=324,', 'Right=596,', 'Bottom=350'], ['traffic light: 81%', 'Left=1047,', 'Top=211,', 'Right=1062,', 'Bottom=243'], ['traffic light: 75%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=266'], ['traffic light: 67%', 'Left=343,', 'Top=252,', 'Right=360,', 'Bottom=305']]
-55 [['car: 94%', 'Left=546,', 'Top=324,', 'Right=597,', 'Bottom=350'], ['traffic light: 80%', 'Left=1047,', 'Top=212,', 'Right=1061,', 'Bottom=242'], ['traffic light: 73%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=266'], ['traffic light: 72%', 'Left=342,', 'Top=254,', 'Right=359,', 'Bottom=305']]
-56 [['car: 95%', 'Left=547,', 'Top=325,', 'Right=597,', 'Bottom=351'], ['traffic light: 79%', 'Left=1047,', 'Top=212,', 'Right=1061,', 'Bottom=242'], ['traffic light: 72%', 'Left=342,', 'Top=254,', 'Right=360,', 'Bottom=306'], ['traffic light: 71%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=266'], ['car: 52%', 'Left=588,', 'Top=322,', 'Right=615,', 'Bottom=340']]
-57 [['car: 95%', 'Left=546,', 'Top=325,', 'Right=597,', 'Bottom=351'], ['traffic light: 79%', 'Left=1047,', 'Top=212,', 'Right=1061,', 'Bottom=243'], ['traffic light: 72%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['traffic light: 67%', 'Left=342,', 'Top=254,', 'Right=360,', 'Bottom=306'], ['car: 53%', 'Left=588,', 'Top=322,', 'Right=615,', 'Bottom=340']]
-58 [['car: 96%', 'Left=547,', 'Top=325,', 'Right=598,', 'Bottom=351'], ['traffic light: 79%', 'Left=1047,', 'Top=212,', 'Right=1061,', 'Bottom=244'], ['traffic light: 71%', 'Left=549,', 'Top=251,', 'Right=562,', 'Bottom=267'], ['traffic light: 55%', 'Left=342,', 'Top=254,', 'Right=360,', 'Bottom=307']]
-59 [['car: 95%', 'Left=549,', 'Top=326,', 'Right=597,', 'Bottom=352'], ['traffic light: 80%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=244'], ['traffic light: 72%', 'Left=549,', 'Top=251,', 'Right=562,', 'Bottom=267']]
-60 [['car: 95%', 'Left=550,', 'Top=327,', 'Right=597,', 'Bottom=352'], ['traffic light: 79%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=244'], ['traffic light: 70%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267']]
-61 [['car: 95%', 'Left=551,', 'Top=327,', 'Right=596,', 'Bottom=352'], ['traffic light: 80%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=244'], ['traffic light: 71%', 'Left=549,', 'Top=251,', 'Right=562,', 'Bottom=267']]
-62 [['car: 95%', 'Left=551,', 'Top=328,', 'Right=596,', 'Bottom=353'], ['traffic light: 80%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=244'], ['traffic light: 70%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267']]
-63 [['car: 95%', 'Left=550,', 'Top=328,', 'Right=597,', 'Bottom=353'], ['traffic light: 80%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=245'], ['traffic light: 68%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267']]
-64 [['car: 95%', 'Left=550,', 'Top=328,', 'Right=597,', 'Bottom=354'], ['traffic light: 80%', 'Left=1047,', 'Top=213,', 'Right=1062,', 'Bottom=244'], ['traffic light: 68%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267']]
-65 [['car: 95%', 'Left=550,', 'Top=328,', 'Right=599,', 'Bottom=354'], ['traffic light: 78%', 'Left=1047,', 'Top=213,', 'Right=1062,', 'Bottom=245'], ['traffic light: 65%', 'Left=550,', 'Top=251,', 'Right=562,', 'Bottom=267']]
-66 [['car: 95%', 'Left=550,', 'Top=328,', 'Right=599,', 'Bottom=355'], ['traffic light: 78%', 'Left=1047,', 'Top=213,', 'Right=1062,', 'Bottom=244'], ['traffic light: 66%', 'Left=549,', 'Top=251,', 'Right=562,', 'Bottom=267']]
-67 [['car: 95%', 'Left=550,', 'Top=327,', 'Right=600,', 'Bottom=355'], ['traffic light: 79%', 'Left=1047,', 'Top=212,', 'Right=1062,', 'Bottom=244'], ['traffic light: 65%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['traffic light: 50%', 'Left=342,', 'Top=253,', 'Right=360,', 'Bottom=308']]
-68 [['car: 95%', 'Left=550,', 'Top=327,', 'Right=600,', 'Bottom=355'], ['traffic light: 81%', 'Left=1046,', 'Top=211,', 'Right=1062,', 'Bottom=244'], ['traffic light: 68%', 'Left=549,', 'Top=250,', 'Right=561,', 'Bottom=267']]
-69 [['car: 95%', 'Left=550,', 'Top=327,', 'Right=598,', 'Bottom=355'], ['traffic light: 83%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=244'], ['traffic light: 70%', 'Left=549,', 'Top=250,', 'Right=561,', 'Bottom=267'], ['traffic light: 51%', 'Left=343,', 'Top=252,', 'Right=361,', 'Bottom=308']]
-70 [['car: 95%', 'Left=549,', 'Top=326,', 'Right=598,', 'Bottom=353'], ['traffic light: 83%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 70%', 'Left=549,', 'Top=250,', 'Right=561,', 'Bottom=266'], ['traffic light: 59%', 'Left=342,', 'Top=253,', 'Right=360,', 'Bottom=307']]
-71 [['car: 94%', 'Left=548,', 'Top=325,', 'Right=595,', 'Bottom=352'], ['traffic light: 84%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 72%', 'Left=549,', 'Top=250,', 'Right=560,', 'Bottom=265'], ['traffic light: 65%', 'Left=342,', 'Top=252,', 'Right=360,', 'Bottom=306']]
-72 [['car: 94%', 'Left=547,', 'Top=324,', 'Right=595,', 'Bottom=351'], ['traffic light: 84%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 72%', 'Left=549,', 'Top=250,', 'Right=561,', 'Bottom=265'], ['traffic light: 65%', 'Left=342,', 'Top=252,', 'Right=360,', 'Bottom=305'], ['car: 52%', 'Left=590,', 'Top=322,', 'Right=615,', 'Bottom=340']]
-73 [['car: 93%', 'Left=546,', 'Top=324,', 'Right=594,', 'Bottom=351'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=244'], ['traffic light: 73%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=265'], ['traffic light: 65%', 'Left=343,', 'Top=252,', 'Right=360,', 'Bottom=305'], ['car: 51%', 'Left=590,', 'Top=322,', 'Right=615,', 'Bottom=339']]
-74 [['car: 94%', 'Left=546,', 'Top=324,', 'Right=594,', 'Bottom=351'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1063,', 'Bottom=244'], ['traffic light: 70%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=266'], ['traffic light: 65%', 'Left=343,', 'Top=253,', 'Right=360,', 'Bottom=305'], ['car: 54%', 'Left=589,', 'Top=322,', 'Right=615,', 'Bottom=340']]
-75 [['car: 95%', 'Left=547,', 'Top=324,', 'Right=594,', 'Bottom=351'], ['traffic light: 83%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=244'], ['traffic light: 69%', 'Left=548,', 'Top=251,', 'Right=560,', 'Bottom=266'], ['traffic light: 60%', 'Left=342,', 'Top=253,', 'Right=360,', 'Bottom=306'], ['car: 57%', 'Left=588,', 'Top=322,', 'Right=615,', 'Bottom=340']]
-76 [['car: 95%', 'Left=549,', 'Top=325,', 'Right=594,', 'Bottom=352'], ['traffic light: 81%', 'Left=1046,', 'Top=211,', 'Right=1062,', 'Bottom=243'], ['traffic light: 69%', 'Left=548,', 'Top=251,', 'Right=560,', 'Bottom=267'], ['car: 56%', 'Left=587,', 'Top=322,', 'Right=615,', 'Bottom=340'], ['traffic light: 52%', 'Left=342,', 'Top=253,', 'Right=360,', 'Bottom=307']]
-77 [['car: 95%', 'Left=551,', 'Top=326,', 'Right=594,', 'Bottom=352'], ['traffic light: 77%', 'Left=1046,', 'Top=212,', 'Right=1062,', 'Bottom=243'], ['traffic light: 72%', 'Left=548,', 'Top=251,', 'Right=561,', 'Bottom=267']]
-78 [['car: 95%', 'Left=552,', 'Top=327,', 'Right=594,', 'Bottom=353'], ['traffic light: 76%', 'Left=1046,', 'Top=213,', 'Right=1061,', 'Bottom=243'], ['traffic light: 72%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=267']]
-79 [['car: 95%', 'Left=551,', 'Top=328,', 'Right=595,', 'Bottom=353'], ['traffic light: 75%', 'Left=1046,', 'Top=213,', 'Right=1061,', 'Bottom=243'], ['traffic light: 73%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['traffic light: 53%', 'Left=341,', 'Top=255,', 'Right=360,', 'Bottom=309']]
-80 [['car: 94%', 'Left=551,', 'Top=328,', 'Right=596,', 'Bottom=354'], ['traffic light: 78%', 'Left=1046,', 'Top=213,', 'Right=1062,', 'Bottom=244'], ['traffic light: 66%', 'Left=549,', 'Top=251,', 'Right=560,', 'Bottom=267'], ['traffic light: 54%', 'Left=342,', 'Top=255,', 'Right=360,', 'Bottom=309']]
-81 [['car: 94%', 'Left=551,', 'Top=327,', 'Right=598,', 'Bottom=354'], ['traffic light: 79%', 'Left=1046,', 'Top=212,', 'Right=1062,', 'Bottom=244'], ['traffic light: 66%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['traffic light: 53%', 'Left=342,', 'Top=255,', 'Right=360,', 'Bottom=309']]
-82 [['car: 94%', 'Left=551,', 'Top=327,', 'Right=599,', 'Bottom=355'], ['traffic light: 81%', 'Left=1046,', 'Top=211,', 'Right=1062,', 'Bottom=244'], ['traffic light: 65%', 'Left=548,', 'Top=251,', 'Right=561,', 'Bottom=267']]
-83 [['car: 94%', 'Left=550,', 'Top=327,', 'Right=599,', 'Bottom=355'], ['traffic light: 83%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 72%', 'Left=548,', 'Top=251,', 'Right=561,', 'Bottom=267']]
-84 [['car: 94%', 'Left=550,', 'Top=327,', 'Right=597,', 'Bottom=355'], ['traffic light: 84%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 74%', 'Left=548,', 'Top=251,', 'Right=561,', 'Bottom=266']]
-85 [['car: 94%', 'Left=550,', 'Top=327,', 'Right=596,', 'Bottom=355'], ['traffic light: 83%', 'Left=1046,', 'Top=210,', 'Right=1061,', 'Bottom=242'], ['traffic light: 74%', 'Left=548,', 'Top=251,', 'Right=560,', 'Bottom=266'], ['car: 56%', 'Left=623,', 'Top=314,', 'Right=643,', 'Bottom=329'], ['car: 52%', 'Left=590,', 'Top=322,', 'Right=616,', 'Bottom=341'], ['traffic light: 52%', 'Left=343,', 'Top=254,', 'Right=361,', 'Bottom=308']]
-86 [['car: 93%', 'Left=550,', 'Top=326,', 'Right=595,', 'Bottom=354'], ['traffic light: 83%', 'Left=1046,', 'Top=209,', 'Right=1061,', 'Bottom=242'], ['traffic light: 76%', 'Left=548,', 'Top=251,', 'Right=560,', 'Bottom=266'], ['car: 60%', 'Left=623,', 'Top=312,', 'Right=643,', 'Bottom=328'], ['traffic light: 59%', 'Left=343,', 'Top=253,', 'Right=361,', 'Bottom=308'], ['car: 57%', 'Left=589,', 'Top=322,', 'Right=616,', 'Bottom=341']]
-87 [['car: 92%', 'Left=550,', 'Top=325,', 'Right=595,', 'Bottom=352'], ['traffic light: 83%', 'Left=1046,', 'Top=209,', 'Right=1061,', 'Bottom=242'], ['traffic light: 76%', 'Left=548,', 'Top=251,', 'Right=560,', 'Bottom=266'], ['car: 63%', 'Left=623,', 'Top=310,', 'Right=644,', 'Bottom=326'], ['traffic light: 62%', 'Left=343,', 'Top=254,', 'Right=361,', 'Bottom=307'], ['car: 62%', 'Left=588,', 'Top=321,', 'Right=616,', 'Bottom=340']]
-88 [['car: 91%', 'Left=549,', 'Top=324,', 'Right=595,', 'Bottom=351'], ['traffic light: 82%', 'Left=1046,', 'Top=209,', 'Right=1060,', 'Bottom=242'], ['traffic light: 76%', 'Left=549,', 'Top=251,', 'Right=560,', 'Bottom=265'], ['traffic light: 66%', 'Left=343,', 'Top=254,', 'Right=360,', 'Bottom=305'], ['car: 63%', 'Left=588,', 'Top=321,', 'Right=616,', 'Bottom=340'], ['car: 57%', 'Left=623,', 'Top=310,', 'Right=644,', 'Bottom=325']]
-89 [['car: 92%', 'Left=548,', 'Top=324,', 'Right=594,', 'Bottom=351'], ['traffic light: 83%', 'Left=1046,', 'Top=210,', 'Right=1060,', 'Bottom=242'], ['traffic light: 76%', 'Left=549,', 'Top=251,', 'Right=560,', 'Bottom=265'], ['traffic light: 66%', 'Left=343,', 'Top=254,', 'Right=360,', 'Bottom=305'], ['car: 64%', 'Left=589,', 'Top=322,', 'Right=616,', 'Bottom=340'], ['car: 58%', 'Left=623,', 'Top=310,', 'Right=644,', 'Bottom=325']]
-90 [['car: 92%', 'Left=547,', 'Top=324,', 'Right=594,', 'Bottom=351'], ['traffic light: 84%', 'Left=1045,', 'Top=210,', 'Right=1061,', 'Bottom=242'], ['traffic light: 76%', 'Left=548,', 'Top=251,', 'Right=559,', 'Bottom=266'], ['car: 64%', 'Left=589,', 'Top=322,', 'Right=616,', 'Bottom=340'], ['traffic light: 64%', 'Left=343,', 'Top=254,', 'Right=360,', 'Bottom=305'], ['car: 59%', 'Left=623,', 'Top=311,', 'Right=644,', 'Bottom=325']]
-91 [['car: 93%', 'Left=548,', 'Top=324,', 'Right=595,', 'Bottom=351'], ['traffic light: 85%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=243'], ['traffic light: 77%', 'Left=548,', 'Top=251,', 'Right=559,', 'Bottom=266'], ['car: 65%', 'Left=588,', 'Top=322,', 'Right=615,', 'Bottom=340'], ['car: 62%', 'Left=623,', 'Top=311,', 'Right=644,', 'Bottom=326'], ['traffic light: 62%', 'Left=343,', 'Top=254,', 'Right=360,', 'Bottom=306']]
-92 [['car: 94%', 'Left=549,', 'Top=325,', 'Right=594,', 'Bottom=351'], ['traffic light: 83%', 'Left=1046,', 'Top=210,', 'Right=1062,', 'Bottom=244'], ['traffic light: 76%', 'Left=547,', 'Top=251,', 'Right=559,', 'Bottom=266'], ['car: 64%', 'Left=623,', 'Top=312,', 'Right=644,', 'Bottom=327'], ['car: 61%', 'Left=588,', 'Top=322,', 'Right=615,', 'Bottom=340'], ['traffic light: 57%', 'Left=342,', 'Top=255,', 'Right=360,', 'Bottom=307']]
-93 [['car: 94%', 'Left=550,', 'Top=325,', 'Right=594,', 'Bottom=351'], ['traffic light: 79%', 'Left=1046,', 'Top=211,', 'Right=1062,', 'Bottom=243'], ['traffic light: 75%', 'Left=548,', 'Top=251,', 'Right=560,', 'Bottom=267'], ['car: 65%', 'Left=622,', 'Top=313,', 'Right=644,', 'Bottom=328'], ['car: 56%', 'Left=589,', 'Top=322,', 'Right=615,', 'Bottom=340'], ['traffic light: 51%', 'Left=342,', 'Top=255,', 'Right=360,', 'Bottom=307']]
-94 [['car: 94%', 'Left=551,', 'Top=326,', 'Right=595,', 'Bottom=352'], ['traffic light: 77%', 'Left=1046,', 'Top=213,', 'Right=1062,', 'Bottom=244'], ['traffic light: 71%', 'Left=548,', 'Top=251,', 'Right=560,', 'Bottom=267'], ['car: 68%', 'Left=622,', 'Top=314,', 'Right=643,', 'Bottom=329'], ['car: 52%', 'Left=589,', 'Top=323,', 'Right=615,', 'Bottom=340']]
-95 [['car: 94%', 'Left=551,', 'Top=327,', 'Right=596,', 'Bottom=353'], ['traffic light: 75%', 'Left=1046,', 'Top=214,', 'Right=1061,', 'Bottom=244'], ['car: 70%', 'Left=622,', 'Top=315,', 'Right=643,', 'Bottom=330'], ['traffic light: 70%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['car: 50%', 'Left=590,', 'Top=323,', 'Right=616,', 'Bottom=340']]
-96 [['car: 94%', 'Left=551,', 'Top=327,', 'Right=598,', 'Bottom=354'], ['traffic light: 76%', 'Left=1046,', 'Top=214,', 'Right=1061,', 'Bottom=244'], ['car: 69%', 'Left=623,', 'Top=316,', 'Right=643,', 'Bottom=330'], ['traffic light: 65%', 'Left=548,', 'Top=251,', 'Right=560,', 'Bottom=267']]
-97 [['car: 94%', 'Left=551,', 'Top=327,', 'Right=598,', 'Bottom=354'], ['traffic light: 76%', 'Left=1047,', 'Top=213,', 'Right=1061,', 'Bottom=244'], ['car: 68%', 'Left=622,', 'Top=315,', 'Right=643,', 'Bottom=330'], ['traffic light: 67%', 'Left=549,', 'Top=251,', 'Right=561,', 'Bottom=267']]
-98 [['car: 94%', 'Left=551,', 'Top=327,', 'Right=599,', 'Bottom=354'], ['traffic light: 77%', 'Left=1046,', 'Top=213,', 'Right=1061,', 'Bottom=244'], ['traffic light: 68%', 'Left=548,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['car: 67%', 'Left=622,', 'Top=315,', 'Right=643,', 'Bottom=330']]
-99 [['car: 94%', 'Left=551,', 'Top=327,', 'Right=599,', 'Bottom=354'], ['traffic light: 79%', 'Left=1046,', 'Top=212,', 'Right=1062,', 'Bottom=244'], ['traffic light: 72%', 'Left=548,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['car: 68%', 'Left=623,', 'Top=315,', 'Right=644,', 'Bottom=330']]
-100 [['car: 94%', 'Left=551,', 'Top=327,', 'Right=598,', 'Bottom=355'], ['traffic light: 82%', 'Left=1046,', 'Top=211,', 'Right=1062,', 'Bottom=244'], ['traffic light: 72%', 'Left=548,', 'Top=251,', 'Right=561,', 'Bottom=267'], ['car: 66%', 'Left=623,', 'Top=315,', 'Right=644,', 'Bottom=330']]
+
+
+543 326 601 356 1047 212 1061 242 549 250 562 267 342 255 361 307
+544 327 600 356 1047 212 1061 242 549 250 562 267 342 255 361 307
+544 326 602 356 1047 212 1061 242 549 250 562 267 342 255 361 307
+545 326 599 356 1047 211 1062 243 549 250 561 267 342 253 361 307
+545 326 600 356 1047 210 1062 243 548 250 561 267 342 252 361 307
+546 327 598 355 1046 209 1063 243 548 250 560 267 343 251 361 307
+547 327 598 355 1046 209 1062 243 549 250 561 267 343 251 361 307
+546 326 598 353 1046 210 1061 242 548 250 560 266 343 251 361 306
+546 325 598 353 1046 210 1061 243 548 250 560 266 342 251 360 306
+545 324 598 352 1046 210 1061 242 548 250 559 266 342 250 360 305 588 321 617 341
+546 324 597 351 1046 210 1061 242 548 250 560 266 342 250 360 305 588 321 617 341
+545 324 596 351 1046 210 1061 243 548 250 560 266 343 251 360 305 589 321 617 341
+545 324 596 351 1046 210 1062 244 343 252 360 305 549 250 560 266 589 321 617 340
+544 324 597 351 1046 209 1062 244 343 253 360 305 549 250 560 267 589 321 616 341
+544 324 597 351 1045 209 1063 244 343 253 360 305 549 250 560 267 589 321 616 341
+545 325 597 351 1046 210 1062 244 343 252 360 306 548 250 560 267 587 321 616 341
+546 325 596 351 1046 210 1062 244 342 252 360 307 548 250 559 267 587 322 616 341
+547 325 597 351 1046 210 1062 243 547 250 559 267 342 252 360 308 586 322 616 341
+547 325 597 350 1046 210 1062 243 547 250 559 267 342 253 360 307 585 322 617 341
+547 325 596 351 1046 211 1061 243 548 250 560 267 586 322 616 341 342 253 360 308
+548 325 595 351 1046 212 1061 243 548 251 560 267 587 322 617 341 342 253 360 307
+550 326 594 352 1046 213 1060 242 549 251 561 267
+549 326 597 353 1046 213 1061 243 548 251 561 267 342 255 360 308
+549 327 598 355 1046 212 1061 243 342 255 360 307 549 251 561 267
+548 327 599 355 1046 211 1062 244 549 250 560 267 343 255 360 307
+548 327 597 355 1046 210 1062 244 549 250 560 267 343 254 361 307
+548 326 597 354 1046 210 1062 243 549 250 560 267 343 252 360 307
+548 326 597 353 1046 210 1061 242 549 250 560 266 343 252 360 306
+548 325 597 352 1046 210 1061 242 342 252 359 306 549 250 561 266
+548 325 596 351 1046 210 1061 242 549 250 561 266 342 252 359 305 586 321 615 340
+548 325 596 351 1046 210 1061 242 550 250 561 266 342 252 359 305
+548 326 596 351 1046 210 1061 243 550 251 561 266 342 253 359 305
+548 325 595 351 1046 210 1062 244 550 251 561 266 342 252 359 305
+548 325 594 351 1046 210 1062 244 550 251 561 266 342 253 359 304
+548 325 594 350 1046 210 1062 243 550 251 561 266 342 253 359 304
+548 326 595 351 1046 211 1062 243 550 251 561 267 342 254 359 305
+549 327 595 352 1047 212 1062 243 549 251 561 267 342 254 360 306
+550 327 595 353 1047 212 1062 244 549 251 562 267 342 254 360 308
+549 328 596 354 1047 212 1062 244 550 251 562 267 342 254 360 308
+549 327 597 355 1047 212 1062 244 550 251 562 267 342 254 360 308
+548 327 599 355 1047 212 1062 243 550 251 562 267 342 254 360 309
+548 327 598 355 1047 212 1062 243 550 251 562 267 343 253 361 309
+549 327 598 355 1047 212 1062 243 550 251 562 267 343 253 361 309
+550 327 596 354 1047 211 1062 243 550 251 562 267 343 252 360 308
+551 326 596 353 1047 210 1062 243 550 251 562 266 343 251 360 308
+551 326 596 352 1047 209 1063 243 550 251 562 266 343 250 360 307
+550 325 596 352 1046 209 1063 243 550 251 562 266 343 249 361 307
+549 325 596 351 1046 209 1062 243 550 251 562 266 344 248 362 306
+547 324 595 351 1046 209 1062 243 550 251 561 266 344 248 362 305
+548 324 594 350 1047 210 1063 243 550 251 561 265 344 248 363 305
+547 324 595 350 1047 210 1062 243 550 251 561 266 343 250 361 305
+547 324 596 350 1047 211 1062 243 550 251 562 266 343 252 360 305
+546 324 597 350 1047 212 1061 242 550 251 562 266 342 254 359 305
+547 325 597 351 1047 212 1061 242 342 254 360 306 550 251 562 266 588 322 615 340
+546 325 597 351 1047 212 1061 243 549 251 561 267 342 254 360 306 588 322 615 340
+547 325 598 351 1047 212 1061 244 549 251 562 267 342 254 360 307
+549 326 597 352 1047 212 1062 244 549 251 562 267
+550 327 597 352 1047 212 1062 244 550 251 562 267
+551 327 596 352 1047 212 1062 244 549 251 562 267
+551 328 596 353 1047 212 1062 244 550 251 562 267
+550 328 597 353 1047 212 1062 245 550 251 562 267
+550 328 597 354 1047 213 1062 244 550 251 562 267
+550 328 599 354 1047 213 1062 245 550 251 562 267
+550 328 599 355 1047 213 1062 244 549 251 562 267
+550 327 600 355 1047 212 1062 244 549 251 561 267 342 253 360 308
+550 327 600 355 1046 211 1062 244 549 250 561 267
+550 327 598 355 1046 210 1062 244 549 250 561 267 343 252 361 308
+549 326 598 353 1046 210 1062 243 549 250 561 266 342 253 360 307
+548 325 595 352 1046 210 1062 243 549 250 560 265 342 252 360 306
+547 324 595 351 1046 210 1062 243 549 250 561 265 342 252 360 305 590 322 615 340
+546 324 594 351 1046 210 1062 244 549 251 561 265 343 252 360 305 590 322 615 339
+546 324 594 351 1046 210 1063 244 549 251 561 266 343 253 360 305 589 322 615 340
+547 324 594 351 1046 210 1062 244 548 251 560 266 342 253 360 306 588 322 615 340
+549 325 594 352 1046 211 1062 243 548 251 560 267 587 322 615 340 342 253 360 307
+551 326 594 352 1046 212 1062 243 548 251 561 267
+552 327 594 353 1046 213 1061 243 549 251 561 267
+551 328 595 353 1046 213 1061 243 549 251 561 267 341 255 360 309
+551 328 596 354 1046 213 1062 244 549 251 560 267 342 255 360 309
+551 327 598 354 1046 212 1062 244 549 251 561 267 342 255 360 309
+551 327 599 355 1046 211 1062 244 548 251 561 267
+550 327 599 355 1046 210 1062 243 548 251 561 267
+550 327 597 355 1046 210 1062 243 548 251 561 266
+550 327 596 355 1046 210 1061 242 548 251 560 266 623 314 643 329 590 322 616 341 343 254 361 308
+550 326 595 354 1046 209 1061 242 548 251 560 266 623 312 643 328 343 253 361 308 589 322 616 341
+550 325 595 352 1046 209 1061 242 548 251 560 266 623 310 644 326 343 254 361 307 588 321 616 340
+549 324 595 351 1046 209 1060 242 549 251 560 265 343 254 360 305 588 321 616 340 623 310 644 325
+548 324 594 351 1046 210 1060 242 549 251 560 265 343 254 360 305 589 322 616 340 623 310 644 325
+547 324 594 351 1045 210 1061 242 548 251 559 266 589 322 616 340 343 254 360 305 623 311 644 325
+548 324 595 351 1046 210 1062 243 548 251 559 266 588 322 615 340 623 311 644 326 343 254 360 306
+549 325 594 351 1046 210 1062 244 547 251 559 266 623 312 644 327 588 322 615 340 342 255 360 307
+550 325 594 351 1046 211 1062 243 548 251 560 267 622 313 644 328 589 322 615 340 342 255 360 307
+551 326 595 352 1046 213 1062 244 548 251 560 267 622 314 643 329 589 323 615 340
+551 327 596 353 1046 214 1061 244 622 315 643 330 549 251 561 267 590 323 616 340
+551 327 598 354 1046 214 1061 244 623 316 643 330 548 251 560 267
+551 327 598 354 1047 213 1061 244 622 315 643 330 549 251 561 267
+551 327 599 354 1046 213 1061 244 548 251 561 267 622 315 643 330
+551 327 599 354 1046 212 1062 244 548 251 561 267 623 315 644 330
+551 327 598 355 1046 211 1062 244 548 251 561 267 623 315 644 330

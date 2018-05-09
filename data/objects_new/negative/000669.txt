@@ -1,100 +1,100 @@
-1 []
-2 []
-3 [['car: 57%', 'Left=539,', 'Top=364,', 'Right=621,', 'Bottom=393'], ['traffic light: 57%', 'Left=593,', 'Top=280,', 'Right=614,', 'Bottom=300']]
-4 [['car: 68%', 'Left=541,', 'Top=363,', 'Right=615,', 'Bottom=391'], ['traffic light: 57%', 'Left=593,', 'Top=279,', 'Right=615,', 'Bottom=299']]
-5 [['traffic light: 55%', 'Left=593,', 'Top=279,', 'Right=614,', 'Bottom=299']]
-6 [['traffic light: 50%', 'Left=593,', 'Top=278,', 'Right=614,', 'Bottom=299']]
-7 []
-8 []
-9 [['traffic light: 54%', 'Left=592,', 'Top=274,', 'Right=616,', 'Bottom=292']]
-10 [['traffic light: 59%', 'Left=593,', 'Top=273,', 'Right=614,', 'Bottom=292']]
-11 [['traffic light: 63%', 'Left=593,', 'Top=272,', 'Right=614,', 'Bottom=290'], ['car: 58%', 'Left=469,', 'Top=342,', 'Right=541,', 'Bottom=369']]
-12 [['traffic light: 59%', 'Left=593,', 'Top=272,', 'Right=614,', 'Bottom=291']]
-13 [['car: 62%', 'Left=449,', 'Top=337,', 'Right=513,', 'Bottom=364'], ['traffic light: 58%', 'Left=594,', 'Top=271,', 'Right=614,', 'Bottom=289']]
-14 [['car: 52%', 'Left=450,', 'Top=338,', 'Right=505,', 'Bottom=366'], ['traffic light: 52%', 'Left=594,', 'Top=272,', 'Right=615,', 'Bottom=291']]
-15 []
-16 [['car: 52%', 'Left=388,', 'Top=326,', 'Right=474,', 'Bottom=361']]
-17 [['traffic light: 59%', 'Left=593,', 'Top=279,', 'Right=615,', 'Bottom=299'], ['car: 53%', 'Left=382,', 'Top=326,', 'Right=469,', 'Bottom=362']]
-18 [['traffic light: 60%', 'Left=593,', 'Top=279,', 'Right=615,', 'Bottom=299'], ['car: 51%', 'Left=365,', 'Top=325,', 'Right=454,', 'Bottom=356']]
-19 [['traffic light: 60%', 'Left=593,', 'Top=280,', 'Right=614,', 'Bottom=300']]
-20 [['traffic light: 53%', 'Left=594,', 'Top=279,', 'Right=614,', 'Bottom=299']]
-21 []
-22 []
-23 [['car: 61%', 'Left=306,', 'Top=312,', 'Right=359,', 'Bottom=333'], ['traffic light: 53%', 'Left=593,', 'Top=274,', 'Right=613,', 'Bottom=292']]
-24 [['traffic light: 58%', 'Left=593,', 'Top=273,', 'Right=613,', 'Bottom=291'], ['car: 53%', 'Left=300,', 'Top=308,', 'Right=363,', 'Bottom=333']]
-25 [['traffic light: 60%', 'Left=593,', 'Top=272,', 'Right=614,', 'Bottom=291']]
-26 [['traffic light: 52%', 'Left=594,', 'Top=273,', 'Right=614,', 'Bottom=292']]
-27 [['car: 57%', 'Left=235,', 'Top=297,', 'Right=328,', 'Bottom=330']]
-28 [['car: 54%', 'Left=229,', 'Top=296,', 'Right=322,', 'Bottom=331']]
-29 [['car: 81%', 'Left=213,', 'Top=296,', 'Right=304,', 'Bottom=329'], ['traffic light: 58%', 'Left=593,', 'Top=278,', 'Right=614,', 'Bottom=299']]
-30 [['car: 57%', 'Left=192,', 'Top=290,', 'Right=282,', 'Bottom=323'], ['traffic light: 60%', 'Left=593,', 'Top=279,', 'Right=614,', 'Bottom=299']]
-31 [['car: 78%', 'Left=187,', 'Top=289,', 'Right=275,', 'Bottom=322'], ['traffic light: 60%', 'Left=593,', 'Top=279,', 'Right=614,', 'Bottom=300']]
-32 [['car: 66%', 'Left=170,', 'Top=284,', 'Right=259,', 'Bottom=315'], ['traffic light: 53%', 'Left=593,', 'Top=278,', 'Right=614,', 'Bottom=299']]
-33 [['car: 91%', 'Left=163,', 'Top=281,', 'Right=253,', 'Bottom=312']]
-34 [['car: 60%', 'Left=150,', 'Top=277,', 'Right=257,', 'Bottom=309']]
-35 [['car: 56%', 'Left=134,', 'Top=273,', 'Right=229,', 'Bottom=306'], ['traffic light: 52%', 'Left=593,', 'Top=273,', 'Right=613,', 'Bottom=292']]
-36 [['car: 74%', 'Left=118,', 'Top=267,', 'Right=204,', 'Bottom=300'], ['traffic light: 52%', 'Left=593,', 'Top=273,', 'Right=613,', 'Bottom=292']]
-37 [['car: 74%', 'Left=112,', 'Top=265,', 'Right=196,', 'Bottom=300']]
-38 [['car: 67%', 'Left=95,', 'Top=263,', 'Right=180,', 'Bottom=298']]
-39 [['car: 53%', 'Left=69,', 'Top=261,', 'Right=163,', 'Bottom=295']]
-40 [['car: 83%', 'Left=70,', 'Top=261,', 'Right=151,', 'Bottom=295']]
-41 [['car: 56%', 'Left=62,', 'Top=260,', 'Right=148,', 'Bottom=294'], ['traffic light: 56%', 'Left=592,', 'Top=278,', 'Right=615,', 'Bottom=298']]
-42 [['car: 50%', 'Left=44,', 'Top=256,', 'Right=129,', 'Bottom=289']]
-43 [['car: 57%', 'Left=34,', 'Top=256,', 'Right=93,', 'Bottom=282']]
-44 [['car: 66%', 'Left=18,', 'Top=249,', 'Right=102,', 'Bottom=282'], ['traffic light: 52%', 'Left=592,', 'Top=274,', 'Right=614,', 'Bottom=292']]
-45 [['traffic light: 52%', 'Left=593,', 'Top=274,', 'Right=613,', 'Bottom=292']]
-46 []
-47 []
-48 []
-49 []
-50 []
-51 []
-52 []
-53 []
-54 []
-55 [['traffic light: 56%', 'Left=592,', 'Top=273,', 'Right=614,', 'Bottom=292']]
-56 [['traffic light: 54%', 'Left=592,', 'Top=273,', 'Right=615,', 'Bottom=292']]
-57 [['traffic light: 51%', 'Left=593,', 'Top=273,', 'Right=615,', 'Bottom=293']]
-58 []
-59 []
-60 [['traffic light: 52%', 'Left=591,', 'Top=277,', 'Right=616,', 'Bottom=299']]
-61 [['traffic light: 64%', 'Left=591,', 'Top=278,', 'Right=616,', 'Bottom=298']]
-62 [['traffic light: 51%', 'Left=591,', 'Top=277,', 'Right=615,', 'Bottom=299']]
-63 []
-64 [['traffic light: 58%', 'Left=592,', 'Top=273,', 'Right=615,', 'Bottom=293']]
-65 [['traffic light: 61%', 'Left=593,', 'Top=273,', 'Right=614,', 'Bottom=293']]
-66 [['traffic light: 60%', 'Left=592,', 'Top=273,', 'Right=614,', 'Bottom=293']]
-67 [['traffic light: 54%', 'Left=592,', 'Top=273,', 'Right=614,', 'Bottom=293']]
-68 [['car: 61%', 'Left=853,', 'Top=418,', 'Right=899,', 'Bottom=443']]
-69 [['car: 71%', 'Left=847,', 'Top=417,', 'Right=902,', 'Bottom=444']]
-70 [['car: 62%', 'Left=844,', 'Top=416,', 'Right=900,', 'Bottom=443']]
-71 [['car: 53%', 'Left=826,', 'Top=411,', 'Right=874,', 'Bottom=438'], ['traffic light: 51%', 'Left=592,', 'Top=277,', 'Right=616,', 'Bottom=299']]
-72 [['car: 58%', 'Left=808,', 'Top=401,', 'Right=891,', 'Bottom=436'], ['traffic light: 57%', 'Left=593,', 'Top=278,', 'Right=615,', 'Bottom=300']]
-73 [['car: 53%', 'Left=801,', 'Top=397,', 'Right=886,', 'Bottom=434']]
-74 [['car: 60%', 'Left=786,', 'Top=394,', 'Right=868,', 'Bottom=430']]
-75 [['traffic light: 57%', 'Left=592,', 'Top=274,', 'Right=614,', 'Bottom=293']]
-76 [['car: 63%', 'Left=757,', 'Top=394,', 'Right=845,', 'Bottom=428'], ['traffic light: 63%', 'Left=593,', 'Top=273,', 'Right=613,', 'Bottom=292']]
-77 [['car: 66%', 'Left=752,', 'Top=395,', 'Right=838,', 'Bottom=430'], ['traffic light: 62%', 'Left=592,', 'Top=273,', 'Right=614,', 'Bottom=293']]
-78 [['car: 63%', 'Left=733,', 'Top=396,', 'Right=821,', 'Bottom=429'], ['traffic light: 54%', 'Left=592,', 'Top=273,', 'Right=615,', 'Bottom=293']]
-79 [['car: 54%', 'Left=727,', 'Top=394,', 'Right=812,', 'Bottom=431']]
-80 [['car: 62%', 'Left=711,', 'Top=388,', 'Right=795,', 'Bottom=425']]
-81 [['car: 77%', 'Left=703,', 'Top=388,', 'Right=790,', 'Bottom=422'], ['traffic light: 51%', 'Left=593,', 'Top=277,', 'Right=615,', 'Bottom=299']]
-82 [['car: 62%', 'Left=684,', 'Top=384,', 'Right=773,', 'Bottom=418'], ['traffic light: 58%', 'Left=593,', 'Top=278,', 'Right=615,', 'Bottom=299']]
-83 [['car: 61%', 'Left=653,', 'Top=378,', 'Right=757,', 'Bottom=412']]
-84 [['car: 93%', 'Left=655,', 'Top=376,', 'Right=744,', 'Bottom=410']]
-85 [['car: 64%', 'Left=648,', 'Top=372,', 'Right=740,', 'Bottom=407']]
-86 [['car: 61%', 'Left=629,', 'Top=369,', 'Right=725,', 'Bottom=406']]
-87 [['car: 62%', 'Left=603,', 'Top=363,', 'Right=706,', 'Bottom=397'], ['traffic light: 53%', 'Left=594,', 'Top=273,', 'Right=614,', 'Bottom=291']]
-88 [['car: 95%', 'Left=601,', 'Top=363,', 'Right=697,', 'Bottom=397'], ['traffic light: 57%', 'Left=594,', 'Top=272,', 'Right=613,', 'Bottom=290']]
-89 [['car: 71%', 'Left=594,', 'Top=363,', 'Right=693,', 'Bottom=398'], ['traffic light: 56%', 'Left=594,', 'Top=272,', 'Right=613,', 'Bottom=291']]
-90 [['car: 62%', 'Left=574,', 'Top=362,', 'Right=684,', 'Bottom=397']]
-91 [['car: 60%', 'Left=552,', 'Top=361,', 'Right=652,', 'Bottom=396']]
-92 [['car: 61%', 'Left=530,', 'Top=360,', 'Right=636,', 'Bottom=395']]
-93 [['car: 88%', 'Left=528,', 'Top=359,', 'Right=627,', 'Bottom=394']]
-94 [['car: 61%', 'Left=499,', 'Top=354,', 'Right=611,', 'Bottom=390'], ['traffic light: 61%', 'Left=593,', 'Top=278,', 'Right=616,', 'Bottom=299']]
-95 [['traffic light: 61%', 'Left=593,', 'Top=279,', 'Right=615,', 'Bottom=298']]
-96 [['car: 65%', 'Left=479,', 'Top=346,', 'Right=585,', 'Bottom=382'], ['traffic light: 54%', 'Left=593,', 'Top=279,', 'Right=615,', 'Bottom=299']]
-97 []
-98 []
-99 []
-100 [['car: 67%', 'Left=429,', 'Top=326,', 'Right=523,', 'Bottom=364'], ['traffic light: 53%', 'Left=594,', 'Top=272,', 'Right=613,', 'Bottom=290']]
+
+
+539 364 621 393 593 280 614 300
+541 363 615 391 593 279 615 299
+593 279 614 299
+593 278 614 299
+
+
+592 274 616 292
+593 273 614 292
+593 272 614 290 469 342 541 369
+593 272 614 291
+449 337 513 364 594 271 614 289
+450 338 505 366 594 272 615 291
+
+388 326 474 361
+593 279 615 299 382 326 469 362
+593 279 615 299 365 325 454 356
+593 280 614 300
+594 279 614 299
+
+
+306 312 359 333 593 274 613 292
+593 273 613 291 300 308 363 333
+593 272 614 291
+594 273 614 292
+235 297 328 330
+229 296 322 331
+213 296 304 329 593 278 614 299
+192 290 282 323 593 279 614 299
+187 289 275 322 593 279 614 300
+170 284 259 315 593 278 614 299
+163 281 253 312
+150 277 257 309
+134 273 229 306 593 273 613 292
+118 267 204 300 593 273 613 292
+112 265 196 300
+95 263 180 298
+69 261 163 295
+70 261 151 295
+62 260 148 294 592 278 615 298
+44 256 129 289
+34 256 93 282
+18 249 102 282 592 274 614 292
+593 274 613 292
+
+
+
+
+
+
+
+
+
+592 273 614 292
+592 273 615 292
+593 273 615 293
+
+
+591 277 616 299
+591 278 616 298
+591 277 615 299
+
+592 273 615 293
+593 273 614 293
+592 273 614 293
+592 273 614 293
+853 418 899 443
+847 417 902 444
+844 416 900 443
+826 411 874 438 592 277 616 299
+808 401 891 436 593 278 615 300
+801 397 886 434
+786 394 868 430
+592 274 614 293
+757 394 845 428 593 273 613 292
+752 395 838 430 592 273 614 293
+733 396 821 429 592 273 615 293
+727 394 812 431
+711 388 795 425
+703 388 790 422 593 277 615 299
+684 384 773 418 593 278 615 299
+653 378 757 412
+655 376 744 410
+648 372 740 407
+629 369 725 406
+603 363 706 397 594 273 614 291
+601 363 697 397 594 272 613 290
+594 363 693 398 594 272 613 291
+574 362 684 397
+552 361 652 396
+530 360 636 395
+528 359 627 394
+499 354 611 390 593 278 616 299
+593 279 615 298
+479 346 585 382 593 279 615 299
+
+
+
+429 326 523 364 594 272 613 290
