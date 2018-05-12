@@ -32,15 +32,37 @@ class AppearanceDataset(Dataset):
         return len(self.data)
 
     def __getitem__(self, idx):
+        X_frames = []  # hold frame objects
         # read video path
         vid_path = self.data[idx, 0]
         obj_path = 'data/objects_new/' + vid_path[5:-3] + 'txt'
         print(vid_path)
-        print(obj_path)
         # YOLO objects
         with open(obj_path, 'r') as f:
             objs = f.read().split('\n')[:-1]
-            print(objs)
+
+        print(self.cap.open(vid_path))
+        # grab random window
+        #start = np.random.randint(100 - self.window_size)
+        start = 0
+        self.cap.set(cv2.CAP_PROP_POS_FRAMES, start)
+        print(start, self.window_size)
+        for i in range(start, start+self.window_size):
+            frame_objs = objs[i].split()
+            frame_objs = np.array(frame_objs, dtype=int).reshape(-1, 4)
+            print(frame_objs)
+            _, frame = self.cap.read()
+            X_frames.append(frame)
+            for f_obj in frame_objs:
+                # left, top, right, bottom
+                print(f_obj)
+                img_obj = frame[f_obj[1]:f_obj[3], f_obj[0]:f_obj[2]]
+                print(img_obj.shape)
+                cv2.imshow('Object', img_obj)
+                cv2.waitKey(0)
+
+        print(len(X_frames))
+        print(X_frames[0].shape)
 #        # load video and read label
 #        X = np.load(vid_path)
 #        y = self.data[idx, 1]
@@ -232,7 +254,7 @@ def main():
     import matplotlib.pyplot as plt
     
     data_path = 'data/labels_done.txt'
-    window_size = 20
+    window_size = 10
 
     dataset = AppearanceDataset(data_path, window_size)
     dataset[0]
