@@ -1,143 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-Frame=4
-Frame=5
-Frame=6
-Frame=7
-Frame=8
-Frame=9
-Frame=10
-Frame=11
-Frame=12
-Frame=13
-Frame=14
-Frame=15
-Frame=16
-Frame=17
-Frame=18
-Frame=19
-Frame=20
-Frame=21
-Frame=22
-Frame=23
-Frame=24
-Frame=25
-Frame=26
-Frame=27
-Frame=28
-Frame=29
-Frame=30
-Frame=31
-car: 60%
-Bounding Box: Left=0, Top=477, Right=1278, Bottom=694
-Frame=32
-car: 84%
-Bounding Box: Left=0, Top=476, Right=1279, Bottom=695
-Frame=33
-car: 54%
-Bounding Box: Left=40, Top=466, Right=1231, Bottom=694
-Frame=34
-Frame=35
-Frame=36
-Frame=37
-Frame=38
-Frame=39
-Frame=40
-Frame=41
-Frame=42
-Frame=43
-Frame=44
-Frame=45
-Frame=46
-Frame=47
-car: 65%
-Bounding Box: Left=718, Top=412, Right=749, Bottom=437
-Frame=48
-car: 91%
-Bounding Box: Left=714, Top=407, Right=749, Bottom=438
-Frame=49
-car: 90%
-Bounding Box: Left=708, Top=405, Right=746, Bottom=438
-Frame=50
-car: 74%
-Bounding Box: Left=702, Top=403, Right=742, Bottom=438
-Frame=51
-Frame=52
-car: 50%
-Bounding Box: Left=684, Top=402, Right=725, Bottom=436
-Frame=53
-Frame=54
-Frame=55
-Frame=56
-truck: 69%
-Bounding Box: Left=650, Top=392, Right=708, Bottom=447
-Frame=57
-truck: 62%
-Bounding Box: Left=642, Top=389, Right=704, Bottom=448
-Frame=58
-Frame=59
-car: 58%
-truck: 52%
-Bounding Box: Left=619, Top=384, Right=682, Bottom=446
-Frame=60
-car: 53%
-Bounding Box: Left=608, Top=380, Right=682, Bottom=446
-Frame=61
-Frame=62
-Frame=63
-truck: 63%
-Bounding Box: Left=563, Top=379, Right=643, Bottom=456
-Frame=64
-truck: 62%
-Bounding Box: Left=552, Top=377, Right=640, Bottom=461
-Frame=65
-truck: 62%
-Bounding Box: Left=535, Top=377, Right=624, Bottom=465
-Frame=66
-Frame=67
-Frame=68
-truck: 71%
-Bounding Box: Left=460, Top=370, Right=572, Bottom=494
-Frame=69
-truck: 51%
-Bounding Box: Left=462, Top=367, Right=565, Bottom=498
-Frame=70
-truck: 56%
-Bounding Box: Left=387, Top=372, Right=545, Bottom=501
-Frame=71
-truck: 69%
-Bounding Box: Left=327, Top=364, Right=507, Bottom=514
-Frame=72
-truck: 79%
-Bounding Box: Left=275, Top=359, Right=476, Bottom=526
-Frame=73
-Frame=74
-Frame=75
-Frame=76
-Frame=77
-Frame=78
-Frame=79
-Frame=80
-Frame=81
-Frame=82
-Frame=83
-Frame=84
-Frame=85
-Frame=86
-Frame=87
-Frame=88
-Frame=89
-Frame=90
-Frame=91
-Frame=92
-Frame=93
-Frame=94
-Frame=95
-Frame=96
-Frame=97
-Frame=98
-car: 50%
-Bounding Box: Left=0, Top=463, Right=1279, Bottom=695
-Frame=99
-Frame=100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 477 1278 694
+0 476 1279 695
+40 466 1231 694
+
+
+
+
+
+
+
+
+
+
+
+
+
+718 412 749 437
+714 407 749 438
+708 405 746 438
+702 403 742 438
+
+684 402 725 436
+
+
+
+650 392 708 447
+642 389 704 448
+
+619 384 682 446
+608 380 682 446
+
+
+563 379 643 456
+552 377 640 461
+535 377 624 465
+
+
+460 370 572 494
+462 367 565 498
+387 372 545 501
+327 364 507 514
+275 359 476 526
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 463 1279 695
+
+

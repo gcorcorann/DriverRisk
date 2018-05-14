@@ -1,138 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-Frame=4
-Frame=5
-car: 53%
-Bounding Box: Left=296, Top=376, Right=420, Bottom=459
-Frame=6
-car: 52%
-Bounding Box: Left=293, Top=385, Right=414, Bottom=461
-Frame=7
-car: 53%
-Bounding Box: Left=249, Top=398, Right=370, Bottom=486
-Frame=8
-car: 52%
-Bounding Box: Left=242, Top=406, Right=369, Bottom=487
-Frame=9
-Frame=10
-Frame=11
-Frame=12
-Frame=13
-Frame=14
-Frame=15
-Frame=16
-Frame=17
-Frame=18
-Frame=19
-Frame=20
-Frame=21
-Frame=22
-Frame=23
-Frame=24
-Frame=25
-Frame=26
-Frame=27
-Frame=28
-Frame=29
-Frame=30
-Frame=31
-Frame=32
-Frame=33
-Frame=34
-Frame=35
-Frame=36
-Frame=37
-Frame=38
-Frame=39
-Frame=40
-Frame=41
-Frame=42
-Frame=43
-Frame=44
-Frame=45
-Frame=46
-Frame=47
-Frame=48
-Frame=49
-Frame=50
-Frame=51
-Frame=52
-Frame=53
-Frame=54
-Frame=55
-Frame=56
-Frame=57
-Frame=58
-Frame=59
-Frame=60
-Frame=61
-Frame=62
-Frame=63
-Frame=64
-Frame=65
-Frame=66
-Frame=67
-Frame=68
-Frame=69
-Frame=70
-Frame=71
-Frame=72
-Frame=73
-Frame=74
-Frame=75
-Frame=76
-Frame=77
-Frame=78
-car: 66%
-Bounding Box: Left=1110, Top=385, Right=1279, Bottom=500
-Frame=79
-car: 80%
-Bounding Box: Left=1121, Top=382, Right=1279, Bottom=505
-Frame=80
-car: 82%
-Bounding Box: Left=1134, Top=380, Right=1279, Bottom=508
-person: 52%
-Bounding Box: Left=840, Top=386, Right=862, Bottom=420
-Frame=81
-car: 77%
-Bounding Box: Left=1144, Top=381, Right=1279, Bottom=510
-Frame=82
-Frame=83
-Frame=84
-Frame=85
-Frame=86
-Frame=87
-car: 53%
-Bounding Box: Left=0, Top=248, Right=86, Bottom=421
-Frame=88
-Frame=89
-Frame=90
-Frame=91
-Frame=92
-motorbike: 68%
-Bounding Box: Left=298, Top=347, Right=416, Bottom=435
-Frame=93
-motorbike: 75%
-Bounding Box: Left=295, Top=343, Right=412, Bottom=437
-Frame=94
-motorbike: 55%
-Bounding Box: Left=298, Top=344, Right=405, Bottom=437
-Frame=95
-motorbike: 55%
-Bounding Box: Left=262, Top=325, Right=404, Bottom=435
-Frame=96
-motorbike: 62%
-Bounding Box: Left=254, Top=325, Right=400, Bottom=435
-Frame=97
-motorbike: 76%
-Bounding Box: Left=245, Top=325, Right=394, Bottom=436
-Frame=98
-motorbike: 81%
-Bounding Box: Left=236, Top=329, Right=385, Bottom=442
-Frame=99
-motorbike: 66%
-Bounding Box: Left=230, Top=332, Right=381, Bottom=449
-Frame=100
-motorbike: 89%
-Bounding Box: Left=215, Top=339, Right=352, Bottom=458
+
+
+
+
+296 376 420 459
+293 385 414 461
+249 398 370 486
+242 406 369 487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1110 385 1279 500
+1121 382 1279 505
+1134 380 1279 508 840 386 862 420
+1144 381 1279 510
+
+
+
+
+
+0 248 86 421
+
+
+
+
+298 347 416 435
+295 343 412 437
+298 344 405 437
+262 325 404 435
+254 325 400 435
+245 325 394 436
+236 329 385 442
+230 332 381 449
+215 339 352 458

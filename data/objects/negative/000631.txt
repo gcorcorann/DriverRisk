@@ -1,904 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-person: 100%
-Bounding Box: Left=236, Top=134, Right=471, Bottom=659
-person: 100%
-Bounding Box: Left=678, Top=226, Right=927, Bottom=643
-Frame=4
-person: 100%
-Bounding Box: Left=236, Top=136, Right=469, Bottom=658
-person: 100%
-Bounding Box: Left=679, Top=225, Right=927, Bottom=644
-Frame=5
-person: 100%
-Bounding Box: Left=236, Top=137, Right=469, Bottom=658
-person: 100%
-Bounding Box: Left=679, Top=224, Right=927, Bottom=644
-person: 55%
-Bounding Box: Left=198, Top=230, Right=216, Bottom=263
-Frame=6
-person: 100%
-Bounding Box: Left=236, Top=138, Right=469, Bottom=657
-person: 100%
-Bounding Box: Left=679, Top=223, Right=927, Bottom=645
-person: 58%
-Bounding Box: Left=198, Top=229, Right=216, Bottom=264
-Frame=7
-person: 100%
-Bounding Box: Left=236, Top=140, Right=469, Bottom=656
-person: 100%
-Bounding Box: Left=679, Top=223, Right=928, Bottom=646
-person: 59%
-Bounding Box: Left=198, Top=229, Right=217, Bottom=264
-Frame=8
-person: 100%
-Bounding Box: Left=237, Top=143, Right=469, Bottom=655
-person: 100%
-Bounding Box: Left=680, Top=222, Right=928, Bottom=647
-person: 62%
-Bounding Box: Left=199, Top=229, Right=217, Bottom=265
-Frame=9
-person: 100%
-Bounding Box: Left=237, Top=146, Right=469, Bottom=653
-person: 100%
-Bounding Box: Left=680, Top=221, Right=928, Bottom=648
-person: 63%
-Bounding Box: Left=199, Top=228, Right=218, Bottom=265
-traffic light: 51%
-Bounding Box: Left=473, Top=137, Right=490, Bottom=154
-Frame=10
-person: 100%
-Bounding Box: Left=237, Top=146, Right=469, Bottom=654
-person: 100%
-Bounding Box: Left=679, Top=221, Right=929, Bottom=648
-person: 67%
-Bounding Box: Left=199, Top=228, Right=218, Bottom=265
-traffic light: 54%
-Bounding Box: Left=473, Top=137, Right=490, Bottom=154
-Frame=11
-person: 100%
-Bounding Box: Left=237, Top=146, Right=470, Bottom=654
-person: 100%
-Bounding Box: Left=679, Top=222, Right=929, Bottom=647
-person: 67%
-Bounding Box: Left=199, Top=228, Right=218, Bottom=265
-traffic light: 55%
-Bounding Box: Left=472, Top=137, Right=489, Bottom=154
-Frame=12
-person: 100%
-Bounding Box: Left=236, Top=147, Right=470, Bottom=653
-person: 100%
-Bounding Box: Left=679, Top=223, Right=929, Bottom=646
-person: 66%
-Bounding Box: Left=199, Top=228, Right=218, Bottom=265
-traffic light: 55%
-Bounding Box: Left=473, Top=137, Right=490, Bottom=154
-Frame=13
-person: 100%
-Bounding Box: Left=234, Top=147, Right=472, Bottom=652
-person: 100%
-Bounding Box: Left=680, Top=225, Right=928, Bottom=646
-person: 64%
-Bounding Box: Left=199, Top=228, Right=218, Bottom=265
-traffic light: 53%
-Bounding Box: Left=473, Top=137, Right=490, Bottom=154
-Frame=14
-person: 100%
-Bounding Box: Left=233, Top=150, Right=473, Bottom=650
-person: 99%
-Bounding Box: Left=680, Top=226, Right=927, Bottom=645
-person: 64%
-Bounding Box: Left=199, Top=228, Right=218, Bottom=264
-Frame=15
-person: 100%
-Bounding Box: Left=233, Top=152, Right=474, Bottom=649
-person: 99%
-Bounding Box: Left=680, Top=227, Right=927, Bottom=646
-person: 67%
-Bounding Box: Left=198, Top=228, Right=218, Bottom=265
-person: 51%
-Bounding Box: Left=393, Top=219, Right=466, Bottom=374
-Frame=16
-person: 100%
-Bounding Box: Left=233, Top=153, Right=475, Bottom=649
-person: 99%
-Bounding Box: Left=678, Top=228, Right=927, Bottom=645
-person: 75%
-Bounding Box: Left=398, Top=220, Right=472, Bottom=375
-person: 68%
-Bounding Box: Left=198, Top=228, Right=218, Bottom=265
-Frame=17
-person: 100%
-Bounding Box: Left=234, Top=150, Right=475, Bottom=651
-person: 99%
-Bounding Box: Left=677, Top=228, Right=927, Bottom=645
-person: 69%
-Bounding Box: Left=198, Top=227, Right=218, Bottom=265
-person: 67%
-Bounding Box: Left=399, Top=219, Right=473, Bottom=375
-Frame=18
-person: 100%
-Bounding Box: Left=233, Top=149, Right=476, Bottom=653
-person: 99%
-Bounding Box: Left=677, Top=226, Right=927, Bottom=646
-person: 72%
-Bounding Box: Left=198, Top=227, Right=218, Bottom=265
-person: 57%
-Bounding Box: Left=399, Top=220, Right=475, Bottom=377
-Frame=19
-person: 100%
-Bounding Box: Left=233, Top=149, Right=478, Bottom=652
-person: 99%
-Bounding Box: Left=677, Top=225, Right=928, Bottom=647
-person: 76%
-Bounding Box: Left=198, Top=228, Right=218, Bottom=265
-Frame=20
-person: 100%
-Bounding Box: Left=234, Top=149, Right=478, Bottom=652
-person: 99%
-Bounding Box: Left=678, Top=225, Right=928, Bottom=647
-person: 80%
-Bounding Box: Left=198, Top=229, Right=218, Bottom=265
-Frame=21
-person: 100%
-Bounding Box: Left=234, Top=152, Right=479, Bottom=650
-person: 99%
-Bounding Box: Left=680, Top=225, Right=928, Bottom=647
-person: 80%
-Bounding Box: Left=198, Top=230, Right=217, Bottom=265
-Frame=22
-person: 100%
-Bounding Box: Left=234, Top=150, Right=478, Bottom=651
-person: 99%
-Bounding Box: Left=680, Top=225, Right=927, Bottom=647
-person: 80%
-Bounding Box: Left=198, Top=230, Right=217, Bottom=264
-person: 67%
-Bounding Box: Left=412, Top=220, Right=491, Bottom=380
-traffic light: 52%
-Bounding Box: Left=885, Top=111, Right=922, Bottom=191
-Frame=23
-person: 100%
-Bounding Box: Left=234, Top=147, Right=477, Bottom=655
-person: 99%
-Bounding Box: Left=680, Top=225, Right=927, Bottom=646
-person: 80%
-Bounding Box: Left=198, Top=230, Right=218, Bottom=265
-person: 79%
-Bounding Box: Left=411, Top=220, Right=497, Bottom=384
-traffic light: 56%
-Bounding Box: Left=884, Top=111, Right=923, Bottom=190
-Frame=24
-person: 100%
-Bounding Box: Left=235, Top=142, Right=476, Bottom=660
-person: 99%
-Bounding Box: Left=679, Top=225, Right=927, Bottom=645
-person: 93%
-Bounding Box: Left=410, Top=222, Right=503, Bottom=386
-person: 80%
-Bounding Box: Left=198, Top=230, Right=218, Bottom=265
-person: 53%
-Bounding Box: Left=663, Top=233, Right=686, Bottom=276
-Frame=25
-person: 99%
-Bounding Box: Left=236, Top=142, Right=475, Bottom=660
-person: 99%
-Bounding Box: Left=679, Top=225, Right=927, Bottom=645
-person: 92%
-Bounding Box: Left=411, Top=222, Right=506, Bottom=385
-person: 79%
-Bounding Box: Left=198, Top=231, Right=217, Bottom=265
-Frame=26
-person: 99%
-Bounding Box: Left=237, Top=143, Right=475, Bottom=659
-person: 99%
-Bounding Box: Left=679, Top=226, Right=928, Bottom=645
-person: 91%
-Bounding Box: Left=414, Top=223, Right=509, Bottom=385
-person: 79%
-Bounding Box: Left=198, Top=230, Right=217, Bottom=265
-Frame=27
-person: 99%
-Bounding Box: Left=238, Top=143, Right=474, Bottom=659
-person: 99%
-Bounding Box: Left=680, Top=225, Right=929, Bottom=645
-person: 89%
-Bounding Box: Left=417, Top=223, Right=512, Bottom=386
-person: 79%
-Bounding Box: Left=198, Top=230, Right=217, Bottom=265
-Frame=28
-person: 99%
-Bounding Box: Left=238, Top=144, Right=475, Bottom=659
-person: 99%
-Bounding Box: Left=681, Top=226, Right=929, Bottom=644
-person: 84%
-Bounding Box: Left=419, Top=224, Right=514, Bottom=383
-person: 78%
-Bounding Box: Left=198, Top=229, Right=217, Bottom=265
-Frame=29
-person: 99%
-Bounding Box: Left=238, Top=147, Right=476, Bottom=657
-person: 99%
-Bounding Box: Left=682, Top=226, Right=929, Bottom=643
-person: 76%
-Bounding Box: Left=198, Top=229, Right=218, Bottom=265
-person: 58%
-Bounding Box: Left=422, Top=221, Right=514, Bottom=380
-Frame=30
-person: 99%
-Bounding Box: Left=682, Top=227, Right=929, Bottom=642
-person: 99%
-Bounding Box: Left=237, Top=150, Right=476, Bottom=655
-person: 73%
-Bounding Box: Left=197, Top=229, Right=218, Bottom=265
-Frame=31
-person: 99%
-Bounding Box: Left=682, Top=228, Right=929, Bottom=641
-person: 99%
-Bounding Box: Left=237, Top=153, Right=475, Bottom=653
-person: 73%
-Bounding Box: Left=197, Top=229, Right=218, Bottom=264
-Frame=32
-person: 99%
-Bounding Box: Left=682, Top=230, Right=929, Bottom=639
-person: 99%
-Bounding Box: Left=236, Top=151, Right=475, Bottom=653
-person: 73%
-Bounding Box: Left=196, Top=229, Right=217, Bottom=264
-person: 61%
-Bounding Box: Left=474, Top=235, Right=524, Bottom=366
-Frame=33
-person: 99%
-Bounding Box: Left=683, Top=231, Right=929, Bottom=639
-person: 99%
-Bounding Box: Left=236, Top=151, Right=476, Bottom=654
-person: 83%
-Bounding Box: Left=476, Top=234, Right=527, Bottom=370
-person: 72%
-Bounding Box: Left=196, Top=229, Right=217, Bottom=264
-Frame=34
-person: 99%
-Bounding Box: Left=683, Top=230, Right=930, Bottom=640
-person: 99%
-Bounding Box: Left=236, Top=150, Right=477, Bottom=654
-person: 85%
-Bounding Box: Left=479, Top=235, Right=530, Bottom=370
-person: 72%
-Bounding Box: Left=196, Top=230, Right=217, Bottom=265
-Frame=35
-person: 99%
-Bounding Box: Left=683, Top=229, Right=931, Bottom=642
-person: 99%
-Bounding Box: Left=236, Top=152, Right=477, Bottom=653
-person: 83%
-Bounding Box: Left=482, Top=236, Right=534, Bottom=369
-person: 72%
-Bounding Box: Left=196, Top=230, Right=217, Bottom=265
-Frame=36
-person: 100%
-Bounding Box: Left=682, Top=227, Right=933, Bottom=643
-person: 99%
-Bounding Box: Left=235, Top=150, Right=478, Bottom=655
-person: 72%
-Bounding Box: Left=197, Top=230, Right=217, Bottom=265
-person: 61%
-Bounding Box: Left=485, Top=238, Right=537, Bottom=366
-Frame=37
-person: 99%
-Bounding Box: Left=684, Top=228, Right=933, Bottom=642
-person: 99%
-Bounding Box: Left=235, Top=146, Right=477, Bottom=658
-person: 72%
-Bounding Box: Left=197, Top=229, Right=218, Bottom=265
-person: 68%
-Bounding Box: Left=478, Top=196, Right=555, Bottom=390
-Frame=38
-person: 99%
-Bounding Box: Left=234, Top=144, Right=476, Bottom=659
-person: 99%
-Bounding Box: Left=684, Top=230, Right=933, Bottom=641
-person: 75%
-Bounding Box: Left=197, Top=229, Right=218, Bottom=265
-person: 74%
-Bounding Box: Left=478, Top=181, Right=562, Bottom=391
-traffic light: 51%
-Bounding Box: Left=885, Top=111, Right=923, Bottom=190
-Frame=39
-person: 99%
-Bounding Box: Left=235, Top=147, Right=476, Bottom=657
-person: 99%
-Bounding Box: Left=683, Top=232, Right=933, Bottom=640
-person: 77%
-Bounding Box: Left=198, Top=229, Right=218, Bottom=265
-person: 74%
-Bounding Box: Left=480, Top=179, Right=565, Bottom=392
-traffic light: 58%
-Bounding Box: Left=884, Top=111, Right=923, Bottom=191
-Frame=40
-person: 99%
-Bounding Box: Left=235, Top=151, Right=476, Bottom=653
-person: 99%
-Bounding Box: Left=682, Top=232, Right=932, Bottom=640
-person: 71%
-Bounding Box: Left=198, Top=230, Right=218, Bottom=265
-person: 67%
-Bounding Box: Left=485, Top=198, Right=565, Bottom=389
-traffic light: 58%
-Bounding Box: Left=884, Top=111, Right=922, Bottom=191
-Frame=41
-person: 100%
-Bounding Box: Left=235, Top=154, Right=474, Bottom=650
-person: 99%
-Bounding Box: Left=681, Top=230, Right=931, Bottom=641
-person: 65%
-Bounding Box: Left=198, Top=231, Right=217, Bottom=265
-person: 65%
-Bounding Box: Left=484, Top=237, Right=562, Bottom=407
-traffic light: 55%
-Bounding Box: Left=885, Top=110, Right=922, Bottom=191
-person: 51%
-Bounding Box: Left=663, Top=248, Right=686, Bottom=290
-Frame=42
-person: 100%
-Bounding Box: Left=236, Top=157, Right=474, Bottom=648
-person: 99%
-Bounding Box: Left=682, Top=230, Right=931, Bottom=642
-person: 62%
-Bounding Box: Left=477, Top=236, Right=565, Bottom=415
-person: 62%
-Bounding Box: Left=197, Top=231, Right=217, Bottom=265
-traffic light: 52%
-Bounding Box: Left=885, Top=110, Right=922, Bottom=191
-Frame=43
-person: 100%
-Bounding Box: Left=235, Top=156, Right=474, Bottom=648
-person: 99%
-Bounding Box: Left=683, Top=230, Right=931, Bottom=643
-person: 67%
-Bounding Box: Left=197, Top=231, Right=217, Bottom=265
-person: 58%
-Bounding Box: Left=473, Top=231, Right=571, Bottom=421
-traffic light: 50%
-Bounding Box: Left=884, Top=110, Right=922, Bottom=191
-Frame=44
-person: 100%
-Bounding Box: Left=235, Top=155, Right=474, Bottom=650
-person: 99%
-Bounding Box: Left=683, Top=230, Right=931, Bottom=644
-person: 69%
-Bounding Box: Left=197, Top=230, Right=217, Bottom=265
-person: 62%
-Bounding Box: Left=472, Top=228, Right=578, Bottom=424
-traffic light: 51%
-Bounding Box: Left=884, Top=110, Right=922, Bottom=191
-Frame=45
-person: 100%
-Bounding Box: Left=234, Top=154, Right=474, Bottom=650
-person: 99%
-Bounding Box: Left=683, Top=230, Right=931, Bottom=644
-person: 69%
-Bounding Box: Left=479, Top=223, Right=581, Bottom=424
-person: 66%
-Bounding Box: Left=197, Top=229, Right=217, Bottom=265
-traffic light: 51%
-Bounding Box: Left=884, Top=110, Right=921, Bottom=191
-Frame=46
-person: 100%
-Bounding Box: Left=235, Top=154, Right=473, Bottom=650
-person: 99%
-Bounding Box: Left=682, Top=230, Right=931, Bottom=645
-person: 76%
-Bounding Box: Left=483, Top=227, Right=583, Bottom=425
-person: 61%
-Bounding Box: Left=197, Top=229, Right=217, Bottom=265
-traffic light: 52%
-Bounding Box: Left=884, Top=110, Right=921, Bottom=192
-Frame=47
-person: 100%
-Bounding Box: Left=235, Top=154, Right=473, Bottom=650
-person: 99%
-Bounding Box: Left=682, Top=230, Right=931, Bottom=644
-person: 77%
-Bounding Box: Left=507, Top=223, Right=590, Bottom=426
-person: 58%
-Bounding Box: Left=197, Top=229, Right=217, Bottom=265
-traffic light: 51%
-Bounding Box: Left=884, Top=110, Right=921, Bottom=192
-Frame=48
-person: 100%
-Bounding Box: Left=235, Top=153, Right=472, Bottom=651
-person: 99%
-Bounding Box: Left=682, Top=231, Right=931, Bottom=643
-person: 92%
-Bounding Box: Left=509, Top=227, Right=592, Bottom=425
-person: 59%
-Bounding Box: Left=197, Top=229, Right=217, Bottom=265
-Frame=49
-person: 100%
-Bounding Box: Left=234, Top=150, Right=472, Bottom=653
-person: 99%
-Bounding Box: Left=681, Top=233, Right=932, Bottom=642
-person: 93%
-Bounding Box: Left=512, Top=231, Right=596, Bottom=419
-person: 56%
-Bounding Box: Left=197, Top=230, Right=217, Bottom=265
-Frame=50
-person: 99%
-Bounding Box: Left=234, Top=151, Right=473, Bottom=652
-person: 99%
-Bounding Box: Left=680, Top=233, Right=933, Bottom=642
-person: 96%
-Bounding Box: Left=515, Top=231, Right=604, Bottom=417
-person: 57%
-Bounding Box: Left=197, Top=230, Right=217, Bottom=265
-Frame=51
-person: 99%
-Bounding Box: Left=235, Top=153, Right=473, Bottom=650
-person: 99%
-Bounding Box: Left=681, Top=232, Right=933, Bottom=643
-person: 97%
-Bounding Box: Left=518, Top=227, Right=613, Bottom=420
-person: 58%
-Bounding Box: Left=197, Top=230, Right=217, Bottom=265
-Frame=52
-person: 99%
-Bounding Box: Left=683, Top=230, Right=932, Bottom=645
-person: 99%
-Bounding Box: Left=235, Top=157, Right=473, Bottom=646
-person: 98%
-Bounding Box: Left=522, Top=223, Right=619, Bottom=424
-person: 62%
-Bounding Box: Left=196, Top=230, Right=217, Bottom=265
-Frame=53
-person: 100%
-Bounding Box: Left=684, Top=228, Right=931, Bottom=647
-person: 99%
-Bounding Box: Left=235, Top=161, Right=473, Bottom=643
-person: 98%
-Bounding Box: Left=526, Top=226, Right=620, Bottom=422
-person: 63%
-Bounding Box: Left=196, Top=229, Right=217, Bottom=265
-Frame=54
-person: 100%
-Bounding Box: Left=684, Top=225, Right=930, Bottom=649
-person: 99%
-Bounding Box: Left=234, Top=160, Right=474, Bottom=643
-person: 98%
-Bounding Box: Left=532, Top=230, Right=622, Bottom=423
-person: 64%
-Bounding Box: Left=196, Top=230, Right=217, Bottom=265
-Frame=55
-person: 99%
-Bounding Box: Left=683, Top=225, Right=930, Bottom=648
-person: 99%
-Bounding Box: Left=233, Top=160, Right=475, Bottom=643
-person: 98%
-Bounding Box: Left=535, Top=233, Right=624, Bottom=425
-person: 66%
-Bounding Box: Left=196, Top=231, Right=217, Bottom=265
-person: 51%
-Bounding Box: Left=479, Top=239, Right=489, Bottom=260
-traffic light: 52%
-Bounding Box: Left=883, Top=112, Right=921, Bottom=192
-Frame=56
-person: 99%
-Bounding Box: Left=683, Top=225, Right=930, Bottom=647
-person: 99%
-Bounding Box: Left=232, Top=156, Right=476, Bottom=646
-person: 97%
-Bounding Box: Left=540, Top=235, Right=626, Bottom=430
-person: 67%
-Bounding Box: Left=196, Top=232, Right=216, Bottom=265
-person: 57%
-Bounding Box: Left=478, Top=241, Right=489, Bottom=260
-traffic light: 58%
-Bounding Box: Left=883, Top=112, Right=922, Bottom=192
-Frame=57
-person: 99%
-Bounding Box: Left=232, Top=157, Right=476, Bottom=646
-person: 99%
-Bounding Box: Left=683, Top=226, Right=931, Bottom=647
-person: 94%
-Bounding Box: Left=542, Top=235, Right=629, Bottom=430
-person: 66%
-Bounding Box: Left=196, Top=232, Right=216, Bottom=265
-person: 58%
-Bounding Box: Left=478, Top=240, Right=488, Bottom=260
-traffic light: 57%
-Bounding Box: Left=883, Top=112, Right=922, Bottom=192
-Frame=58
-person: 99%
-Bounding Box: Left=234, Top=157, Right=476, Bottom=646
-person: 99%
-Bounding Box: Left=684, Top=226, Right=930, Bottom=649
-person: 96%
-Bounding Box: Left=559, Top=234, Right=636, Bottom=423
-person: 65%
-Bounding Box: Left=197, Top=232, Right=217, Bottom=264
-person: 56%
-Bounding Box: Left=478, Top=240, Right=488, Bottom=259
-traffic light: 52%
-Bounding Box: Left=883, Top=112, Right=922, Bottom=192
-Frame=59
-person: 100%
-Bounding Box: Left=235, Top=159, Right=475, Bottom=644
-person: 99%
-Bounding Box: Left=683, Top=225, Right=930, Bottom=650
-person: 96%
-Bounding Box: Left=564, Top=232, Right=640, Bottom=418
-person: 60%
-Bounding Box: Left=712, Top=256, Right=738, Bottom=292
-person: 63%
-Bounding Box: Left=197, Top=232, Right=217, Bottom=264
-person: 54%
-Bounding Box: Left=478, Top=239, Right=487, Bottom=259
-traffic light: 51%
-Bounding Box: Left=883, Top=112, Right=922, Bottom=191
-Frame=60
-person: 100%
-Bounding Box: Left=236, Top=160, Right=476, Bottom=643
-person: 99%
-Bounding Box: Left=681, Top=226, Right=930, Bottom=650
-person: 90%
-Bounding Box: Left=573, Top=231, Right=644, Bottom=416
-person: 61%
-Bounding Box: Left=714, Top=256, Right=739, Bottom=293
-person: 60%
-Bounding Box: Left=197, Top=232, Right=217, Bottom=264
-traffic light: 54%
-Bounding Box: Left=883, Top=112, Right=922, Bottom=191
-Frame=61
-person: 100%
-Bounding Box: Left=236, Top=158, Right=476, Bottom=645
-person: 99%
-Bounding Box: Left=680, Top=227, Right=930, Bottom=647
-person: 90%
-Bounding Box: Left=576, Top=228, Right=651, Bottom=420
-person: 61%
-Bounding Box: Left=197, Top=231, Right=217, Bottom=264
-person: 52%
-Bounding Box: Left=717, Top=260, Right=740, Bottom=293
-traffic light: 54%
-Bounding Box: Left=883, Top=112, Right=921, Bottom=191
-Frame=62
-person: 100%
-Bounding Box: Left=236, Top=154, Right=475, Bottom=649
-person: 99%
-Bounding Box: Left=679, Top=228, Right=929, Bottom=645
-person: 91%
-Bounding Box: Left=582, Top=223, Right=658, Bottom=424
-person: 65%
-Bounding Box: Left=196, Top=231, Right=217, Bottom=265
-Frame=63
-person: 100%
-Bounding Box: Left=237, Top=150, Right=473, Bottom=652
-person: 99%
-Bounding Box: Left=678, Top=227, Right=929, Bottom=645
-person: 97%
-Bounding Box: Left=586, Top=219, Right=662, Bottom=426
-person: 71%
-Bounding Box: Left=196, Top=231, Right=217, Bottom=266
-Frame=64
-person: 100%
-Bounding Box: Left=237, Top=149, Right=472, Bottom=653
-person: 100%
-Bounding Box: Left=678, Top=226, Right=929, Bottom=646
-person: 98%
-Bounding Box: Left=591, Top=216, Right=665, Bottom=426
-person: 73%
-Bounding Box: Left=196, Top=231, Right=217, Bottom=267
-Frame=65
-person: 100%
-Bounding Box: Left=237, Top=149, Right=472, Bottom=653
-person: 100%
-Bounding Box: Left=678, Top=226, Right=929, Bottom=646
-person: 98%
-Bounding Box: Left=591, Top=217, Right=667, Bottom=423
-person: 70%
-Bounding Box: Left=197, Top=231, Right=217, Bottom=266
-Frame=66
-person: 100%
-Bounding Box: Left=237, Top=146, Right=472, Bottom=655
-person: 99%
-Bounding Box: Left=680, Top=228, Right=930, Bottom=645
-person: 98%
-Bounding Box: Left=592, Top=220, Right=670, Bottom=419
-person: 57%
-Bounding Box: Left=197, Top=232, Right=217, Bottom=265
-Frame=67
-person: 100%
-Bounding Box: Left=238, Top=147, Right=473, Bottom=654
-person: 99%
-Bounding Box: Left=682, Top=231, Right=931, Bottom=644
-person: 96%
-Bounding Box: Left=593, Top=222, Right=672, Bottom=414
-person: 51%
-Bounding Box: Left=198, Top=232, Right=218, Bottom=265
-Frame=68
-person: 100%
-Bounding Box: Left=239, Top=145, Right=473, Bottom=656
-person: 99%
-Bounding Box: Left=683, Top=234, Right=931, Bottom=642
-person: 93%
-Bounding Box: Left=608, Top=224, Right=679, Bottom=410
-person: 51%
-Bounding Box: Left=198, Top=231, Right=220, Bottom=264
-Frame=69
-person: 100%
-Bounding Box: Left=239, Top=145, Right=473, Bottom=656
-person: 99%
-Bounding Box: Left=683, Top=234, Right=931, Bottom=642
-person: 96%
-Bounding Box: Left=610, Top=226, Right=680, Bottom=408
-person: 54%
-Bounding Box: Left=476, Top=239, Right=486, Bottom=258
-person: 52%
-Bounding Box: Left=198, Top=229, Right=221, Bottom=262
-Frame=70
-person: 100%
-Bounding Box: Left=239, Top=146, Right=472, Bottom=655
-person: 99%
-Bounding Box: Left=684, Top=236, Right=931, Bottom=640
-person: 96%
-Bounding Box: Left=612, Top=230, Right=683, Bottom=406
-person: 66%
-Bounding Box: Left=476, Top=236, Right=486, Bottom=257
-person: 54%
-Bounding Box: Left=199, Top=228, Right=221, Bottom=260
-Frame=71
-person: 100%
-Bounding Box: Left=239, Top=148, Right=472, Bottom=652
-person: 99%
-Bounding Box: Left=685, Top=235, Right=931, Bottom=640
-person: 93%
-Bounding Box: Left=617, Top=232, Right=685, Bottom=405
-person: 71%
-Bounding Box: Left=476, Top=234, Right=486, Bottom=255
-traffic light: 55%
-Bounding Box: Left=885, Top=112, Right=926, Bottom=189
-person: 51%
-Bounding Box: Left=200, Top=228, Right=222, Bottom=259
-Frame=72
-person: 100%
-Bounding Box: Left=240, Top=149, Right=471, Bottom=652
-person: 99%
-Bounding Box: Left=683, Top=236, Right=930, Bottom=638
-person: 84%
-Bounding Box: Left=628, Top=248, Right=681, Bottom=387
-person: 72%
-Bounding Box: Left=476, Top=234, Right=486, Bottom=255
-person: 52%
-Bounding Box: Left=200, Top=227, Right=221, Bottom=258
-Frame=73
-person: 100%
-Bounding Box: Left=240, Top=147, Right=470, Bottom=652
-person: 99%
-Bounding Box: Left=681, Top=236, Right=930, Bottom=638
-person: 83%
-Bounding Box: Left=630, Top=249, Right=685, Bottom=388
-person: 71%
-Bounding Box: Left=477, Top=235, Right=486, Bottom=256
-Frame=74
-person: 100%
-Bounding Box: Left=242, Top=142, Right=471, Bottom=656
-person: 99%
-Bounding Box: Left=683, Top=240, Right=934, Bottom=637
-person: 78%
-Bounding Box: Left=631, Top=235, Right=696, Bottom=412
-person: 72%
-Bounding Box: Left=478, Top=236, Right=487, Bottom=258
-Frame=75
-person: 100%
-Bounding Box: Left=245, Top=140, Right=473, Bottom=658
-person: 98%
-Bounding Box: Left=686, Top=243, Right=938, Bottom=635
-person: 91%
-Bounding Box: Left=640, Top=239, Right=706, Bottom=415
-person: 67%
-Bounding Box: Left=479, Top=239, Right=489, Bottom=261
-Frame=76
-person: 100%
-Bounding Box: Left=249, Top=136, Right=477, Bottom=664
-person: 99%
-Bounding Box: Left=690, Top=246, Right=941, Bottom=636
-person: 95%
-Bounding Box: Left=647, Top=242, Right=714, Bottom=416
-person: 68%
-Bounding Box: Left=481, Top=241, Right=490, Bottom=263
-Frame=77
-person: 100%
-Bounding Box: Left=250, Top=139, Right=480, Bottom=661
-person: 99%
-Bounding Box: Left=691, Top=246, Right=942, Bottom=637
-person: 96%
-Bounding Box: Left=648, Top=244, Right=718, Bottom=417
-person: 55%
-Bounding Box: Left=481, Top=242, Right=491, Bottom=261
-Frame=78
-person: 100%
-Bounding Box: Left=250, Top=137, Right=484, Bottom=660
-person: 99%
-Bounding Box: Left=690, Top=244, Right=944, Bottom=640
-person: 89%
-Bounding Box: Left=650, Top=246, Right=719, Bottom=417
-person: 53%
-Bounding Box: Left=216, Top=225, Right=234, Bottom=260
-Frame=79
-person: 100%
-Bounding Box: Left=249, Top=139, Right=486, Bottom=655
-person: 98%
-Bounding Box: Left=689, Top=243, Right=947, Bottom=640
-person: 96%
-Bounding Box: Left=659, Top=250, Right=732, Bottom=417
-person: 60%
-Bounding Box: Left=216, Top=225, Right=236, Bottom=259
-Frame=80
-person: 100%
-Bounding Box: Left=250, Top=139, Right=488, Bottom=653
-person: 98%
-Bounding Box: Left=689, Top=243, Right=948, Bottom=637
-person: 98%
-Bounding Box: Left=661, Top=251, Right=739, Bottom=416
-person: 61%
-Bounding Box: Left=217, Top=225, Right=237, Bottom=258
-Frame=81
-person: 100%
-Bounding Box: Left=250, Top=139, Right=489, Bottom=653
-person: 98%
-Bounding Box: Left=691, Top=244, Right=949, Bottom=635
-person: 98%
-Bounding Box: Left=661, Top=250, Right=745, Bottom=414
-Frame=82
-person: 100%
-Bounding Box: Left=250, Top=139, Right=491, Bottom=653
-person: 98%
-Bounding Box: Left=695, Top=243, Right=949, Bottom=633
-person: 98%
-Bounding Box: Left=668, Top=248, Right=752, Bottom=413
-Frame=83
-person: 100%
-Bounding Box: Left=250, Top=138, Right=493, Bottom=653
-person: 99%
-Bounding Box: Left=696, Top=239, Right=950, Bottom=634
-person: 95%
-Bounding Box: Left=675, Top=244, Right=758, Bottom=409
-person: 78%
-Bounding Box: Left=218, Top=213, Right=241, Bottom=250
-Frame=84
-person: 100%
-Bounding Box: Left=250, Top=134, Right=493, Bottom=653
-person: 99%
-Bounding Box: Left=696, Top=234, Right=952, Bottom=633
-person: 94%
-Bounding Box: Left=686, Top=241, Right=762, Bottom=405
-person: 76%
-Bounding Box: Left=219, Top=212, Right=240, Bottom=248
-Frame=85
-person: 100%
-Bounding Box: Left=251, Top=129, Right=493, Bottom=656
-person: 99%
-Bounding Box: Left=694, Top=233, Right=954, Bottom=633
-person: 88%
-Bounding Box: Left=692, Top=240, Right=763, Bottom=401
-person: 75%
-Bounding Box: Left=219, Top=212, Right=240, Bottom=247
-Frame=86
-person: 100%
-Bounding Box: Left=250, Top=129, Right=491, Bottom=659
-person: 99%
-Bounding Box: Left=694, Top=233, Right=953, Bottom=635
-person: 82%
-Bounding Box: Left=696, Top=238, Right=767, Bottom=399
-person: 75%
-Bounding Box: Left=219, Top=213, Right=240, Bottom=249
-Frame=87
-person: 100%
-Bounding Box: Left=249, Top=136, Right=490, Bottom=657
-person: 99%
-Bounding Box: Left=693, Top=234, Right=951, Bottom=637
-person: 75%
-Bounding Box: Left=698, Top=238, Right=769, Bottom=398
-person: 72%
-Bounding Box: Left=218, Top=213, Right=239, Bottom=251
-Frame=88
-person: 100%
-Bounding Box: Left=249, Top=138, Right=487, Bottom=655
-person: 99%
-Bounding Box: Left=694, Top=235, Right=949, Bottom=640
-person: 79%
-Bounding Box: Left=698, Top=238, Right=770, Bottom=401
-person: 56%
-Bounding Box: Left=218, Top=214, Right=238, Bottom=252
-Frame=89
-person: 100%
-Bounding Box: Left=250, Top=139, Right=485, Bottom=655
-person: 98%
-Bounding Box: Left=695, Top=239, Right=946, Bottom=640
-person: 88%
-Bounding Box: Left=698, Top=241, Right=769, Bottom=407
-Frame=90
-person: 100%
-Bounding Box: Left=252, Top=138, Right=483, Bottom=656
-person: 98%
-Bounding Box: Left=696, Top=241, Right=944, Bottom=640
-person: 97%
-Bounding Box: Left=696, Top=245, Right=771, Bottom=412
-Frame=91
-person: 100%
-Bounding Box: Left=251, Top=140, Right=483, Bottom=656
-person: 97%
-Bounding Box: Left=695, Top=242, Right=942, Bottom=638
-person: 97%
-Bounding Box: Left=694, Top=248, Right=773, Bottom=414
-Frame=92
-person: 100%
-Bounding Box: Left=251, Top=140, Right=481, Bottom=654
-person: 98%
-Bounding Box: Left=693, Top=241, Right=943, Bottom=636
-person: 97%
-Bounding Box: Left=702, Top=250, Right=784, Bottom=410
-person: 62%
-Bounding Box: Left=216, Top=213, Right=239, Bottom=250
-Frame=93
-person: 100%
-Bounding Box: Left=250, Top=137, Right=479, Bottom=654
-person: 98%
-Bounding Box: Left=692, Top=241, Right=943, Bottom=633
-person: 97%
-Bounding Box: Left=700, Top=248, Right=786, Bottom=406
-person: 59%
-Bounding Box: Left=217, Top=212, Right=237, Bottom=247
-Frame=94
-person: 100%
-Bounding Box: Left=250, Top=136, Right=478, Bottom=649
-person: 98%
-Bounding Box: Left=690, Top=237, Right=945, Bottom=632
-person: 96%
-Bounding Box: Left=700, Top=246, Right=788, Bottom=401
-person: 58%
-Bounding Box: Left=217, Top=208, Right=238, Bottom=243
-Frame=95
-person: 100%
-Bounding Box: Left=249, Top=131, Right=479, Bottom=647
-person: 98%
-Bounding Box: Left=689, Top=236, Right=946, Bottom=631
-person: 95%
-Bounding Box: Left=700, Top=243, Right=790, Bottom=400
-person: 56%
-Bounding Box: Left=217, Top=205, Right=238, Bottom=240
-Frame=96
-person: 100%
-Bounding Box: Left=248, Top=129, Right=481, Bottom=646
-person: 98%
-Bounding Box: Left=687, Top=234, Right=947, Bottom=630
-person: 87%
-Bounding Box: Left=702, Top=241, Right=791, Bottom=400
-person: 58%
-Bounding Box: Left=218, Top=200, Right=239, Bottom=237
-Frame=97
-person: 100%
-Bounding Box: Left=247, Top=123, Right=481, Bottom=649
-person: 98%
-Bounding Box: Left=687, Top=237, Right=946, Bottom=628
-person: 72%
-Bounding Box: Left=705, Top=239, Right=796, Bottom=400
-person: 58%
-Bounding Box: Left=218, Top=199, Right=238, Bottom=235
-Frame=98
-person: 100%
-Bounding Box: Left=247, Top=126, Right=480, Bottom=650
-person: 98%
-Bounding Box: Left=687, Top=235, Right=946, Bottom=628
-person: 51%
-Bounding Box: Left=709, Top=244, Right=800, Bottom=398
-Frame=99
-person: 100%
-Bounding Box: Left=248, Top=129, Right=478, Bottom=650
-person: 99%
-Bounding Box: Left=684, Top=234, Right=945, Bottom=629
-Frame=100
-person: 100%
-Bounding Box: Left=248, Top=136, Right=478, Bottom=650
-person: 98%
-Bounding Box: Left=682, Top=234, Right=945, Bottom=632
+
+
+236 134 471 659 678 226 927 643
+236 136 469 658 679 225 927 644
+236 137 469 658 679 224 927 644 198 230 216 263
+236 138 469 657 679 223 927 645 198 229 216 264
+236 140 469 656 679 223 928 646 198 229 217 264
+237 143 469 655 680 222 928 647 199 229 217 265
+237 146 469 653 680 221 928 648 199 228 218 265 473 137 490 154
+237 146 469 654 679 221 929 648 199 228 218 265 473 137 490 154
+237 146 470 654 679 222 929 647 199 228 218 265 472 137 489 154
+236 147 470 653 679 223 929 646 199 228 218 265 473 137 490 154
+234 147 472 652 680 225 928 646 199 228 218 265 473 137 490 154
+233 150 473 650 680 226 927 645 199 228 218 264
+233 152 474 649 680 227 927 646 198 228 218 265 393 219 466 374
+233 153 475 649 678 228 927 645 398 220 472 375 198 228 218 265
+234 150 475 651 677 228 927 645 198 227 218 265 399 219 473 375
+233 149 476 653 677 226 927 646 198 227 218 265 399 220 475 377
+233 149 478 652 677 225 928 647 198 228 218 265
+234 149 478 652 678 225 928 647 198 229 218 265
+234 152 479 650 680 225 928 647 198 230 217 265
+234 150 478 651 680 225 927 647 198 230 217 264 412 220 491 380 885 111 922 191
+234 147 477 655 680 225 927 646 198 230 218 265 411 220 497 384 884 111 923 190
+235 142 476 660 679 225 927 645 410 222 503 386 198 230 218 265 663 233 686 276
+236 142 475 660 679 225 927 645 411 222 506 385 198 231 217 265
+237 143 475 659 679 226 928 645 414 223 509 385 198 230 217 265
+238 143 474 659 680 225 929 645 417 223 512 386 198 230 217 265
+238 144 475 659 681 226 929 644 419 224 514 383 198 229 217 265
+238 147 476 657 682 226 929 643 198 229 218 265 422 221 514 380
+682 227 929 642 237 150 476 655 197 229 218 265
+682 228 929 641 237 153 475 653 197 229 218 264
+682 230 929 639 236 151 475 653 196 229 217 264 474 235 524 366
+683 231 929 639 236 151 476 654 476 234 527 370 196 229 217 264
+683 230 930 640 236 150 477 654 479 235 530 370 196 230 217 265
+683 229 931 642 236 152 477 653 482 236 534 369 196 230 217 265
+682 227 933 643 235 150 478 655 197 230 217 265 485 238 537 366
+684 228 933 642 235 146 477 658 197 229 218 265 478 196 555 390
+234 144 476 659 684 230 933 641 197 229 218 265 478 181 562 391 885 111 923 190
+235 147 476 657 683 232 933 640 198 229 218 265 480 179 565 392 884 111 923 191
+235 151 476 653 682 232 932 640 198 230 218 265 485 198 565 389 884 111 922 191
+235 154 474 650 681 230 931 641 198 231 217 265 484 237 562 407 885 110 922 191 663 248 686 290
+236 157 474 648 682 230 931 642 477 236 565 415 197 231 217 265 885 110 922 191
+235 156 474 648 683 230 931 643 197 231 217 265 473 231 571 421 884 110 922 191
+235 155 474 650 683 230 931 644 197 230 217 265 472 228 578 424 884 110 922 191
+234 154 474 650 683 230 931 644 479 223 581 424 197 229 217 265 884 110 921 191
+235 154 473 650 682 230 931 645 483 227 583 425 197 229 217 265 884 110 921 192
+235 154 473 650 682 230 931 644 507 223 590 426 197 229 217 265 884 110 921 192
+235 153 472 651 682 231 931 643 509 227 592 425 197 229 217 265
+234 150 472 653 681 233 932 642 512 231 596 419 197 230 217 265
+234 151 473 652 680 233 933 642 515 231 604 417 197 230 217 265
+235 153 473 650 681 232 933 643 518 227 613 420 197 230 217 265
+683 230 932 645 235 157 473 646 522 223 619 424 196 230 217 265
+684 228 931 647 235 161 473 643 526 226 620 422 196 229 217 265
+684 225 930 649 234 160 474 643 532 230 622 423 196 230 217 265
+683 225 930 648 233 160 475 643 535 233 624 425 196 231 217 265 479 239 489 260 883 112 921 192
+683 225 930 647 232 156 476 646 540 235 626 430 196 232 216 265 478 241 489 260 883 112 922 192
+232 157 476 646 683 226 931 647 542 235 629 430 196 232 216 265 478 240 488 260 883 112 922 192
+234 157 476 646 684 226 930 649 559 234 636 423 197 232 217 264 478 240 488 259 883 112 922 192
+235 159 475 644 683 225 930 650 564 232 640 418 712 256 738 292 197 232 217 264 478 239 487 259 883 112 922 191
+236 160 476 643 681 226 930 650 573 231 644 416 714 256 739 293 197 232 217 264 883 112 922 191
+236 158 476 645 680 227 930 647 576 228 651 420 197 231 217 264 717 260 740 293 883 112 921 191
+236 154 475 649 679 228 929 645 582 223 658 424 196 231 217 265
+237 150 473 652 678 227 929 645 586 219 662 426 196 231 217 266
+237 149 472 653 678 226 929 646 591 216 665 426 196 231 217 267
+237 149 472 653 678 226 929 646 591 217 667 423 197 231 217 266
+237 146 472 655 680 228 930 645 592 220 670 419 197 232 217 265
+238 147 473 654 682 231 931 644 593 222 672 414 198 232 218 265
+239 145 473 656 683 234 931 642 608 224 679 410 198 231 220 264
+239 145 473 656 683 234 931 642 610 226 680 408 476 239 486 258 198 229 221 262
+239 146 472 655 684 236 931 640 612 230 683 406 476 236 486 257 199 228 221 260
+239 148 472 652 685 235 931 640 617 232 685 405 476 234 486 255 885 112 926 189 200 228 222 259
+240 149 471 652 683 236 930 638 628 248 681 387 476 234 486 255 200 227 221 258
+240 147 470 652 681 236 930 638 630 249 685 388 477 235 486 256
+242 142 471 656 683 240 934 637 631 235 696 412 478 236 487 258
+245 140 473 658 686 243 938 635 640 239 706 415 479 239 489 261
+249 136 477 664 690 246 941 636 647 242 714 416 481 241 490 263
+250 139 480 661 691 246 942 637 648 244 718 417 481 242 491 261
+250 137 484 660 690 244 944 640 650 246 719 417 216 225 234 260
+249 139 486 655 689 243 947 640 659 250 732 417 216 225 236 259
+250 139 488 653 689 243 948 637 661 251 739 416 217 225 237 258
+250 139 489 653 691 244 949 635 661 250 745 414
+250 139 491 653 695 243 949 633 668 248 752 413
+250 138 493 653 696 239 950 634 675 244 758 409 218 213 241 250
+250 134 493 653 696 234 952 633 686 241 762 405 219 212 240 248
+251 129 493 656 694 233 954 633 692 240 763 401 219 212 240 247
+250 129 491 659 694 233 953 635 696 238 767 399 219 213 240 249
+249 136 490 657 693 234 951 637 698 238 769 398 218 213 239 251
+249 138 487 655 694 235 949 640 698 238 770 401 218 214 238 252
+250 139 485 655 695 239 946 640 698 241 769 407
+252 138 483 656 696 241 944 640 696 245 771 412
+251 140 483 656 695 242 942 638 694 248 773 414
+251 140 481 654 693 241 943 636 702 250 784 410 216 213 239 250
+250 137 479 654 692 241 943 633 700 248 786 406 217 212 237 247
+250 136 478 649 690 237 945 632 700 246 788 401 217 208 238 243
+249 131 479 647 689 236 946 631 700 243 790 400 217 205 238 240
+248 129 481 646 687 234 947 630 702 241 791 400 218 200 239 237
+247 123 481 649 687 237 946 628 705 239 796 400 218 199 238 235
+247 126 480 650 687 235 946 628 709 244 800 398
+248 129 478 650 684 234 945 629
+248 136 478 650 682 234 945 632

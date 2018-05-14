@@ -1,182 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-Frame=4
-Frame=5
-Frame=6
-Frame=7
-Frame=8
-Frame=9
-Frame=10
-Frame=11
-Frame=12
-Frame=13
-Frame=14
-Frame=15
-Frame=16
-Frame=17
-Frame=18
-Frame=19
-Frame=20
-Frame=21
-Frame=22
-Frame=23
-Frame=24
-Frame=25
-Frame=26
-Frame=27
-Frame=28
-Frame=29
-Frame=30
-Frame=31
-Frame=32
-Frame=33
-Frame=34
-Frame=35
-Frame=36
-Frame=37
-Frame=38
-Frame=39
-Frame=40
-Frame=41
-Frame=42
-Frame=43
-Frame=44
-Frame=45
-Frame=46
-Frame=47
-Frame=48
-Frame=49
-Frame=50
-Frame=51
-Frame=52
-Frame=53
-Frame=54
-Frame=55
-Frame=56
-Frame=57
-Frame=58
-Frame=59
-Frame=60
-car: 56%
-Bounding Box: Left=11, Top=187, Right=1279, Bottom=706
-Frame=61
-car: 65%
-Bounding Box: Left=8, Top=188, Right=1279, Bottom=710
-Frame=62
-car: 78%
-Bounding Box: Left=8, Top=186, Right=1277, Bottom=716
-Frame=63
-car: 77%
-Bounding Box: Left=13, Top=187, Right=1268, Bottom=716
-Frame=64
-car: 69%
-Bounding Box: Left=12, Top=189, Right=1259, Bottom=715
-Frame=65
-car: 70%
-Bounding Box: Left=4, Top=196, Right=1261, Bottom=719
-Frame=66
-car: 73%
-Bounding Box: Left=0, Top=200, Right=1266, Bottom=719
-Frame=67
-car: 83%
-Bounding Box: Left=5, Top=204, Right=1263, Bottom=719
-Frame=68
-car: 86%
-Bounding Box: Left=11, Top=212, Right=1264, Bottom=719
-Frame=69
-car: 83%
-Bounding Box: Left=19, Top=217, Right=1257, Bottom=719
-Frame=70
-car: 80%
-Bounding Box: Left=12, Top=219, Right=1257, Bottom=719
-Frame=71
-car: 81%
-Bounding Box: Left=11, Top=218, Right=1253, Bottom=719
-Frame=72
-car: 77%
-Bounding Box: Left=9, Top=214, Right=1254, Bottom=719
-Frame=73
-car: 79%
-Bounding Box: Left=9, Top=214, Right=1260, Bottom=719
-Frame=74
-car: 76%
-Bounding Box: Left=4, Top=221, Right=1267, Bottom=719
-Frame=75
-car: 83%
-Bounding Box: Left=0, Top=226, Right=1272, Bottom=719
-Frame=76
-car: 82%
-Bounding Box: Left=0, Top=231, Right=1265, Bottom=716
-Frame=77
-car: 80%
-Bounding Box: Left=4, Top=227, Right=1255, Bottom=716
-Frame=78
-car: 78%
-Bounding Box: Left=13, Top=224, Right=1242, Bottom=719
-Frame=79
-car: 75%
-Bounding Box: Left=11, Top=219, Right=1236, Bottom=719
-Frame=80
-car: 78%
-Bounding Box: Left=12, Top=218, Right=1236, Bottom=719
-Frame=81
-car: 81%
-Bounding Box: Left=14, Top=216, Right=1241, Bottom=719
-Frame=82
-car: 85%
-Bounding Box: Left=19, Top=218, Right=1251, Bottom=719
-Frame=83
-car: 83%
-Bounding Box: Left=19, Top=217, Right=1248, Bottom=719
-Frame=84
-car: 68%
-Bounding Box: Left=7, Top=226, Right=1251, Bottom=719
-Frame=85
-car: 58%
-Bounding Box: Left=5, Top=231, Right=1246, Bottom=718
-Frame=86
-car: 57%
-Bounding Box: Left=0, Top=231, Right=1253, Bottom=718
-Frame=87
-car: 64%
-Bounding Box: Left=6, Top=226, Right=1253, Bottom=719
-Frame=88
-car: 71%
-Bounding Box: Left=2, Top=220, Right=1254, Bottom=719
-Frame=89
-car: 73%
-Bounding Box: Left=4, Top=218, Right=1256, Bottom=719
-Frame=90
-car: 81%
-Bounding Box: Left=3, Top=211, Right=1257, Bottom=719
-Frame=91
-car: 84%
-Bounding Box: Left=6, Top=207, Right=1246, Bottom=719
-Frame=92
-car: 91%
-Bounding Box: Left=0, Top=236, Right=1164, Bottom=719
-Frame=93
-car: 93%
-Bounding Box: Left=0, Top=240, Right=1158, Bottom=719
-Frame=94
-car: 94%
-Bounding Box: Left=0, Top=236, Right=1156, Bottom=719
-Frame=95
-car: 94%
-Bounding Box: Left=0, Top=236, Right=1151, Bottom=719
-Frame=96
-car: 96%
-Bounding Box: Left=0, Top=238, Right=1151, Bottom=719
-Frame=97
-car: 96%
-Bounding Box: Left=0, Top=243, Right=1148, Bottom=718
-Frame=98
-car: 94%
-Bounding Box: Left=0, Top=247, Right=1149, Bottom=715
-Frame=99
-car: 92%
-Bounding Box: Left=0, Top=252, Right=1155, Bottom=713
-Frame=100
-car: 93%
-Bounding Box: Left=0, Top=254, Right=1160, Bottom=714
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 187 1279 706
+8 188 1279 710
+8 186 1277 716
+13 187 1268 716
+12 189 1259 715
+4 196 1261 719
+0 200 1266 719
+5 204 1263 719
+11 212 1264 719
+19 217 1257 719
+12 219 1257 719
+11 218 1253 719
+9 214 1254 719
+9 214 1260 719
+4 221 1267 719
+0 226 1272 719
+0 231 1265 716
+4 227 1255 716
+13 224 1242 719
+11 219 1236 719
+12 218 1236 719
+14 216 1241 719
+19 218 1251 719
+19 217 1248 719
+7 226 1251 719
+5 231 1246 718
+0 231 1253 718
+6 226 1253 719
+2 220 1254 719
+4 218 1256 719
+3 211 1257 719
+6 207 1246 719
+0 236 1164 719
+0 240 1158 719
+0 236 1156 719
+0 236 1151 719
+0 238 1151 719
+0 243 1148 718
+0 247 1149 715
+0 252 1155 713
+0 254 1160 714

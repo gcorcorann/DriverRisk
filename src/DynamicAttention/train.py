@@ -3,7 +3,7 @@ import time
 import torch
 from torch.autograd import Variable
 
-def train_network(net, dataloader, dataset_size, batch_size, sequence_len,
+def train_network(net, dataloader, dataset_size, batch_size, window_size,
         criterion, optimizer, max_epochs, gpu):
     """Train network.
 
@@ -12,6 +12,7 @@ def train_network(net, dataloader, dataset_size, batch_size, sequence_len,
         dataloader (torch.utils.data.DataLoader):   training dataloader
         dataset_size (int):         size of dataset
         batch_size (int):           size of mini-batch
+        window_size (int):          size of sliding window
         criterion (torch.nn.modules.loss):      loss function
         optimizer (torch.optim):    optimization algorithm
         max_epochs (int):           maximum number of epochs used for training
@@ -46,36 +47,46 @@ def train_network(net, dataloader, dataset_size, batch_size, sequence_len,
         # iterate over data
         for i, data in enumerate(dataloader):
             # get the inputs
-            inputs, labels = data['X'], data['y']
+            inp_frames, inp_objs = data['X_frames'], data['X_objs']
+            labels = data['y']
+            # reshape [seqLen, batchSize, *]
+            inp_frames = inp_frames.transpose(0, 1)
+            inp_objs = inp_objs.transpose(0, 1)
+            print('inp_frames:', inp_frames.shape)
+            print('inp_objs:', inp_objs.shape)
+            print('labels:', labels.shape)
             if gpu:
-                inputs = inputs.cuda()
+                inp_frames = inp_frames.cuda()
+                inp_objs = inp_objs.cuda()
                 labels = labels.cuda()
 
-            # wrap in Variable
-            inputs = Variable(inputs)
-            labels = Variable(labels)
-            # reshape to 1 dimension [batchSize*numSeqs]
-            labels = labels.view(-1)
             # zero the parameter gradients
             optimizer.zero_grad()
-            # forward pass
-            outputs = net.forward(inputs)
-            # reshape to 1 dimension [batchSize*numSeqs]
-            outputs = outputs.view(-1, 4)
-            # loss + predicted
-            _, pred = torch.max(outputs.data, 1)
-            loss = criterion(outputs, labels)
-            correct = torch.sum(pred == labels.data)
+            # initiaize hidden states
+            # TODO move to cuda
+            state = net.init_hidden()
+            loss = 0
+            correct = 0
+            # for each time-step
+            for i in range(window_size):
+                frame = inp_frames[i]
+                objs = inp_objs[i]
+                output, state = net.forward(frame, objs, state)
+                # loss + predicted
+                loss += criterion(output, labels[:, i])
+                _, pred = torch.max(output.detach(), 1)
+                correct += torch.sum(pred == labels[:,i].detach())
+
             # backwars + optimize
             loss.backward()
             optimizer.step()
 
             # statistics
-            running_loss += loss.data[0]
-            running_correct += correct
+            running_loss += loss.item()
+            running_correct += correct.item()
 
         epoch_loss = running_loss * batch_size / dataset_size 
-        epoch_acc = running_correct / (dataset_size * sequence_len)
+        epoch_acc = running_correct / (dataset_size * window_size)
         print('Training Loss: {:.4f} Acc: {:.4f}'.format(
             epoch_loss, epoch_acc))
         # store stats

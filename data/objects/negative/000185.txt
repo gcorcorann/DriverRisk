@@ -1,262 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-car: 88%
-Bounding Box: Left=825, Top=247, Right=953, Bottom=363
-car: 88%
-Bounding Box: Left=733, Top=245, Right=861, Bottom=336
-traffic light: 65%
-Bounding Box: Left=781, Top=225, Right=792, Bottom=242
-Frame=4
-car: 90%
-Bounding Box: Left=830, Top=246, Right=949, Bottom=365
-car: 88%
-Bounding Box: Left=735, Top=247, Right=868, Bottom=337
-traffic light: 57%
-Bounding Box: Left=783, Top=224, Right=794, Bottom=243
-Frame=5
-car: 89%
-Bounding Box: Left=836, Top=247, Right=950, Bottom=367
-car: 80%
-Bounding Box: Left=735, Top=249, Right=874, Bottom=338
-Frame=6
-car: 87%
-Bounding Box: Left=843, Top=247, Right=953, Bottom=369
-car: 81%
-Bounding Box: Left=757, Top=248, Right=889, Bottom=342
-Frame=7
-car: 83%
-Bounding Box: Left=762, Top=246, Right=896, Bottom=344
-car: 87%
-Bounding Box: Left=859, Top=246, Right=953, Bottom=374
-Frame=8
-car: 74%
-Bounding Box: Left=762, Top=246, Right=905, Bottom=345
-car: 90%
-Bounding Box: Left=867, Top=249, Right=954, Bottom=374
-Frame=9
-car: 66%
-Bounding Box: Left=759, Top=246, Right=914, Bottom=346
-car: 88%
-Bounding Box: Left=874, Top=251, Right=954, Bottom=373
-traffic light: 58%
-Bounding Box: Left=871, Top=215, Right=887, Bottom=231
-traffic light: 54%
-Bounding Box: Left=799, Top=221, Right=812, Bottom=236
-Frame=10
-car: 54%
-truck: 52%
-Bounding Box: Left=756, Top=245, Right=922, Bottom=344
-car: 56%
-Bounding Box: Left=877, Top=254, Right=952, Bottom=371
-Frame=11
-car: 60%
-truck: 59%
-Bounding Box: Left=793, Top=246, Right=940, Bottom=354
-traffic light: 60%
-Bounding Box: Left=883, Top=210, Right=901, Bottom=227
-Frame=12
-car: 60%
-truck: 61%
-Bounding Box: Left=794, Top=245, Right=948, Bottom=356
-traffic light: 66%
-Bounding Box: Left=888, Top=207, Right=906, Bottom=224
-traffic light: 56%
-Bounding Box: Left=811, Top=217, Right=823, Bottom=233
-Frame=13
-car: 60%
-truck: 60%
-Bounding Box: Left=795, Top=243, Right=952, Bottom=357
-traffic light: 68%
-Bounding Box: Left=814, Top=215, Right=827, Bottom=232
-Frame=14
-car: 68%
-Bounding Box: Left=790, Top=241, Right=952, Bottom=356
-traffic light: 56%
-Bounding Box: Left=816, Top=214, Right=830, Bottom=231
-Frame=15
-car: 69%
-Bounding Box: Left=790, Top=238, Right=951, Bottom=356
-Frame=16
-car: 76%
-Bounding Box: Left=787, Top=233, Right=952, Bottom=357
-traffic light: 74%
-Bounding Box: Left=478, Top=174, Right=491, Bottom=199
-traffic light: 61%
-Bounding Box: Left=829, Top=212, Right=845, Bottom=230
-Frame=17
-car: 50%
-Bounding Box: Left=840, Top=244, Right=956, Bottom=368
-traffic light: 55%
-Bounding Box: Left=477, Top=174, Right=491, Bottom=198
-Frame=18
-Frame=19
-Frame=20
-car: 57%
-Bounding Box: Left=803, Top=256, Right=935, Bottom=344
-Frame=21
-motorbike: 65%
-Bounding Box: Left=810, Top=260, Right=936, Bottom=344
-Frame=22
-motorbike: 64%
-Bounding Box: Left=817, Top=261, Right=942, Bottom=346
-Frame=23
-motorbike: 65%
-Bounding Box: Left=834, Top=255, Right=957, Bottom=353
-Frame=24
-motorbike: 58%
-Bounding Box: Left=843, Top=262, Right=958, Bottom=354
-traffic light: 52%
-Bounding Box: Left=468, Top=175, Right=483, Bottom=198
-Frame=25
-traffic light: 55%
-Bounding Box: Left=469, Top=176, Right=484, Bottom=197
-Frame=26
-traffic light: 58%
-Bounding Box: Left=469, Top=175, Right=483, Bottom=198
-Frame=27
-traffic light: 65%
-Bounding Box: Left=469, Top=174, Right=483, Bottom=200
-traffic light: 57%
-Bounding Box: Left=451, Top=157, Right=464, Bottom=185
-Frame=28
-traffic light: 65%
-Bounding Box: Left=469, Top=175, Right=482, Bottom=201
-traffic light: 53%
-Bounding Box: Left=451, Top=156, Right=463, Bottom=183
-Frame=29
-Frame=30
-Frame=31
-Frame=32
-Frame=33
-Frame=34
-Frame=35
-Frame=36
-traffic light: 55%
-Bounding Box: Left=525, Top=236, Right=532, Bottom=248
-Frame=37
-traffic light: 65%
-Bounding Box: Left=525, Top=236, Right=532, Bottom=248
-Frame=38
-Frame=39
-Frame=40
-Frame=41
-Frame=42
-Frame=43
-Frame=44
-Frame=45
-Frame=46
-Frame=47
-Frame=48
-Frame=49
-Frame=50
-traffic light: 63%
-Bounding Box: Left=522, Top=234, Right=531, Bottom=246
-traffic light: 55%
-Bounding Box: Left=456, Top=162, Right=472, Bottom=182
-Frame=51
-traffic light: 63%
-Bounding Box: Left=456, Top=161, Right=472, Bottom=181
-traffic light: 57%
-Bounding Box: Left=524, Top=235, Right=532, Bottom=246
-Frame=52
-traffic light: 64%
-Bounding Box: Left=456, Top=161, Right=472, Bottom=179
-traffic light: 50%
-Bounding Box: Left=527, Top=235, Right=533, Bottom=247
-Frame=53
-traffic light: 65%
-Bounding Box: Left=456, Top=160, Right=472, Bottom=178
-traffic light: 50%
-Bounding Box: Left=528, Top=236, Right=534, Bottom=247
-Frame=54
-traffic light: 59%
-Bounding Box: Left=456, Top=159, Right=471, Bottom=177
-traffic light: 55%
-Bounding Box: Left=528, Top=236, Right=534, Bottom=246
-Frame=55
-traffic light: 55%
-Bounding Box: Left=528, Top=235, Right=534, Bottom=246
-traffic light: 54%
-Bounding Box: Left=421, Top=123, Right=434, Bottom=142
-traffic light: 51%
-Bounding Box: Left=455, Top=158, Right=470, Bottom=176
-Frame=56
-traffic light: 55%
-Bounding Box: Left=528, Top=235, Right=534, Bottom=245
-traffic light: 54%
-Bounding Box: Left=419, Top=121, Right=433, Bottom=142
-Frame=57
-traffic light: 53%
-Bounding Box: Left=451, Top=156, Right=466, Bottom=174
-Frame=58
-traffic light: 65%
-Bounding Box: Left=451, Top=154, Right=466, Bottom=175
-Frame=59
-Frame=60
-traffic light: 52%
-Bounding Box: Left=451, Top=150, Right=464, Bottom=177
-Frame=61
-traffic light: 52%
-Bounding Box: Left=450, Top=148, Right=463, Bottom=176
-Frame=62
-traffic light: 77%
-Bounding Box: Left=449, Top=147, Right=461, Bottom=176
-traffic light: 52%
-Bounding Box: Left=411, Top=108, Right=424, Bottom=140
-Frame=63
-traffic light: 59%
-Bounding Box: Left=449, Top=147, Right=461, Bottom=174
-Frame=64
-Frame=65
-Frame=66
-Frame=67
-Frame=68
-Frame=69
-Frame=70
-Frame=71
-Frame=72
-Frame=73
-Frame=74
-Frame=75
-Frame=76
-Frame=77
-Frame=78
-Frame=79
-Frame=80
-Frame=81
-Frame=82
-Frame=83
-Frame=84
-Frame=85
-Frame=86
-traffic light: 56%
-Bounding Box: Left=419, Top=102, Right=437, Bottom=148
-Frame=87
-Frame=88
-Frame=89
-Frame=90
-Frame=91
-Frame=92
-traffic light: 52%
-Bounding Box: Left=535, Top=222, Right=542, Bottom=234
-traffic light: 50%
-Bounding Box: Left=410, Top=92, Right=425, Bottom=124
-Frame=93
-traffic light: 56%
-Bounding Box: Left=535, Top=221, Right=542, Bottom=234
-Frame=94
-traffic light: 57%
-Bounding Box: Left=535, Top=220, Right=541, Bottom=234
-Frame=95
-traffic light: 55%
-Bounding Box: Left=535, Top=220, Right=541, Bottom=234
-Frame=96
-traffic light: 55%
-Bounding Box: Left=534, Top=219, Right=541, Bottom=233
-Frame=97
-traffic light: 54%
-Bounding Box: Left=534, Top=219, Right=541, Bottom=234
-Frame=98
-Frame=99
-Frame=100
+
+
+825 247 953 363 733 245 861 336 781 225 792 242
+830 246 949 365 735 247 868 337 783 224 794 243
+836 247 950 367 735 249 874 338
+843 247 953 369 757 248 889 342
+762 246 896 344 859 246 953 374
+762 246 905 345 867 249 954 374
+759 246 914 346 874 251 954 373 871 215 887 231 799 221 812 236
+756 245 922 344 877 254 952 371
+793 246 940 354 883 210 901 227
+794 245 948 356 888 207 906 224 811 217 823 233
+795 243 952 357 814 215 827 232
+790 241 952 356 816 214 830 231
+790 238 951 356
+787 233 952 357 478 174 491 199 829 212 845 230
+840 244 956 368 477 174 491 198
+
+
+803 256 935 344
+810 260 936 344
+817 261 942 346
+834 255 957 353
+843 262 958 354 468 175 483 198
+469 176 484 197
+469 175 483 198
+469 174 483 200 451 157 464 185
+469 175 482 201 451 156 463 183
+
+
+
+
+
+
+
+525 236 532 248
+525 236 532 248
+
+
+
+
+
+
+
+
+
+
+
+
+522 234 531 246 456 162 472 182
+456 161 472 181 524 235 532 246
+456 161 472 179 527 235 533 247
+456 160 472 178 528 236 534 247
+456 159 471 177 528 236 534 246
+528 235 534 246 421 123 434 142 455 158 470 176
+528 235 534 245 419 121 433 142
+451 156 466 174
+451 154 466 175
+
+451 150 464 177
+450 148 463 176
+449 147 461 176 411 108 424 140
+449 147 461 174
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+419 102 437 148
+
+
+
+
+
+535 222 542 234 410 92 425 124
+535 221 542 234
+535 220 541 234
+535 220 541 234
+534 219 541 233
+534 219 541 234
+
+
+

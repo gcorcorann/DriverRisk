@@ -2,7 +2,7 @@
 import torch
 import torch.nn as nn
 from dataloader import get_loader
-from model import SingleStream
+from model import DynamicAttention
 from train import train_network
 
 def plot_data(losses, accuracies):
@@ -30,18 +30,18 @@ def main():
     # dataloader parameters
     gpu = torch.cuda.is_available()
     data_path = 'data/labels_done.txt'
-    batch_size = 4
-    num_workers = 2
-    window_size = 20
+    batch_size = 1
+    num_workers = 0
+    window_size = 10
     # network parameters
-    architecture = 'VGGNet11'
-    rnn_hidden = 128
+    architecture = 'AlexNet'
+    hidden_size = 8
     rnn_layers = 1
-    pretrained = True
-    finetuned = True
+    pretrained = False
+    finetuned = False
     # training parameters
     learning_rate = 1e-4
-    max_epochs = 200
+    max_epochs = 2
     criterion = nn.CrossEntropyLoss()
 
     # get dataloader
@@ -49,22 +49,22 @@ def main():
             num_workers)
     print('Dataset Size:', dataset_size)
 
-#    # create network object
-#    net = SingleStream(architecture, rnn_hidden, rnn_layers, pretrained, 
-#            finetuned)
-#    # create optimizer
-#    if not finetuned:
-#        optimizer = torch.optim.Adam(
-#                list(net.lstm.parameters()) + list(net.fc.parameters()),
-#                learning_rate
-#                )
-#    else:
-#        optimizer = torch.optim.Adam(net.parameters(), learning_rate)
-#
-#    # train the network
-#    best_acc, losses, accuracies = train_network(net, dataloader, dataset_size,
-#            batch_size, window_size, criterion, optimizer, max_epochs, gpu)
-#    # plot statistics
+    # create network object
+    net = DynamicAttention(architecture, batch_size, hidden_size, rnn_layers, 
+            pretrained, finetuned)
+    # create optimizer
+    if not finetuned:
+        p = list(net.embedding.parameters()) + list(net.attn.parameters()) \
+                + list(net.attn_combine.parameters()) \
+                + list(net.lstm.parameters()) + list(net.fc.parameters())
+        optimizer = torch.optim.Adam(p, learning_rate)
+    else:
+        optimizer = torch.optim.Adam(net.parameters(), learning_rate)
+
+    # train the network
+    best_acc, losses, accuracies = train_network(net, dataloader, dataset_size,
+            batch_size, window_size, criterion, optimizer, max_epochs, gpu)
+    # plot statistics
 #    print('Best Training Accuracy:', best_acc*100)
 #    plot_data(losses, accuracies)
 

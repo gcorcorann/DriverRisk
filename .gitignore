@@ -1,6 +1,3 @@
-data/negative
-data/positive
-data/processed
-data/labels.txt
+data
 src/*.swp
 src/__pycache__

@@ -1,148 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-Frame=4
-Frame=5
-Frame=6
-Frame=7
-Frame=8
-Frame=9
-Frame=10
-Frame=11
-Frame=12
-Frame=13
-Frame=14
-Frame=15
-Frame=16
-Frame=17
-Frame=18
-Frame=19
-Frame=20
-Frame=21
-Frame=22
-Frame=23
-Frame=24
-Frame=25
-Frame=26
-Frame=27
-Frame=28
-Frame=29
-Frame=30
-Frame=31
-Frame=32
-Frame=33
-Frame=34
-Frame=35
-Frame=36
-train: 55%
-Bounding Box: Left=0, Top=51, Right=676, Bottom=500
-Frame=37
-train: 60%
-Bounding Box: Left=0, Top=47, Right=674, Bottom=501
-Frame=38
-train: 77%
-Bounding Box: Left=0, Top=41, Right=670, Bottom=499
-Frame=39
-train: 69%
-Bounding Box: Left=0, Top=38, Right=666, Bottom=502
-Frame=40
-train: 58%
-Bounding Box: Left=1, Top=40, Right=659, Bottom=503
-Frame=41
-train: 55%
-Bounding Box: Left=4, Top=43, Right=659, Bottom=502
-Frame=42
-train: 69%
-Bounding Box: Left=7, Top=40, Right=656, Bottom=505
-Frame=43
-train: 85%
-Bounding Box: Left=7, Top=32, Right=655, Bottom=514
-Frame=44
-train: 75%
-Bounding Box: Left=6, Top=33, Right=653, Bottom=514
-Frame=45
-train: 74%
-Bounding Box: Left=1, Top=35, Right=656, Bottom=510
-Frame=46
-Frame=47
-train: 63%
-Bounding Box: Left=0, Top=49, Right=665, Bottom=487
-Frame=48
-train: 54%
-Bounding Box: Left=0, Top=54, Right=669, Bottom=479
-Frame=49
-train: 59%
-Bounding Box: Left=0, Top=56, Right=671, Bottom=477
-Frame=50
-train: 57%
-Bounding Box: Left=0, Top=57, Right=664, Bottom=470
-Frame=51
-Frame=52
-Frame=53
-Frame=54
-Frame=55
-train: 62%
-Bounding Box: Left=0, Top=49, Right=656, Bottom=471
-Frame=56
-train: 65%
-Bounding Box: Left=0, Top=47, Right=661, Bottom=473
-Frame=57
-Frame=58
-Frame=59
-Frame=60
-Frame=61
-Frame=62
-Frame=63
-Frame=64
-Frame=65
-Frame=66
-Frame=67
-Frame=68
-Frame=69
-Frame=70
-Frame=71
-Frame=72
-Frame=73
-Frame=74
-Frame=75
-Frame=76
-Frame=77
-Frame=78
-Frame=79
-Frame=80
-Frame=81
-Frame=82
-Frame=83
-Frame=84
-train: 54%
-Bounding Box: Left=0, Top=2, Right=632, Bottom=542
-Frame=85
-train: 77%
-Bounding Box: Left=0, Top=9, Right=624, Bottom=533
-Frame=86
-train: 85%
-Bounding Box: Left=0, Top=11, Right=621, Bottom=532
-Frame=87
-train: 88%
-Bounding Box: Left=0, Top=12, Right=622, Bottom=535
-Frame=88
-train: 81%
-Bounding Box: Left=1, Top=22, Right=619, Bottom=655
-Frame=89
-train: 67%
-Bounding Box: Left=0, Top=29, Right=620, Bottom=650
-Frame=90
-Frame=91
-Frame=92
-Frame=93
-train: 56%
-Bounding Box: Left=0, Top=13, Right=626, Bottom=525
-Frame=94
-train: 50%
-Bounding Box: Left=0, Top=14, Right=629, Bottom=521
-Frame=95
-Frame=96
-Frame=97
-Frame=98
-Frame=99
-Frame=100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 51 676 500
+0 47 674 501
+0 41 670 499
+0 38 666 502
+1 40 659 503
+4 43 659 502
+7 40 656 505
+7 32 655 514
+6 33 653 514
+1 35 656 510
+
+0 49 665 487
+0 54 669 479
+0 56 671 477
+0 57 664 470
+
+
+
+
+0 49 656 471
+0 47 661 473
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 2 632 542
+0 9 624 533
+0 11 621 532
+0 12 622 535
+1 22 619 655
+0 29 620 650
+
+
+
+0 13 626 525
+0 14 629 521
+
+
+
+
+
+

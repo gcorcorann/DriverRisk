@@ -1,176 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-dog: 55%
-Bounding Box: Left=468, Top=226, Right=817, Bottom=460
-Frame=4
-dog: 54%
-Bounding Box: Left=467, Top=227, Right=817, Bottom=459
-Frame=5
-dog: 57%
-Bounding Box: Left=467, Top=227, Right=818, Bottom=460
-Frame=6
-dog: 61%
-Bounding Box: Left=468, Top=226, Right=818, Bottom=462
-Frame=7
-dog: 65%
-Bounding Box: Left=471, Top=226, Right=817, Bottom=463
-Frame=8
-dog: 65%
-Bounding Box: Left=470, Top=225, Right=817, Bottom=464
-Frame=9
-dog: 60%
-Bounding Box: Left=468, Top=226, Right=818, Bottom=463
-Frame=10
-dog: 55%
-Bounding Box: Left=465, Top=227, Right=819, Bottom=464
-Frame=11
-dog: 53%
-Bounding Box: Left=465, Top=228, Right=819, Bottom=462
-Frame=12
-dog: 55%
-Bounding Box: Left=467, Top=227, Right=819, Bottom=459
-Frame=13
-dog: 60%
-Bounding Box: Left=468, Top=228, Right=819, Bottom=458
-Frame=14
-dog: 62%
-Bounding Box: Left=471, Top=228, Right=819, Bottom=455
-Frame=15
-dog: 63%
-Bounding Box: Left=473, Top=228, Right=821, Bottom=454
-Frame=16
-dog: 64%
-Bounding Box: Left=477, Top=228, Right=821, Bottom=452
-Frame=17
-dog: 68%
-Bounding Box: Left=478, Top=229, Right=823, Bottom=453
-Frame=18
-dog: 71%
-Bounding Box: Left=479, Top=230, Right=823, Bottom=456
-Frame=19
-dog: 73%
-Bounding Box: Left=478, Top=230, Right=824, Bottom=458
-Frame=20
-dog: 72%
-Bounding Box: Left=474, Top=227, Right=824, Bottom=457
-Frame=21
-dog: 73%
-Bounding Box: Left=473, Top=225, Right=825, Bottom=450
-Frame=22
-dog: 72%
-Bounding Box: Left=472, Top=224, Right=828, Bottom=446
-Frame=23
-dog: 72%
-Bounding Box: Left=474, Top=224, Right=831, Bottom=444
-Frame=24
-dog: 72%
-Bounding Box: Left=473, Top=224, Right=832, Bottom=443
-Frame=25
-dog: 71%
-Bounding Box: Left=473, Top=224, Right=832, Bottom=439
-Frame=26
-dog: 72%
-Bounding Box: Left=472, Top=226, Right=833, Bottom=437
-Frame=27
-dog: 70%
-Bounding Box: Left=472, Top=228, Right=834, Bottom=435
-Frame=28
-dog: 72%
-Bounding Box: Left=474, Top=229, Right=835, Bottom=435
-Frame=29
-dog: 72%
-Bounding Box: Left=475, Top=230, Right=835, Bottom=433
-Frame=30
-dog: 74%
-Bounding Box: Left=474, Top=231, Right=835, Bottom=432
-Frame=31
-dog: 70%
-Bounding Box: Left=476, Top=231, Right=833, Bottom=430
-Frame=32
-dog: 67%
-Bounding Box: Left=481, Top=229, Right=832, Bottom=429
-Frame=33
-dog: 62%
-Bounding Box: Left=488, Top=227, Right=832, Bottom=428
-Frame=34
-dog: 57%
-Bounding Box: Left=492, Top=225, Right=832, Bottom=427
-Frame=35
-dog: 53%
-Bounding Box: Left=494, Top=225, Right=831, Bottom=426
-Frame=36
-dog: 51%
-Bounding Box: Left=493, Top=223, Right=829, Bottom=426
-Frame=37
-dog: 51%
-Bounding Box: Left=492, Top=223, Right=828, Bottom=424
-Frame=38
-Frame=39
-Frame=40
-Frame=41
-Frame=42
-Frame=43
-Frame=44
-Frame=45
-Frame=46
-Frame=47
-Frame=48
-Frame=49
-Frame=50
-Frame=51
-Frame=52
-Frame=53
-Frame=54
-Frame=55
-Frame=56
-Frame=57
-Frame=58
-Frame=59
-Frame=60
-Frame=61
-Frame=62
-toilet: 52%
-Bounding Box: Left=645, Top=664, Right=747, Bottom=719
-Frame=63
-toilet: 57%
-Bounding Box: Left=642, Top=658, Right=747, Bottom=719
-Frame=64
-toilet: 52%
-Bounding Box: Left=641, Top=653, Right=747, Bottom=719
-Frame=65
-Frame=66
-Frame=67
-Frame=68
-Frame=69
-Frame=70
-Frame=71
-Frame=72
-Frame=73
-Frame=74
-Frame=75
-Frame=76
-Frame=77
-Frame=78
-Frame=79
-Frame=80
-Frame=81
-Frame=82
-Frame=83
-Frame=84
-Frame=85
-Frame=86
-Frame=87
-Frame=88
-Frame=89
-Frame=90
-Frame=91
-Frame=92
-Frame=93
-Frame=94
-Frame=95
-Frame=96
-Frame=97
-Frame=98
-Frame=99
-Frame=100
+
+
+468 226 817 460
+467 227 817 459
+467 227 818 460
+468 226 818 462
+471 226 817 463
+470 225 817 464
+468 226 818 463
+465 227 819 464
+465 228 819 462
+467 227 819 459
+468 228 819 458
+471 228 819 455
+473 228 821 454
+477 228 821 452
+478 229 823 453
+479 230 823 456
+478 230 824 458
+474 227 824 457
+473 225 825 450
+472 224 828 446
+474 224 831 444
+473 224 832 443
+473 224 832 439
+472 226 833 437
+472 228 834 435
+474 229 835 435
+475 230 835 433
+474 231 835 432
+476 231 833 430
+481 229 832 429
+488 227 832 428
+492 225 832 427
+494 225 831 426
+493 223 829 426
+492 223 828 424
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+645 664 747 719
+642 658 747 719
+641 653 747 719
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,122 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-train: 63%
-Bounding Box: Left=0, Top=45, Right=629, Bottom=503
-Frame=4
-Frame=5
-Frame=6
-Frame=7
-Frame=8
-train: 62%
-Bounding Box: Left=0, Top=32, Right=620, Bottom=512
-Frame=9
-train: 58%
-Bounding Box: Left=2, Top=34, Right=619, Bottom=510
-Frame=10
-train: 54%
-Bounding Box: Left=8, Top=36, Right=614, Bottom=512
-Frame=11
-Frame=12
-Frame=13
-Frame=14
-Frame=15
-Frame=16
-train: 51%
-Bounding Box: Left=0, Top=16, Right=612, Bottom=660
-Frame=17
-train: 64%
-Bounding Box: Left=0, Top=9, Right=611, Bottom=666
-Frame=18
-train: 72%
-Bounding Box: Left=0, Top=15, Right=613, Bottom=658
-Frame=19
-train: 79%
-Bounding Box: Left=0, Top=12, Right=614, Bottom=662
-Frame=20
-train: 84%
-Bounding Box: Left=0, Top=12, Right=617, Bottom=666
-Frame=21
-train: 80%
-Bounding Box: Left=0, Top=13, Right=616, Bottom=665
-Frame=22
-train: 63%
-Bounding Box: Left=0, Top=24, Right=617, Bottom=651
-Frame=23
-Frame=24
-Frame=25
-Frame=26
-Frame=27
-Frame=28
-Frame=29
-Frame=30
-Frame=31
-Frame=32
-Frame=33
-Frame=34
-Frame=35
-Frame=36
-Frame=37
-Frame=38
-Frame=39
-Frame=40
-Frame=41
-Frame=42
-Frame=43
-Frame=44
-Frame=45
-Frame=46
-Frame=47
-Frame=48
-Frame=49
-Frame=50
-Frame=51
-Frame=52
-Frame=53
-Frame=54
-Frame=55
-Frame=56
-Frame=57
-Frame=58
-Frame=59
-Frame=60
-Frame=61
-Frame=62
-Frame=63
-Frame=64
-Frame=65
-Frame=66
-Frame=67
-Frame=68
-Frame=69
-Frame=70
-Frame=71
-Frame=72
-Frame=73
-Frame=74
-Frame=75
-Frame=76
-Frame=77
-Frame=78
-Frame=79
-Frame=80
-Frame=81
-Frame=82
-Frame=83
-Frame=84
-Frame=85
-Frame=86
-Frame=87
-Frame=88
-Frame=89
-Frame=90
-Frame=91
-Frame=92
-Frame=93
-Frame=94
-Frame=95
-Frame=96
-Frame=97
-Frame=98
-Frame=99
-Frame=100
+
+
+0 45 629 503
+
+
+
+
+0 32 620 512
+2 34 619 510
+8 36 614 512
+
+
+
+
+
+0 16 612 660
+0 9 611 666
+0 15 613 658
+0 12 614 662
+0 12 617 666
+0 13 616 665
+0 24 617 651
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

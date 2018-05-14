@@ -1,154 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-person: 97%
-Bounding Box: Left=950, Top=291, Right=1064, Bottom=507
-Frame=4
-person: 62%
-Bounding Box: Left=994, Top=287, Right=1109, Bottom=509
-Frame=5
-person: 66%
-Bounding Box: Left=1000, Top=286, Right=1116, Bottom=510
-Frame=6
-person: 86%
-Bounding Box: Left=1025, Top=276, Right=1189, Bottom=523
-car: 53%
-Bounding Box: Left=545, Top=358, Right=566, Bottom=368
-Frame=7
-car: 62%
-Bounding Box: Left=544, Top=357, Right=567, Bottom=368
-person: 62%
-Bounding Box: Left=1061, Top=271, Right=1245, Bottom=527
-Frame=8
-car: 66%
-Bounding Box: Left=544, Top=356, Right=567, Bottom=368
-person: 59%
-Bounding Box: Left=1077, Top=260, Right=1254, Bottom=533
-Frame=9
-car: 64%
-Bounding Box: Left=544, Top=357, Right=567, Bottom=368
-person: 61%
-Bounding Box: Left=1141, Top=244, Right=1277, Bottom=548
-Frame=10
-car: 63%
-Bounding Box: Left=544, Top=357, Right=567, Bottom=368
-Frame=11
-car: 53%
-Bounding Box: Left=545, Top=357, Right=567, Bottom=368
-Frame=12
-Frame=13
-Frame=14
-Frame=15
-Frame=16
-Frame=17
-Frame=18
-Frame=19
-Frame=20
-Frame=21
-Frame=22
-Frame=23
-Frame=24
-Frame=25
-Frame=26
-Frame=27
-Frame=28
-Frame=29
-Frame=30
-Frame=31
-Frame=32
-Frame=33
-car: 50%
-Bounding Box: Left=561, Top=362, Right=583, Bottom=375
-Frame=34
-Frame=35
-Frame=36
-Frame=37
-car: 53%
-Bounding Box: Left=564, Top=363, Right=584, Bottom=376
-Frame=38
-Frame=39
-Frame=40
-Frame=41
-Frame=42
-Frame=43
-Frame=44
-Frame=45
-Frame=46
-Frame=47
-Frame=48
-car: 53%
-Bounding Box: Left=566, Top=368, Right=585, Bottom=380
-Frame=49
-car: 52%
-Bounding Box: Left=566, Top=368, Right=584, Bottom=380
-Frame=50
-car: 56%
-Bounding Box: Left=566, Top=367, Right=584, Bottom=379
-Frame=51
-Frame=52
-car: 50%
-Bounding Box: Left=567, Top=366, Right=583, Bottom=377
-Frame=53
-Frame=54
-Frame=55
-Frame=56
-Frame=57
-Frame=58
-Frame=59
-Frame=60
-Frame=61
-Frame=62
-Frame=63
-car: 58%
-Bounding Box: Left=565, Top=368, Right=582, Bottom=380
-Frame=64
-car: 58%
-Bounding Box: Left=566, Top=368, Right=582, Bottom=381
-Frame=65
-car: 58%
-Bounding Box: Left=567, Top=368, Right=583, Bottom=380
-Frame=66
-car: 59%
-Bounding Box: Left=567, Top=368, Right=583, Bottom=380
-Frame=67
-car: 58%
-Bounding Box: Left=568, Top=369, Right=583, Bottom=380
-Frame=68
-car: 54%
-Bounding Box: Left=569, Top=371, Right=583, Bottom=381
-Frame=69
-Frame=70
-Frame=71
-Frame=72
-Frame=73
-Frame=74
-Frame=75
-car: 50%
-Bounding Box: Left=569, Top=371, Right=583, Bottom=382
-Frame=76
-Frame=77
-Frame=78
-Frame=79
-Frame=80
-Frame=81
-Frame=82
-Frame=83
-Frame=84
-Frame=85
-Frame=86
-Frame=87
-Frame=88
-Frame=89
-Frame=90
-Frame=91
-car: 52%
-Bounding Box: Left=569, Top=346, Right=587, Bottom=357
-Frame=92
-Frame=93
-Frame=94
-Frame=95
-Frame=96
-Frame=97
-Frame=98
-Frame=99
-Frame=100
+
+
+950 291 1064 507
+994 287 1109 509
+1000 286 1116 510
+1025 276 1189 523 545 358 566 368
+544 357 567 368 1061 271 1245 527
+544 356 567 368 1077 260 1254 533
+544 357 567 368 1141 244 1277 548
+544 357 567 368
+545 357 567 368
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+561 362 583 375
+
+
+
+564 363 584 376
+
+
+
+
+
+
+
+
+
+
+566 368 585 380
+566 368 584 380
+566 367 584 379
+
+567 366 583 377
+
+
+
+
+
+
+
+
+
+
+565 368 582 380
+566 368 582 381
+567 368 583 380
+567 368 583 380
+568 369 583 380
+569 371 583 381
+
+
+
+
+
+
+569 371 583 382
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+569 346 587 357
+
+
+
+
+
+
+
+
+

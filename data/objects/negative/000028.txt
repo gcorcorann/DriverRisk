@@ -1,144 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-Frame=4
-Frame=5
-Frame=6
-Frame=7
-Frame=8
-Frame=9
-Frame=10
-Frame=11
-Frame=12
-Frame=13
-Frame=14
-Frame=15
-Frame=16
-Frame=17
-Frame=18
-Frame=19
-Frame=20
-Frame=21
-Frame=22
-Frame=23
-Frame=24
-Frame=25
-Frame=26
-Frame=27
-Frame=28
-Frame=29
-Frame=30
-Frame=31
-Frame=32
-Frame=33
-Frame=34
-Frame=35
-Frame=36
-Frame=37
-Frame=38
-Frame=39
-Frame=40
-Frame=41
-Frame=42
-Frame=43
-car: 58%
-Bounding Box: Left=8, Top=421, Right=1261, Bottom=695
-Frame=44
-car: 57%
-Bounding Box: Left=12, Top=396, Right=1269, Bottom=698
-Frame=45
-Frame=46
-Frame=47
-Frame=48
-Frame=49
-Frame=50
-Frame=51
-Frame=52
-Frame=53
-Frame=54
-Frame=55
-Frame=56
-Frame=57
-Frame=58
-Frame=59
-Frame=60
-Frame=61
-Frame=62
-Frame=63
-Frame=64
-Frame=65
-Frame=66
-Frame=67
-Frame=68
-Frame=69
-Frame=70
-Frame=71
-Frame=72
-Frame=73
-Frame=74
-Frame=75
-Frame=76
-Frame=77
-Frame=78
-Frame=79
-Frame=80
-Frame=81
-truck: 62%
-Bounding Box: Left=397, Top=363, Right=459, Bottom=447
-Frame=82
-truck: 55%
-Bounding Box: Left=386, Top=361, Right=463, Bottom=446
-Frame=83
-truck: 54%
-Bounding Box: Left=381, Top=360, Right=463, Bottom=446
-Frame=84
-truck: 67%
-Bounding Box: Left=367, Top=357, Right=449, Bottom=450
-Frame=85
-truck: 70%
-Bounding Box: Left=361, Top=353, Right=448, Bottom=450
-Frame=86
-truck: 63%
-Bounding Box: Left=354, Top=346, Right=446, Bottom=447
-Frame=87
-truck: 60%
-Bounding Box: Left=350, Top=340, Right=446, Bottom=446
-Frame=88
-truck: 58%
-Bounding Box: Left=329, Top=336, Right=443, Bottom=444
-Frame=89
-truck: 66%
-Bounding Box: Left=326, Top=334, Right=441, Bottom=444
-Frame=90
-truck: 89%
-Bounding Box: Left=310, Top=325, Right=439, Bottom=443
-Frame=91
-truck: 95%
-Bounding Box: Left=307, Top=328, Right=435, Bottom=445
-Frame=92
-truck: 97%
-Bounding Box: Left=301, Top=330, Right=430, Bottom=449
-Frame=93
-truck: 96%
-Bounding Box: Left=296, Top=331, Right=428, Bottom=453
-Frame=94
-truck: 95%
-Bounding Box: Left=289, Top=330, Right=425, Bottom=456
-Frame=95
-truck: 94%
-Bounding Box: Left=283, Top=331, Right=423, Bottom=457
-Frame=96
-truck: 93%
-Bounding Box: Left=280, Top=328, Right=421, Bottom=459
-Frame=97
-truck: 94%
-Bounding Box: Left=266, Top=326, Right=411, Bottom=457
-Frame=98
-truck: 95%
-Bounding Box: Left=262, Top=320, Right=410, Bottom=458
-Frame=99
-truck: 97%
-Bounding Box: Left=257, Top=315, Right=407, Bottom=459
-Frame=100
-truck: 98%
-Bounding Box: Left=250, Top=310, Right=403, Bottom=462
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8 421 1261 695
+12 396 1269 698
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+397 363 459 447
+386 361 463 446
+381 360 463 446
+367 357 449 450
+361 353 448 450
+354 346 446 447
+350 340 446 446
+329 336 443 444
+326 334 441 444
+310 325 439 443
+307 328 435 445
+301 330 430 449
+296 331 428 453
+289 330 425 456
+283 331 423 457
+280 328 421 459
+266 326 411 457
+262 320 410 458
+257 315 407 459
+250 310 403 462

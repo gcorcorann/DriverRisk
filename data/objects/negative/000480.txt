@@ -1,157 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-motorbike: 51%
-Bounding Box: Left=376, Top=378, Right=398, Bottom=416
-Frame=4
-motorbike: 62%
-Bounding Box: Left=374, Top=378, Right=397, Bottom=417
-Frame=5
-motorbike: 76%
-Bounding Box: Left=372, Top=379, Right=394, Bottom=418
-Frame=6
-person: 57%
-motorbike: 57%
-Bounding Box: Left=370, Top=378, Right=391, Bottom=420
-Frame=7
-person: 70%
-Bounding Box: Left=368, Top=378, Right=388, Bottom=420
-Frame=8
-person: 71%
-Bounding Box: Left=366, Top=377, Right=385, Bottom=421
-Frame=9
-Frame=10
-person: 56%
-motorbike: 50%
-Bounding Box: Left=352, Top=375, Right=376, Bottom=425
-Frame=11
-person: 50%
-motorbike: 71%
-Bounding Box: Left=349, Top=373, Right=374, Bottom=428
-Frame=12
-person: 50%
-motorbike: 71%
-Bounding Box: Left=345, Top=372, Right=372, Bottom=429
-Frame=13
-person: 58%
-motorbike: 53%
-Bounding Box: Left=341, Top=373, Right=367, Bottom=429
-Frame=14
-Frame=15
-motorbike: 60%
-Bounding Box: Left=325, Top=395, Right=351, Bottom=445
-person: 54%
-Bounding Box: Left=319, Top=364, Right=357, Bottom=440
-Frame=16
-person: 86%
-Bounding Box: Left=314, Top=361, Right=352, Bottom=442
-Frame=17
-person: 85%
-Bounding Box: Left=308, Top=359, Right=346, Bottom=446
-Frame=18
-motorbike: 54%
-Bounding Box: Left=293, Top=380, Right=334, Bottom=460
-Frame=19
-motorbike: 82%
-Bounding Box: Left=285, Top=376, Right=328, Bottom=465
-Frame=20
-Frame=21
-motorbike: 77%
-Bounding Box: Left=260, Top=369, Right=307, Bottom=473
-Frame=22
-car: 55%
-Bounding Box: Left=25, Top=552, Right=1215, Bottom=700
-Frame=23
-car: 58%
-Bounding Box: Left=39, Top=555, Right=1204, Bottom=702
-Frame=24
-motorbike: 68%
-Bounding Box: Left=178, Top=356, Right=264, Bottom=497
-motorbike: 53%
-Bounding Box: Left=206, Top=396, Right=255, Bottom=490
-Frame=25
-motorbike: 50%
-Bounding Box: Left=143, Top=358, Right=232, Bottom=509
-Frame=26
-Frame=27
-Frame=28
-motorbike: 66%
-Bounding Box: Left=19, Top=388, Right=131, Bottom=555
-Frame=29
-person: 64%
-Bounding Box: Left=14, Top=322, Right=117, Bottom=542
-Frame=30
-Frame=31
-Frame=32
-Frame=33
-Frame=34
-Frame=35
-Frame=36
-Frame=37
-Frame=38
-Frame=39
-Frame=40
-Frame=41
-Frame=42
-Frame=43
-Frame=44
-Frame=45
-Frame=46
-Frame=47
-Frame=48
-Frame=49
-Frame=50
-Frame=51
-Frame=52
-Frame=53
-traffic light: 55%
-Bounding Box: Left=372, Top=146, Right=395, Bottom=191
-Frame=54
-Frame=55
-Frame=56
-Frame=57
-Frame=58
-Frame=59
-Frame=60
-Frame=61
-Frame=62
-Frame=63
-Frame=64
-Frame=65
-Frame=66
-Frame=67
-Frame=68
-Frame=69
-Frame=70
-Frame=71
-Frame=72
-Frame=73
-car: 55%
-Bounding Box: Left=0, Top=545, Right=1270, Bottom=707
-Frame=74
-Frame=75
-Frame=76
-Frame=77
-Frame=78
-Frame=79
-Frame=80
-Frame=81
-Frame=82
-Frame=83
-Frame=84
-Frame=85
-Frame=86
-Frame=87
-Frame=88
-Frame=89
-Frame=90
-Frame=91
-Frame=92
-Frame=93
-Frame=94
-Frame=95
-Frame=96
-Frame=97
-Frame=98
-Frame=99
-Frame=100
+
+
+376 378 398 416
+374 378 397 417
+372 379 394 418
+370 378 391 420
+368 378 388 420
+366 377 385 421
+
+352 375 376 425
+349 373 374 428
+345 372 372 429
+341 373 367 429
+
+325 395 351 445 319 364 357 440
+314 361 352 442
+308 359 346 446
+293 380 334 460
+285 376 328 465
+
+260 369 307 473
+25 552 1215 700
+39 555 1204 702
+178 356 264 497 206 396 255 490
+143 358 232 509
+
+
+19 388 131 555
+14 322 117 542
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+372 146 395 191
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 545 1270 707
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

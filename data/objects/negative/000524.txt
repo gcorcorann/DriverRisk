@@ -1,136 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-Frame=4
-Frame=5
-Frame=6
-bench: 57%
-Bounding Box: Left=0, Top=363, Right=256, Bottom=484
-Frame=7
-bench: 62%
-Bounding Box: Left=0, Top=363, Right=253, Bottom=485
-Frame=8
-bench: 67%
-Bounding Box: Left=2, Top=363, Right=249, Bottom=484
-Frame=9
-bench: 68%
-Bounding Box: Left=3, Top=364, Right=244, Bottom=483
-Frame=10
-bench: 66%
-Bounding Box: Left=3, Top=365, Right=241, Bottom=482
-Frame=11
-bench: 68%
-Bounding Box: Left=1, Top=365, Right=237, Bottom=483
-Frame=12
-bench: 68%
-Bounding Box: Left=0, Top=365, Right=234, Bottom=486
-Frame=13
-bench: 69%
-Bounding Box: Left=0, Top=366, Right=229, Bottom=489
-Frame=14
-bench: 60%
-Bounding Box: Left=0, Top=368, Right=223, Bottom=489
-Frame=15
-Frame=16
-Frame=17
-Frame=18
-Frame=19
-Frame=20
-Frame=21
-Frame=22
-Frame=23
-Frame=24
-bench: 66%
-Bounding Box: Left=0, Top=389, Right=133, Bottom=461
-Frame=25
-bench: 66%
-Bounding Box: Left=1, Top=390, Right=126, Bottom=462
-Frame=26
-bench: 52%
-Bounding Box: Left=0, Top=391, Right=124, Bottom=461
-Frame=27
-Frame=28
-Frame=29
-Frame=30
-Frame=31
-Frame=32
-Frame=33
-Frame=34
-Frame=35
-Frame=36
-Frame=37
-Frame=38
-Frame=39
-Frame=40
-Frame=41
-Frame=42
-Frame=43
-Frame=44
-Frame=45
-Frame=46
-Frame=47
-Frame=48
-Frame=49
-Frame=50
-Frame=51
-Frame=52
-Frame=53
-Frame=54
-Frame=55
-Frame=56
-Frame=57
-Frame=58
-Frame=59
-Frame=60
-Frame=61
-Frame=62
-Frame=63
-Frame=64
-car: 65%
-Bounding Box: Left=0, Top=378, Right=1279, Bottom=698
-Frame=65
-car: 74%
-Bounding Box: Left=0, Top=378, Right=1279, Bottom=698
-Frame=66
-car: 77%
-Bounding Box: Left=0, Top=380, Right=1279, Bottom=699
-Frame=67
-car: 69%
-Bounding Box: Left=0, Top=376, Right=1279, Bottom=702
-Frame=68
-car: 59%
-Bounding Box: Left=0, Top=371, Right=1279, Bottom=705
-Frame=69
-car: 56%
-Bounding Box: Left=0, Top=364, Right=1279, Bottom=707
-Frame=70
-Frame=71
-Frame=72
-Frame=73
-Frame=74
-Frame=75
-Frame=76
-Frame=77
-Frame=78
-Frame=79
-Frame=80
-Frame=81
-Frame=82
-Frame=83
-Frame=84
-Frame=85
-Frame=86
-Frame=87
-Frame=88
-Frame=89
-Frame=90
-Frame=91
-Frame=92
-Frame=93
-Frame=94
-Frame=95
-Frame=96
-Frame=97
-Frame=98
-Frame=99
-Frame=100
+
+
+
+
+
+0 363 256 484
+0 363 253 485
+2 363 249 484
+3 364 244 483
+3 365 241 482
+1 365 237 483
+0 365 234 486
+0 366 229 489
+0 368 223 489
+
+
+
+
+
+
+
+
+
+0 389 133 461
+1 390 126 462
+0 391 124 461
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 378 1279 698
+0 378 1279 698
+0 380 1279 699
+0 376 1279 702
+0 371 1279 705
+0 364 1279 707
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

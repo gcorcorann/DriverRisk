@@ -1,212 +1,100 @@
-Frame=1
-Frame=2
-Frame=3
-Frame=4
-car: 57%
-Bounding Box: Left=236, Top=6, Right=482, Bottom=159
-Frame=5
-car: 71%
-Bounding Box: Left=243, Top=5, Right=489, Bottom=166
-Frame=6
-car: 67%
-Bounding Box: Left=252, Top=6, Right=495, Bottom=177
-Frame=7
-car: 69%
-Bounding Box: Left=249, Top=0, Right=499, Bottom=209
-Frame=8
-car: 62%
-Bounding Box: Left=253, Top=0, Right=504, Bottom=214
-Frame=9
-Frame=10
-car: 59%
-Bounding Box: Left=286, Top=3, Right=523, Bottom=205
-Frame=11
-Frame=12
-car: 55%
-Bounding Box: Left=291, Top=20, Right=535, Bottom=225
-Frame=13
-car: 64%
-Bounding Box: Left=296, Top=21, Right=536, Bottom=229
-Frame=14
-car: 73%
-Bounding Box: Left=301, Top=22, Right=538, Bottom=232
-Frame=15
-car: 74%
-Bounding Box: Left=300, Top=23, Right=535, Bottom=238
-Frame=16
-car: 60%
-Bounding Box: Left=302, Top=25, Right=531, Bottom=248
-Frame=17
-suitcase: 81%
-Bounding Box: Left=300, Top=14, Right=529, Bottom=263
-Frame=18
-Frame=19
-car: 61%
-Bounding Box: Left=293, Top=36, Right=532, Bottom=277
-Frame=20
-car: 68%
-Bounding Box: Left=286, Top=38, Right=534, Bottom=281
-Frame=21
-car: 59%
-Bounding Box: Left=285, Top=38, Right=534, Bottom=282
-Frame=22
-car: 57%
-Bounding Box: Left=283, Top=34, Right=534, Bottom=284
-Frame=23
-Frame=24
-Frame=25
-Frame=26
-Frame=27
-Frame=28
-Frame=29
-Frame=30
-Frame=31
-Frame=32
-Frame=33
-Frame=34
-Frame=35
-Frame=36
-car: 77%
-Bounding Box: Left=401, Top=38, Right=643, Bottom=283
-Frame=37
-car: 81%
-Bounding Box: Left=421, Top=43, Right=661, Bottom=295
-Frame=38
-car: 86%
-Bounding Box: Left=445, Top=45, Right=682, Bottom=329
-Frame=39
-car: 81%
-Bounding Box: Left=458, Top=51, Right=695, Bottom=334
-Frame=40
-car: 69%
-Bounding Box: Left=476, Top=62, Right=717, Bottom=330
-Frame=41
-car: 84%
-Bounding Box: Left=482, Top=61, Right=723, Bottom=334
-Frame=42
-car: 71%
-Bounding Box: Left=497, Top=62, Right=744, Bottom=335
-Frame=43
-car: 74%
-Bounding Box: Left=528, Top=98, Right=774, Bottom=360
-Frame=44
-car: 63%
-Bounding Box: Left=539, Top=104, Right=802, Bottom=371
-Frame=45
-car: 65%
-Bounding Box: Left=593, Top=118, Right=837, Bottom=381
-bicycle: 60%
-Bounding Box: Left=92, Top=32, Right=354, Bottom=256
-Frame=46
-car: 79%
-Bounding Box: Left=620, Top=129, Right=861, Bottom=395
-bicycle: 72%
-Bounding Box: Left=74, Top=36, Right=358, Bottom=263
-Frame=47
-bicycle: 67%
-Bounding Box: Left=60, Top=47, Right=366, Bottom=275
-Frame=48
-car: 75%
-Bounding Box: Left=693, Top=160, Right=923, Bottom=431
-bicycle: 60%
-Bounding Box: Left=19, Top=41, Right=341, Bottom=262
-Frame=49
-car: 71%
-Bounding Box: Left=717, Top=190, Right=959, Bottom=450
-bicycle: 64%
-Bounding Box: Left=11, Top=40, Right=335, Bottom=260
-Frame=50
-car: 52%
-Bounding Box: Left=741, Top=195, Right=975, Bottom=464
-bicycle: 58%
-Bounding Box: Left=3, Top=37, Right=325, Bottom=266
-Frame=51
-car: 50%
-Bounding Box: Left=802, Top=209, Right=1012, Bottom=470
-Frame=52
-car: 87%
-Bounding Box: Left=816, Top=231, Right=1050, Bottom=481
-Frame=53
-car: 72%
-Bounding Box: Left=842, Top=215, Right=1075, Bottom=482
-Frame=54
-Frame=55
-Frame=56
-car: 59%
-Bounding Box: Left=961, Top=242, Right=1162, Bottom=505
-Frame=57
-car: 50%
-Bounding Box: Left=983, Top=248, Right=1164, Bottom=501
-Frame=58
-Frame=59
-Frame=60
-person: 67%
-Bounding Box: Left=58, Top=188, Right=357, Bottom=402
-Frame=61
-person: 72%
-Bounding Box: Left=58, Top=191, Right=360, Bottom=404
-Frame=62
-person: 52%
-Bounding Box: Left=56, Top=190, Right=366, Bottom=412
-Frame=63
-person: 56%
-Bounding Box: Left=60, Top=220, Right=386, Bottom=425
-Frame=64
-person: 71%
-Bounding Box: Left=68, Top=224, Right=405, Bottom=422
-Frame=65
-person: 89%
-Bounding Box: Left=78, Top=229, Right=423, Bottom=419
-Frame=66
-person: 83%
-Bounding Box: Left=90, Top=236, Right=441, Bottom=420
-Frame=67
-person: 66%
-Bounding Box: Left=98, Top=245, Right=455, Bottom=424
-Frame=68
-Frame=69
-Frame=70
-Frame=71
-Frame=72
-Frame=73
-Frame=74
-person: 55%
-Bounding Box: Left=172, Top=310, Right=535, Bottom=488
-Frame=75
-person: 73%
-Bounding Box: Left=177, Top=309, Right=536, Bottom=488
-Frame=76
-person: 64%
-Bounding Box: Left=183, Top=305, Right=534, Bottom=490
-Frame=77
-person: 55%
-Bounding Box: Left=189, Top=295, Right=530, Bottom=489
-Frame=78
-Frame=79
-Frame=80
-person: 60%
-Bounding Box: Left=199, Top=284, Right=531, Bottom=493
-Frame=81
-person: 71%
-Bounding Box: Left=203, Top=284, Right=530, Bottom=496
-Frame=82
-person: 60%
-Bounding Box: Left=206, Top=282, Right=534, Bottom=498
-Frame=83
-Frame=84
-Frame=85
-Frame=86
-Frame=87
-Frame=88
-Frame=89
-Frame=90
-Frame=91
-Frame=92
-Frame=93
-Frame=94
-Frame=95
-Frame=96
-Frame=97
-Frame=98
-Frame=99
-Frame=100
+
+
+
+236 6 482 159
+243 5 489 166
+252 6 495 177
+249 0 499 209
+253 0 504 214
+
+286 3 523 205
+
+291 20 535 225
+296 21 536 229
+301 22 538 232
+300 23 535 238
+302 25 531 248
+300 14 529 263
+
+293 36 532 277
+286 38 534 281
+285 38 534 282
+283 34 534 284
+
+
+
+
+
+
+
+
+
+
+
+
+
+401 38 643 283
+421 43 661 295
+445 45 682 329
+458 51 695 334
+476 62 717 330
+482 61 723 334
+497 62 744 335
+528 98 774 360
+539 104 802 371
+593 118 837 381 92 32 354 256
+620 129 861 395 74 36 358 263
+60 47 366 275
+693 160 923 431 19 41 341 262
+717 190 959 450 11 40 335 260
+741 195 975 464 3 37 325 266
+802 209 1012 470
+816 231 1050 481
+842 215 1075 482
+
+
+961 242 1162 505
+983 248 1164 501
+
+
+58 188 357 402
+58 191 360 404
+56 190 366 412
+60 220 386 425
+68 224 405 422
+78 229 423 419
+90 236 441 420
+98 245 455 424
+
+
+
+
+
+
+172 310 535 488
+177 309 536 488
+183 305 534 490
+189 295 530 489
+
+
+199 284 531 493
+203 284 530 496
+206 282 534 498
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
