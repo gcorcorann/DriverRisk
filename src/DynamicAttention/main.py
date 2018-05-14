@@ -63,7 +63,7 @@ def main():
 
     # train the network
     best_acc, losses, accuracies = train_network(net, dataloader, dataset_size,
-            batch_size, window_size, criterion, optimizer, max_epochs, gpu)
+            criterion, optimizer, max_epochs, gpu)
     # plot statistics
 #    print('Best Training Accuracy:', best_acc*100)
 #    plot_data(losses, accuracies)
