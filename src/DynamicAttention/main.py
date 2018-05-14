@@ -31,17 +31,17 @@ def main():
     gpu = torch.cuda.is_available()
     data_path = 'data/labels_done.txt'
     batch_size = 1
-    num_workers = 0
+    num_workers = 2
     window_size = 10
     # network parameters
-    architecture = 'AlexNet'
-    hidden_size = 8
-    rnn_layers = 1
-    pretrained = False
+    architecture = 'VGGNet11'
+    hidden_size = 512
+    rnn_layers = 2
+    pretrained = True
     finetuned = False
     # training parameters
     learning_rate = 1e-4
-    max_epochs = 2
+    max_epochs = 100
     criterion = nn.CrossEntropyLoss()
 
     # get dataloader

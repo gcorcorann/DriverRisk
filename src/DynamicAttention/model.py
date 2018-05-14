@@ -29,6 +29,40 @@ class DynamicAttention(nn.Module):
             self.cnn.classifier = nn.Sequential(
                     *list(self.cnn.classifier.children())[:-3]
                     )
+        elif model is 'VGGNet11':
+            self.cnn = models.vgg11_bn(pretrained)
+            num_fts = self.cnn.classifier[3].in_features
+            self.cnn.classifier = nn.Sequential(
+                    *list(self.cnn.classifier.children())[:-4]
+                    )
+        elif model is 'VGGNet16':
+            self.cnn = models.vgg16_bn(pretrained)
+            num_fts = self.cnn.classifier[3].in_features
+            self.cnn.classifier = nn.Sequential(
+                    *list(self.cnn.classifier.children())[:-4]
+                    )
+        elif model is 'VGGNet19':
+            self.cnn = models.vgg19_bn(pretrained)
+            num_fts = self.cnn.classifier[3].in_features
+            self.cnn.classifier = nn.Sequential(
+                    *list(self.cnn.classifier.children())[:-4]
+                    )
+        elif model is 'ResNet18':
+            self.cnn = models.resnet18(pretrained)
+            num_fts = self.cnn.fc.in_features
+            self.cnn = nn.Sequential(
+                    *list(self.cnn.children())[:-1]
+                    )
+        elif model is 'ResNet34':
+            self.cnn = models.resnet34(pretrained)
+            num_fts = self.cnn.fc.in_features
+            self.cnn = nn.Sequential(
+                    *list(self.cnn.children())[:-1]
+                    )
+        else:
+            print('Please input correct model architecture')
+            return
+
         for param in self.cnn.parameters():
             param.requires_grad = finetuned
 
@@ -42,7 +76,7 @@ class DynamicAttention(nn.Module):
         # add fc layer
         self.fc = nn.Linear(hidden_size, 4)
         
-    def forward(self, inp_frame, inp_objs, state):
+    def forward(self, inp_frame, inp_objs, state, device):
         # break state into hidden state and cell state
         h, c = state
 #        print('inp_frame:', inp_frame.shape)
@@ -60,7 +94,7 @@ class DynamicAttention(nn.Module):
 
         # for attention for each object
         num_objs = emb_objs.shape[1]
-        attn_energies = torch.zeros(num_objs)
+        attn_energies = torch.zeros(num_objs).to(device)
         # calculate energies for each object
         for i in range(num_objs):
             attn_energies[i] = self.score(h[-1], emb_objs[:, i])
