@@ -144,7 +144,7 @@ class DynamicAttention(nn.Module):
         # pass through fc layer
         output = self.fc(output).squeeze(0)
 #        print('output:', output.shape)
-        return output, state
+        return output, state, attn_weights.squeeze(1)
 
 
     def init_hidden(self, device):
@@ -176,14 +176,13 @@ def main():
 
     # initialize hidden
     state = net.init_hidden(device)
-    print('state[0]:', state[0].shape)
-    print('state[1]:', state[1].shape)
     # for each time step
     for i in range(window_size):
         frame = X_frames[i]
         objs = X_objs[i]
-        output, state = net.forward(frame, objs, state, device)
+        output, state, attn = net.forward(frame, objs, state, device)
         print('output:', output.shape)
+        print('attn:', attn.shape)
 
 if __name__ == '__main__':
     main()
