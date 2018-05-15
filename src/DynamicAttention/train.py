@@ -63,7 +63,7 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
             for i in range(inp_frames.shape[0]):
                 frame = inp_frames[i]
                 objs = inp_objs[i]
-                output, state = net.forward(frame, objs, state, device)
+                output, state, _ = net.forward(frame, objs, state, device)
                 # loss + predicted
                 loss += criterion(output, labels[i])
                 _, pred = torch.max(output, 1)
