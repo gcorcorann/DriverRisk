@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import time
 import torch
+import copy
 from torch.autograd import Variable
 
 def train_network(net, dataloader, dataset_size, criterion, optimizer, 
@@ -26,10 +27,10 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # store network to cpu/gpu
     net = net.to(device)
-    
     # training losses + accuracies
     losses, accuracies = [], []
     best_acc = 0 
+    best_model_wts = copy.deepcopy(net.state_dict())
     # when to stop training
     patience = 0
     for epoch in range(max_epochs):
@@ -89,6 +90,7 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
         patience += 1
         if epoch_acc > best_acc:
             best_acc = epoch_acc
+            best_model_wts = copy.deepcopy(net.state_dict())
             patience = 0
 
         if patience == 20:
@@ -99,6 +101,10 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
     print()
     print('Training Complete in {:.0f}m {:.0f}s'.format(
         time_elapsed // 60, time_elapsed % 60))
+
+    net.load_state_dict(best_model_wts)
+    # save to disk
+    torch.save(net.state_dict(), 'data/model_params.pkl')
 
     return best_acc, losses, accuracies
 
