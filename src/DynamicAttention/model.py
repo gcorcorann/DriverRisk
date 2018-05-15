@@ -22,36 +22,19 @@ class Attn(nn.Module):
 #        print('objs:', objs.shape)
         batch_size = objs.shape[0]
         num_objs = objs.shape[1]
-        attn_energies = torch.zeros(batch_size, num_objs).to(device)
-#        print('attn_energies:', attn_energies.shape)
-        # calculate energies for each encoder output
-        for i in range(num_objs):
-            attn_energies[:, i] = self.score(hidden, objs[:, i])
-
+        attn_energies = self.score(hidden, objs)
 #        print('attn_energies:', attn_energies.shape)
         # normalize energies to weights in range 0 to 1
         return F.softmax(attn_energies, dim=1).unsqueeze(1)
 
-    def score(self, hidden, obj):
-        if self.method == 'dot':
-            energy = hidden.dot(obj)
-            return energy
-        
-        elif self.method == 'general':
-#            print('obj:', obj.shape)
-            energy = self.attn(obj)
-            energy = energy.unsqueeze(1)
-#            print('energy:', energy.shape)
-            hidden = hidden.unsqueeze(2)
-#            print('hidden:', hidden.shape)
-            energy = torch.bmm(energy, hidden).squeeze()
-#            print('energy:', energy.shape)
-            return energy
-
-        elif self.method == 'concat':
-            energy = self.attn(torch.cat((hidden, encoder_output), 1))
-            energy = self.other.dot(energy)
-            return energy
+    def score(self, hidden, objs):
+        hidden = hidden.unsqueeze(2)
+#        print('hidden:', hidden.shape)
+        energy = self.attn(objs)
+#        print('energy:', energy.shape)
+        energy = torch.bmm(energy, hidden).squeeze(2)
+#        print('energy:', energy.shape)
+        return energy
 
 class DynamicAttention(nn.Module):
     """Single stream model.
