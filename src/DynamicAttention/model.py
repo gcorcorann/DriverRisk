@@ -18,14 +18,19 @@ class Attn(nn.Module):
             self.other = nn.Parameter(torch.FloatTensor(1, hidden_size))
 
     def forward(self, hidden, objs, device):
+#        print('hidden:', hidden.shape)
+#        print('objs:', objs.shape)
+        batch_size = objs.shape[0]
         num_objs = objs.shape[1]
-        attn_energies = torch.zeros(num_objs).to(device)
+        attn_energies = torch.zeros(batch_size, num_objs).to(device)
+#        print('attn_energies:', attn_energies.shape)
         # calculate energies for each encoder output
         for i in range(num_objs):
-            attn_energies[i] = self.score(hidden, objs[:, i])
+            attn_energies[:, i] = self.score(hidden, objs[:, i])
 
+#        print('attn_energies:', attn_energies.shape)
         # normalize energies to weights in range 0 to 1
-        return F.softmax(attn_energies, dim=0).unsqueeze(0)
+        return F.softmax(attn_energies, dim=1).unsqueeze(1)
 
     def score(self, hidden, obj):
         if self.method == 'dot':
@@ -33,10 +38,14 @@ class Attn(nn.Module):
             return energy
         
         elif self.method == 'general':
+#            print('obj:', obj.shape)
             energy = self.attn(obj)
-            energy = energy.squeeze()
-            hidden = hidden.squeeze()
-            energy = hidden.dot(energy)
+            energy = energy.unsqueeze(1)
+#            print('energy:', energy.shape)
+            hidden = hidden.unsqueeze(2)
+#            print('hidden:', hidden.shape)
+            energy = torch.bmm(energy, hidden).squeeze()
+#            print('energy:', energy.shape)
             return energy
 
         elif self.method == 'concat':
@@ -117,31 +126,41 @@ class DynamicAttention(nn.Module):
         self.fc = nn.Linear(hidden_size, 4)
         
     def forward(self, inp_frame, inp_objs, state, device):
+#        print('inp_frame:', inp_frame.shape)
+#        print('inp_objs:', inp_objs.shape)
         # break state into hidden state and cell state
         h, c = state
         # pass through CNN + embedding
         emb_frame = self.embedding(self.cnn.forward(inp_frame))
+#        print('emb_frame:', emb_frame.shape)
         window_size = inp_objs.shape[1]
-        inp_objs = inp_objs.view(-1, 3, 224, 224)
+        inp_objs = inp_objs.contiguous().view(-1, 3, 224, 224)
         emb_objs = self.embedding(self.cnn.forward(inp_objs))
         emb_objs = emb_objs.view(self.batch_size, window_size, -1)
+#        print('emb_objs:', emb_objs.shape)
 
-        # for attention for each object
+        # for attention for each object (use last hidden layer)
         attn_weights = self.attn(h[-1], emb_objs, device)
+#        print('attn_weights:', attn_weights.shape)
 
         # context
-        context = torch.mm(attn_weights, emb_objs[0])
+        context = torch.bmm(attn_weights, emb_objs).squeeze(1)
+#        print('context:', context.shape)
 
         # combine
+#        print('emb_frame:', emb_frame.shape)
         output = torch.cat((emb_frame, context), 1)
-        output = self.attn_combine(output)
+#        print('output:', output.shape)
+        output = self.attn_combine(output).unsqueeze(0)
+#        print('output:', output.shape)
 
         # pass through RNN
-        output = output.unsqueeze(0)
         output, state = self.lstm(output, state)
+#        print('output:', output.shape)
 
         # pass through fc layer
         output = self.fc(output).squeeze(0)
+#        print('output:', output.shape)
         return output, state
 
 
@@ -156,25 +175,26 @@ def main():
     """Test Function."""
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = 'AlexNet'
-    batch_size = 1
+    batch_size = 2
     hidden_size = 512
-    rnn_layers = 1
+    rnn_layers = 2
     net = DynamicAttention(model, batch_size, hidden_size, rnn_layers, 
-            pretrained=False, finetuned=False)
-    net.to(device)
+            pretrained=False, finetuned=False).to(device)
     print(net)
 
     window_size = 10
     max_objects = 20
     X_frames = torch.randn(window_size, batch_size, 3, 224, 224)
     X_objs = torch.randn(window_size, batch_size, max_objects, 3, 224, 224)
-    X_frames.to(device)
-    X_objs.to(device)
+    X_frames = X_frames.to(device)
+    X_objs = X_objs.to(device)
     print('X_frames:', X_frames.shape)
     print('X_objs:', X_objs.shape)
 
     # initialize hidden
     state = net.init_hidden(device)
+    print('state[0]:', state[0].shape)
+    print('state[1]:', state[1].shape)
     # for each time step
     for i in range(window_size):
         frame = X_frames[i]
