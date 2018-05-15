@@ -148,17 +148,9 @@ class DynamicAttention(nn.Module):
     def init_hidden(self, device):
         h_0 = torch.zeros(self.rnn_layers, self.batch_size, self.hidden_size)
         c_0 = torch.zeros(self.rnn_layers, self.batch_size, self.hidden_size)
-        h_0.to(device)
-        c_0.to(device)
+        h_0 = h_0.to(device)
+        c_0 = c_0.to(device)
         return (h_0, c_0)
-
-    def score(self, hidden, obj):
-        energy = self.attn(obj)
-        energy = energy.squeeze()
-        hidden = hidden.squeeze()
-        energy = hidden.dot(energy)
-        return energy
-
 
 def main():
     """Test Function."""
