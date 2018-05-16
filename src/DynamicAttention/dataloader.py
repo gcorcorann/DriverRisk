@@ -5,7 +5,6 @@ import numbers
 import numpy as np
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
-from PIL import Image
 
 class AppearanceDataset(Dataset):
     """Appearance features for risk level dataset.
@@ -14,7 +13,6 @@ class AppearanceDataset(Dataset):
         data_path (string):     path to text file with annotations
         window_size (int):      length of sequence in window
         transform (callable):   transform to be applied to image
-        
 
     Returns:
         torch.utils.data.Dataset:   dataset object
@@ -44,7 +42,11 @@ class AppearanceDataset(Dataset):
         # convert string to array of ints [0-3]
         y = np.array(list(y), dtype=int) - 1
         # grab random window
-        start = np.random.randint(100 - self.window_size)
+        #TODO should this be 100 - window_size + 1 ?
+        if self.window_size == 100:
+            start = 0
+        else:
+            start = np.random.randint(100 - self.window_size)
         # window frames, objects, and labels
         X_frames = X_frames[start: start+self.window_size]
         y = y[start: start+self.window_size]
@@ -54,6 +56,8 @@ class AppearanceDataset(Dataset):
         for i in range(self.window_size):
             s = obj_path + '{:02}'.format(start + i) + '-*.png'
             objs = glob.glob(s)
+            #TODO remove sort while training?
+            objs.sort()
             x_objs = [cv2.resize(cv2.imread(x), (224,224)) for x in objs]
             if len(x_objs) > 0 and self.transform:
                 x_objs = np.array(x_objs)
@@ -125,7 +129,7 @@ class Normalize():
         video = np.transpose(video, (0, 3, 1, 2))
         return video
 
-def get_loader(data_path, sample_rate, batch_size, num_workers):
+def get_loader(data_path, sample_rate, batch_size, num_workers, shuffle=True):
     """Return dataloader for custom dataset.
 
     Args:
@@ -147,7 +151,7 @@ def get_loader(data_path, sample_rate, batch_size, num_workers):
     dataset = AppearanceDataset(data_path, sample_rate, data_transforms)
     dataset_size = len(dataset)
     # create dataloader
-    dataloader = DataLoader(dataset, batch_size, shuffle=True,
+    dataloader = DataLoader(dataset, batch_size, shuffle=shuffle,
             num_workers=num_workers)
     return dataloader, dataset_size
 
@@ -160,7 +164,7 @@ def main():
     data_path = 'data/labels_done.txt'
     window_size = 10
 
-    batch_size = 2
+    batch_size = 1
     num_workers = 0
 
     dataloader, dataset_size = get_loader(data_path, window_size, batch_size, 
