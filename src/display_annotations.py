@@ -36,7 +36,7 @@ def draw_graph(w,h, label):
 def main():
     """Main Function."""
     fps = 20
-    data_path = 'data/labels_done.txt'
+    data_path = 'data/labels.txt'
     try:
         with open(data_path, 'r') as f:
             data = f.read().split()

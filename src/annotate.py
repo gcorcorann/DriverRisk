@@ -48,8 +48,8 @@ class Annotate:
         # if no annotations or exceptions
         self.f = open(labels_path, 'w')
         self.fps = fps
-        self.video_paths = glob.glob('data/positive/*.mp4') \
-                + glob.glob('data/negative/*.mp4')
+        self.video_paths = glob.glob('data/videos/positive/*.mp4') \
+                + glob.glob('data/videos/negative/*.mp4')
         random.shuffle(self.video_paths)
 
     def __del__(self):
