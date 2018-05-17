@@ -1,37 +1,66 @@
 #!/usr/bin/env python3
+import time
+import torch
+import torch.nn.functional as F
 from dataloader import get_loader
 from model import DynamicAttention
 
 def main():
+    """MAIN FUNCTION."""
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     data_path = 'data/labels_done.txt'
-    window_size = 100
     batch_size = 1
     num_workers = 0
+    sequence_len = 100
+    ws = 10  # window_size
 
-    dataloader, dataset_size = get_loader(data_path, window_size, batch_size,
+    dataloader, dataset_size = get_loader(data_path, sequence_len, batch_size,
             num_workers)
     print('Dataset size:', dataset_size)
 
     batch = next(iter(dataloader))
-    X_frames, X_objs, labels = batch['X_frames'], batch['X_objs'], batch['y']
+    X_frames = batch['X_frames'].transpose(0, 1).to(device)
+    X_objs = batch['X_objs'].transpose(0, 1).to(device)
     print('X_frames:', X_frames.shape)
     print('X_objs:', X_objs.shape)
-    print('labels:', labels.shape)
 
     # create model
-#    model = 'AlexNet'
-#    batch_size = 1
-#    hidden_size = 512
-#    rnn_layers = 2
-#    net = DynamicAttention(model, batch_size, hidden_size, rnn_layers,
-#            pretrained=False, finetuned=False)
-#    print(net)
+    model = 'AlexNet'
+    batch_size = 1
+    hidden_size = 512
+    rnn_layers = 2
+    net = DynamicAttention(model, batch_size, hidden_size, rnn_layers,
+            pretrained=False, finetuned=False).to(device)
 
-    for i in range(10, 110, 10):
-        
-        print(i)
+    with open('outputs.txt', 'w') as f:
+        for i in range(1, sequence_len+1):
+            inp_frames = X_frames[i-ws if i-ws > 0 else 0: i]
+            inp_objs = X_objs[i-ws if i-ws > 0 else 0: i]
+            print('inp_frames:', inp_frames.shape)
+            print('inp_objs:', inp_objs.shape)
     
-
+            state = net.init_hidden(device)
+    
+            start_time = time.time()
+            # for each timestep
+            for t in range(inp_frames.shape[0]):
+                frame = inp_frames[t]
+                objs = inp_objs[t]
+                output, state, attn = net.forward(frame, objs, state, device)
+    
+            output = F.softmax(output.squeeze(), dim=0)
+            attn = attn.squeeze()
+            print('output:', output.shape)
+            print('attn:', attn.shape)
+            output = output.tolist()
+            attn = attn.tolist()
+            for item in output:
+                f.write(str(item) + ' ')
+            for item in attn:
+                f.write(str(item) + ' ')
+            f.write('\n')
+            fps = 1 / ((time.time() - start_time) + 1/30)
+            print('FPS:', fps)
 
 if __name__ == '__main__':
     main()
