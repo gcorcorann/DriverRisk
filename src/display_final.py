@@ -40,14 +40,15 @@ def draw_graph(w,h, label):
 
 def draw_objects(frame, objs, attn, color_map):
     attn = attn.squeeze()
+    attn = 1 - attn
     attn *= 255
     attn = attn.numpy().astype(np.uint8)
     attn = cv2.applyColorMap(attn, color_map)
+    blend = 0.8
     for i, bb in enumerate(objs):
         left, top, right, bot = bb
         a = attn[i][0].astype(float)
         # alpha blending
-        blend = 0.8
         frame[top:bot, left:right] = a * blend + (1-blend) * frame[top:bot,
                 left:right]
 
@@ -127,6 +128,7 @@ def main():
             data = f.read()
             data = data.split('\n')
 
+        attn_scale = [0.25, 0.50, 0.75, 1.0]
         probs_list = []
         # open video
         cap = cv2.VideoCapture(vid_path)
@@ -142,6 +144,7 @@ def main():
             # attention
             attn = torch.randn(1, 20)
             attn = attn.sigmoid()
+            attn *= attn_scale[y_pred]
 
             # draw labels graph
             graph = draw_graph(w,h,y_pred+1)
