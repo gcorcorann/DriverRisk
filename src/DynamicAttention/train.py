@@ -65,15 +65,11 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
                 frame = inp_frames[i]
                 objs = inp_objs[i]
                 output, state, _ = net.forward(frame, objs, state, device)
-                # loss + predicted
-                loss += criterion(output, labels[i])
-                _, pred = torch.max(output, 1)
-                correct += (pred == labels[i]).sum().item()
 
             # loss + predicted
             loss = criterion(output, labels[-1])
             _, pred = torch.max(output, 1)
-            correct += (pred == labels[-1]).sum().item()
+            correct = (pred == labels[-1]).sum().item()
 
             # backwards + optimize
             loss.backward()
@@ -83,7 +79,6 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
             running_loss += loss.item() * inp_frames.shape[1]
             running_correct += correct
                     
-
         epoch_loss = running_loss / dataset_size
         epoch_acc = running_correct / dataset_size
         print('Training Loss: {:.4f} Acc: {:.4f}'.format(
