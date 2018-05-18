@@ -38,8 +38,14 @@ def train_network(net, dataloaders, dataset_sizes, criterion, optimizer,
         print()
         print('Epoch', epoch)
         print('-' * 8)
-        # each epoch has a training and validation phase
-        for phase in ['Train', 'Valid']:
+        # validation phase every x epochs
+        if (epoch+1) % 5 == 0:
+            phases = ['Train', 'Valid']
+        else:
+            phases = ['Train']
+
+        # for each phase
+        for phase in phases:
             if phase == 'Train':
                 net.train()   # set network to training mode
             else:

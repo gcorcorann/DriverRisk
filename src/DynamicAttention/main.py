@@ -18,19 +18,25 @@ def plot_data(losses, accuracies):
     accuracies['Train'] = [acc * 100 for acc in accuracies['Train']]
     accuracies['Valid'] = [acc * 100 for acc in accuracies['Valid']]
     plt.figure()
-    plt.subplot(121)
-    plt.plot(losses['Train'], label='Training')
-    plt.plot(losses['Valid'], label='Validation')
+    plt.subplot(221)
+    plt.plot(losses['Train'])
     plt.ylim(0, 2)
-    plt.title('Losses')
-    plt.legend(loc='upper right')
+    plt.title('Training Losses')
+    
+    plt.subplot(222)
+    plt.plot(losses['Valid'])
+    plt.ylim(0, 2)
+    plt.title('Validation Losses')
 
-    plt.subplot(122)
-    plt.plot(accuracies['Train'], label='Training')
-    plt.plot(accuracies['Valid'], label='Validation')
+    plt.subplot(223)
+    plt.plot(accuracies['Train'])
     plt.ylim(0, 100)
-    plt.title('Accuracy')
-    plt.legend(loc='upper left')
+    plt.title('Training Accuracy')
+
+    plt.subplot(224)
+    plt.plot(accuracies['Valid'])
+    plt.ylim(0, 100)
+    plt.title('Training Accuracy')
     plt.show()
 
 def main():
@@ -49,7 +55,7 @@ def main():
     finetuned = False
     # training parameters
     learning_rate = 1e-4
-    max_epochs = 5
+    max_epochs = 100
     criterion = nn.CrossEntropyLoss()
 
     # get dataloader
