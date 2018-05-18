@@ -18,21 +18,25 @@ def main():
             num_workers)
     print('Dataset size:', dataset_size)
 
-    batch = next(iter(dataloader))
+    it = iter(dataloader)
+    for _ in range(10):
+        batch = next(it)
+
     X_frames = batch['X_frames'].transpose(0, 1).to(device)
     X_objs = batch['X_objs'].transpose(0, 1).to(device)
     print('X_frames:', X_frames.shape)
     print('X_objs:', X_objs.shape)
 
     # create model
-    model = 'AlexNet'
+    model = 'VGGNet11'
     batch_size = 1
     hidden_size = 512
     rnn_layers = 2
     net = DynamicAttention(model, batch_size, hidden_size, rnn_layers,
-            pretrained=False, finetuned=False).to(device)
+            pretrained=True, finetuned=False).to(device)
+    net.load_state_dict(torch.load('data/model_params.pkl'))
 
-    with open('outputs.txt', 'w') as f:
+    with open('outputs_positive_000512.txt', 'w') as f:
         for i in range(1, sequence_len+1):
             inp_frames = X_frames[i-ws if i-ws > 0 else 0: i]
             inp_objs = X_objs[i-ws if i-ws > 0 else 0: i]
