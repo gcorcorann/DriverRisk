@@ -157,7 +157,7 @@ def get_loader(data_path, sample_rate, batch_size, num_workers, display=False):
     dataset_size = len(dataset)
     # create dataloader
     dataloader = DataLoader(dataset, batch_size, shuffle=display,
-            num_workers=num_workers)
+            num_workers=num_workers, worker_init_fn=lambda _: np.random.seed())
     return dataloader, dataset_size
 
 def main():
