@@ -40,18 +40,16 @@ class DynamicAttention(nn.Module):
     """Single stream model.
     Args:
         model (string):     CNN architecture
-        batch_size (int):   number of instances in mini-batch
         hidden_size (int):  number of hidden units
         rnn_layers (int):   number of layers in rnn model
         pretrained (bool):  if model is pretrained with ImageNet (default true)
         finetuned (bool):   if model is finetuned (default true)
     """
 
-    def __init__(self, model, batch_size, hidden_size, rnn_layers, 
+    def __init__(self, model, hidden_size, rnn_layers, 
             pretrained=True, finetuned=True):
         super().__init__()
         # define parameters
-        self.batch_size = batch_size
         self.hidden_size = hidden_size
         self.rnn_layers = rnn_layers
 
@@ -109,6 +107,7 @@ class DynamicAttention(nn.Module):
         self.fc = nn.Linear(hidden_size, 4)
         
     def forward(self, inp_frame, inp_objs, state, device):
+        batch_size, num_objs = inp_objs.shape[0], inp_objs.shape[1]
 #        print('inp_frame:', inp_frame.shape)
 #        print('inp_objs:', inp_objs.shape)
         # break state into hidden state and cell state
@@ -116,10 +115,9 @@ class DynamicAttention(nn.Module):
         # pass through CNN + embedding
         emb_frame = self.embedding(self.cnn.forward(inp_frame))
 #        print('emb_frame:', emb_frame.shape)
-        window_size = inp_objs.shape[1]
         inp_objs = inp_objs.contiguous().view(-1, 3, 224, 224)
         emb_objs = self.embedding(self.cnn.forward(inp_objs))
-        emb_objs = emb_objs.view(self.batch_size, window_size, -1)
+        emb_objs = emb_objs.view(batch_size, num_objs, -1)
 #        print('emb_objs:', emb_objs.shape)
 
         # for attention for each object (use last hidden layer)
@@ -147,9 +145,9 @@ class DynamicAttention(nn.Module):
         return output, state, attn_weights.squeeze(1)
 
 
-    def init_hidden(self, device):
-        h_0 = torch.zeros(self.rnn_layers, self.batch_size, self.hidden_size)
-        c_0 = torch.zeros(self.rnn_layers, self.batch_size, self.hidden_size)
+    def init_hidden(self, batch_size, device):
+        h_0 = torch.zeros(self.rnn_layers, batch_size, self.hidden_size)
+        c_0 = torch.zeros(self.rnn_layers, batch_size, self.hidden_size)
         h_0 = h_0.to(device)
         c_0 = c_0.to(device)
         return (h_0, c_0)
