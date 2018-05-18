@@ -13,12 +13,13 @@ class AppearanceDataset(Dataset):
         data_path (string):     path to text file with annotations
         window_size (int):      length of sequence in window
         transform (callable):   transform to be applied to image
+        display (bool):         if used for displaying (default False)
 
     Returns:
         torch.utils.data.Dataset:   dataset object
     """
 
-    def __init__(self, data_path, window_size, transform=None):
+    def __init__(self, data_path, window_size, transform=None, display=False):
         # read video paths and labels
         with open(data_path, 'r') as f:
             data = f.read().split()
@@ -27,6 +28,7 @@ class AppearanceDataset(Dataset):
         self.data = data
         self.window_size = window_size
         self.transform = transform
+        self.display = display
 
     def __len__(self):
         return len(self.data)
@@ -43,10 +45,11 @@ class AppearanceDataset(Dataset):
         y = np.array(list(y), dtype=int) - 1
         # grab random window
         #TODO should this be 100 - window_size + 1 ?
-        if self.window_size == 100:
+        if self.display == True:
             start = 0
         else:
             start = np.random.randint(100 - self.window_size)
+
         # window frames, objects, and labels
         X_frames = X_frames[start: start+self.window_size]
         y = y[start: start+self.window_size]
@@ -56,8 +59,8 @@ class AppearanceDataset(Dataset):
         for i in range(self.window_size):
             s = obj_path + '{:02}'.format(start + i) + '-*.png'
             objs = glob.glob(s)
-            #TODO remove sort while training?
-            objs.sort()
+            if self.display == True:
+                objs.sort()
             x_objs = [cv2.resize(cv2.imread(x), (224,224)) for x in objs]
             if len(x_objs) > 0 and self.transform:
                 x_objs = np.array(x_objs)
@@ -129,7 +132,7 @@ class Normalize():
         video = np.transpose(video, (0, 3, 1, 2))
         return video
 
-def get_loader(data_path, sample_rate, batch_size, num_workers, shuffle=True):
+def get_loader(data_path, sample_rate, batch_size, num_workers, display=False):
     """Return dataloader for custom dataset.
 
     Args:
@@ -137,6 +140,7 @@ def get_loader(data_path, sample_rate, batch_size, num_workers, shuffle=True):
         sample_rate (int):      sample every ith frame
         batch_size (int):       number of instances in mini-batch
         num_workers (int):      number of subprocessed used for data loading
+        display (bool):         if used for displaying purposes
 
     Returns:
         torch.utils.data.DataLoader:    dataloader for custom dataset
@@ -148,10 +152,11 @@ def get_loader(data_path, sample_rate, batch_size, num_workers, shuffle=True):
         Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ])
     # create dataset object
-    dataset = AppearanceDataset(data_path, sample_rate, data_transforms)
+    dataset = AppearanceDataset(data_path, sample_rate, data_transforms,
+            display)
     dataset_size = len(dataset)
     # create dataloader
-    dataloader = DataLoader(dataset, batch_size, shuffle=shuffle,
+    dataloader = DataLoader(dataset, batch_size, shuffle=display,
             num_workers=num_workers)
     return dataloader, dataset_size
 

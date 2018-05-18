@@ -39,10 +39,9 @@ def draw_graph(w,h, label):
     return graph
 
 def draw_objects(frame, objs, attn, color_map):
-    attn = attn.squeeze()
     attn = 1 - attn
     attn *= 255
-    attn = attn.numpy().astype(np.uint8)
+    attn = attn.astype(np.uint8)
     attn = cv2.applyColorMap(attn, color_map)
     blend = 0.8
     for i, bb in enumerate(objs):
@@ -116,54 +115,56 @@ def main():
     """Main Function."""
     fps = 10
     color_map = cv2.COLORMAP_HOT
-    pos_vids = glob.glob('data/videos/positive/*.mp4')
-    neg_vids = glob.glob('data/videos/negative/*.mp4')
-    all_vids = pos_vids + neg_vids
-    random.shuffle(all_vids)
-    
-    for i, vid_path in enumerate(all_vids):
-        print('Iteration: {}, Video Path: {}'.format(i+1, vid_path))
-        objs_path = 'data/objects/' + vid_path[12:-3] + 'txt'
-        with open(objs_path, 'r') as f:
-            data = f.read()
-            data = data.split('\n')
+    vid_path = 'data/videos/positive/000155.mp4'
+    print('Video Path:', vid_path)
 
-        attn_scale = [0.25, 0.50, 0.75, 1.0]
-        probs_list = []
-        # open video
-        cap = cv2.VideoCapture(vid_path)
-        for i in range(100):
-            _, frame = cap.read()
-            h, w = frame.shape[:2]
-            # inputs from algorithm
-            probs = F.softmax(torch.randn(1, 4).squeeze(), dim=0).numpy()
-            # store in list
-            probs_list.append(probs)
-            # label
-            y_pred = np.argmax(probs)
-            # attention
-            attn = torch.randn(1, 20)
-            attn = attn.sigmoid()
-            attn *= attn_scale[y_pred]
+    objs_path = 'data/objects/' + vid_path[12:-3] + 'txt'
+    with open(objs_path, 'r') as f:
+        objs_data = f.read().split('\n')[:-1]
 
-            # draw labels graph
-            graph = draw_graph(w,h,y_pred+1)
-            # draw YOLO objects
-            objs = np.array(data[i].split(), dtype=int).reshape(-1, 4)
-            draw_objects(frame, objs, attn, color_map)
-            # draw scale legend
-            legend = draw_legend(w, h, color_map)
-            frame = np.hstack((legend, frame, graph))
+    with open('outputs_positive_000155.txt', 'r') as f:
+        out_data = f.read().split('\n')[:-1]
 
-            # draw probability plots
-            plot = draw_plots(*frame.shape[:2], probs_list)
-            frame = np.vstack((frame, plot))
-            cv2.imshow('Frame', frame)
-            #cv2.waitKey(int(1/fps*1000))
-            cv2.waitKey(0)
-        
-        break
+    attn_scale = [1, 5, 50, 100]
+    #attn_scale = [0.25, 0.50, 0.75, 1.0]
+    probs_list = []
+    # open video
+    cap = cv2.VideoCapture(vid_path)
+    for i in range(100):
+        _, frame = cap.read()
+        h, w = frame.shape[:2]
+        # inputs from algorithm
+        frame_data = np.float32(out_data[i].split())
+        probs = frame_data[:4]
+        #probs = F.softmax(torch.randn(1, 4).squeeze(), dim=0).numpy()
+        print(probs)
+        # store in list
+        probs_list.append(probs)
+        # label
+        y_pred = np.argmax(probs)
+        # attention
+        attn = frame_data[4:]
+#        attn = torch.randn(1, 20)
+#        attn = attn.sigmoid()
+        #TODO attention levels are mostly all zeros
+        attn *= attn_scale[y_pred]
+        print(attn)
 
+        # draw labels graph
+        graph = draw_graph(w,h,y_pred+1)
+        # draw YOLO objects
+        objs = np.array(objs_data[i].split(), dtype=int).reshape(-1, 4)
+        draw_objects(frame, objs, attn, color_map)
+        # draw scale legend
+        legend = draw_legend(w, h, color_map)
+        frame = np.hstack((legend, frame, graph))
+
+        # draw probability plots
+        plot = draw_plots(*frame.shape[:2], probs_list)
+        frame = np.vstack((frame, plot))
+        cv2.imshow('Frame', frame)
+        #cv2.waitKey(int(1/fps*1000))
+        cv2.waitKey(0)
 
 if __name__ == '__main__':
     main()
