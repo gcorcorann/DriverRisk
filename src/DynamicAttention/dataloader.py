@@ -13,22 +13,27 @@ class AppearanceDataset(Dataset):
         data_path (string):     path to text file with annotations
         window_size (int):      length of sequence in window
         transform (callable):   transform to be applied to image
-        display (bool):         if used for displaying (default False)
+        validate (bool):        if used for validation (default False)
 
     Returns:
         torch.utils.data.Dataset:   dataset object
     """
 
-    def __init__(self, data_path, window_size, transform=None, display=False):
+    def __init__(self, data_path, window_size, transform=None, validate=False):
         # read video paths and labels
         with open(data_path, 'r') as f:
             data = f.read().split()
             data = np.array(data).reshape(-1, 2)
 
         self.data = data
-        self.window_size = window_size
+        # if validation, return full video sequence
+        if validate:
+            self.window_size = 100
+        else:
+            self.window_size = window_size
+
         self.transform = transform
-        self.display = display
+        self.validate = validate
 
     def __len__(self):
         return len(self.data)
@@ -45,7 +50,7 @@ class AppearanceDataset(Dataset):
         y = np.array(list(y), dtype=int) - 1
         # grab random window
         #TODO should this be 100 - window_size + 1 ?
-        if self.display == True:
+        if self.validate == True:
             start = 0
         else:
             start = np.random.randint(100 - self.window_size)
@@ -59,7 +64,7 @@ class AppearanceDataset(Dataset):
         for i in range(self.window_size):
             s = obj_path + '{:02}'.format(start + i) + '-*.png'
             objs = glob.glob(s)
-            if self.display == True:
+            if self.validate == True:
                 objs.sort()
             x_objs = [cv2.resize(cv2.imread(x), (224,224)) for x in objs]
             if len(x_objs) > 0 and self.transform:
@@ -132,33 +137,41 @@ class Normalize():
         video = np.transpose(video, (0, 3, 1, 2))
         return video
 
-def get_loader(data_path, sample_rate, batch_size, num_workers, display=False):
+def get_loader(data_path, window_size, batch_size, num_workers):
     """Return dataloader for custom dataset.
 
     Args:
         data_path (string):     path to data annotations
-        sample_rate (int):      sample every ith frame
+        window_size (int):      size of sliding window
         batch_size (int):       number of instances in mini-batch
         num_workers (int):      number of subprocessed used for data loading
-        display (bool):         if used for displaying purposes
 
     Returns:
-        torch.utils.data.DataLoader:    dataloader for custom dataset
-        int:                            dataset size
+        torch.utils.data.DataLoader:    list of dataloaders for custom dataset
+        int:                            list of dataset sizes
     """
     # data augmentation
     data_transforms = transforms.Compose([
         CenterCrop((224,224)),
         Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ])
-    # create dataset object
-    dataset = AppearanceDataset(data_path, sample_rate, data_transforms,
-            display)
-    dataset_size = len(dataset)
+    # create dataset objects
+    datasets = {
+            'Train': AppearanceDataset(data_path, window_size,
+                data_transforms, validate=False),
+            'Valid': AppearanceDataset(data_path, window_size,
+                data_transforms, validate=True)
+            }
+    dataset_sizes = {x: len(datasets[x]) for x in ['Train', 'Valid']}
     # create dataloader
-    dataloader = DataLoader(dataset, batch_size, shuffle=display,
-            num_workers=num_workers, worker_init_fn=lambda _: np.random.seed())
-    return dataloader, dataset_size
+    dataloaders = {
+            'Train': DataLoader(datasets['Train'], batch_size, shuffle=True,
+                num_workers=num_workers, 
+                worker_init_fn=lambda _: np.random.seed()),
+            'Valid': DataLoader(datasets['Valid'], batch_size=1, shuffle=False,
+                num_workers=num_workers)
+            }
+    return dataloaders, dataset_sizes
 
 def main():
     """Main Function."""
@@ -172,9 +185,14 @@ def main():
     batch_size = 1
     num_workers = 0
 
-    dataloader, dataset_size = get_loader(data_path, window_size, batch_size, 
+    dataloaders, dataset_sizes = get_loader(data_path, window_size, batch_size, 
             num_workers)
-    print('Dataset size:', dataset_size)
+    print('Train:')
+    print('\tDataset size:', dataset_sizes['Train'])
+    print('\tDataLoader:', dataloaders['Train'])
+    print('Valid:')
+    print('\tDataset size:', dataset_sizes['Valid'])
+    print('\tDataLoader:', dataloaders['Valid'])
 
     def imshow(grid):
         grid = grid.numpy().transpose((1,2,0))
@@ -187,12 +205,12 @@ def main():
         plt.tight_layout()
         plt.show()
 
-    batch = next(iter(dataloader))
+    batch = next(iter(dataloaders['Valid']))
     X_frames, X_objs, labels = batch['X_frames'], batch['X_objs'], batch['y']
     print('X_frames:', X_frames.shape)
     print('X_objs:', X_objs.shape)
     print('labels:', labels.shape)
-    for i in range(window_size):
+    for i in range(X_frames.shape[1]):
         frame = X_frames[0][i]
         objs = X_objs[0][i]
         frame = frame.unsqueeze(0)
