@@ -9,48 +9,56 @@ def plot_data(losses, accuracies):
     """Plot training statistics.
 
     Args:
-        losses (list):      loss per training epoch
-        accuracies (list):  accuracy per training epoch
+        losses (dict):      training and validation losses per epoch
+        accuracies (dict):  training and validation accuracy per epoch
     """
     import matplotlib.pyplot as plt
 
     # convert accuracies to percentages
-    accuracies = [acc * 100 for acc in accuracies]
+    accuracies['Train'] = [acc * 100 for acc in accuracies['Train']]
+    accuracies['Valid'] = [acc * 100 for acc in accuracies['Valid']]
     plt.figure()
-    plt.subplot(121), plt.plot(losses)
+    plt.subplot(121)
+    plt.plot(losses['Train'], label='Training')
+    plt.plot(losses['Valid'], label='Validation')
     plt.ylim(0, 2)
-    plt.title('Training Losses')
-    plt.subplot(122), plt.plot(accuracies)
+    plt.title('Losses')
+    plt.legend(loc='upper right')
+
+    plt.subplot(122)
+    plt.plot(accuracies['Train'], label='Training')
+    plt.plot(accuracies['Valid'], label='Validation')
     plt.ylim(0, 100)
-    plt.title('Training Accuracy')
+    plt.title('Accuracy')
+    plt.legend(loc='upper left')
     plt.show()
 
 def main():
     """Main Function."""
     # dataloader parameters
     gpu = torch.cuda.is_available()
-    data_path = 'data/labels_done.txt'
-    batch_size = 1
+    data_path = 'data/labels.txt'
+    batch_size = 2
     num_workers = 2
     window_size = 10
     # network parameters
-    architecture = 'VGGNet11'
+    architecture = 'AlexNet'
     hidden_size = 512
     rnn_layers = 2
     pretrained = True
     finetuned = False
     # training parameters
     learning_rate = 1e-4
-    max_epochs = 100
+    max_epochs = 5
     criterion = nn.CrossEntropyLoss()
 
     # get dataloader
-    dataloader, dataset_size = get_loader(data_path, window_size, batch_size, 
+    dataloaders, dataset_sizes = get_loader(data_path, window_size, batch_size, 
             num_workers)
-    print('Dataset Size:', dataset_size)
+    print('Dataset Size:', dataset_sizes)
 
     # create network object
-    net = DynamicAttention(architecture, batch_size, hidden_size, rnn_layers, 
+    net = DynamicAttention(architecture, hidden_size, rnn_layers, 
             pretrained, finetuned)
     # create optimizer
     if not finetuned:
@@ -62,11 +70,12 @@ def main():
         optimizer = torch.optim.Adam(net.parameters(), learning_rate)
 
     # train the network
-    best_acc, losses, accuracies = train_network(net, dataloader, dataset_size,
+    best_acc, losses, accuracies = train_network(net, dataloaders, 
+            dataset_sizes,
             criterion, optimizer, max_epochs, gpu)
     # plot statistics
-#    print('Best Training Accuracy:', best_acc*100)
-#    plot_data(losses, accuracies)
+    print('Best Training Accuracy:', best_acc*100)
+    plot_data(losses, accuracies)
 
 if __name__ == '__main__':
     main()
