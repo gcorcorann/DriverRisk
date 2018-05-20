@@ -2,8 +2,8 @@
 import time
 import torch
 import torch.nn.functional as F
-from dataloader import get_loader
-from model import DynamicAttention
+from dataloader2 import get_loader
+from model2 import DynamicAttention
 
 def main():
     """MAIN FUNCTION."""
@@ -12,59 +12,51 @@ def main():
     batch_size = 1
     num_workers = 0
     sequence_len = 100
-    ws = 10  # window_size
 
-    dataloader, dataset_size = get_loader(data_path, sequence_len, batch_size,
-            num_workers, display=True)
+    # get DataLoader object
+    dataloader, dataset_size = get_loader(data_path, batch_size, num_workers,
+            shuffle=False)
     print('Dataset size:', dataset_size)
 
+    # get mini-batch
     it = iter(dataloader)
-    for _ in range(1):
-        batch = next(it)
+    batch = next(it)
+    # extract data
+    X_frames, X_objs, y = batch
+    X_frames = X_frames.transpose(0, 1).to(device)
+    X_objs = X_objs.transpose(0, 1).to(device)
+    y = y.transpose(0, 1).to(device)
 
-    X_frames = batch['X_frames'].transpose(0, 1).to(device)
-    X_objs = batch['X_objs'].transpose(0, 1).to(device)
-    print('X_frames:', X_frames.shape)
-    print('X_objs:', X_objs.shape)
-
-    # create model
-    model = 'AlexNet'
-    batch_size = 1
+    # create network
     hidden_size = 512
     rnn_layers = 2
-    net = DynamicAttention(model, batch_size, hidden_size, rnn_layers,
-            pretrained=True, finetuned=False).to(device)
-    net.load_state_dict(torch.load('data/model_params.pkl'))
+    pretrained = True
+    net = DynamicAttention(hidden_size, rnn_layers, pretrained).to(device)
+    # load weights
+    net.load_state_dict(torch.load('data/net_params.pkl'))
 
-    with open('outputs.txt', 'w') as f:
-        for i in range(1, sequence_len+1):
-            inp_frames = X_frames[i-ws if i-ws > 0 else 0: i]
-            inp_objs = X_objs[i-ws if i-ws > 0 else 0: i]
-            print('inp_frames:', inp_frames.shape)
-            print('inp_objs:', inp_objs.shape)
-    
-            state = net.init_hidden(device)
-    
-            start_time = time.time()
-            # for each timestep
-            for t in range(inp_frames.shape[0]):
-                frame = inp_frames[t]
-                objs = inp_objs[t]
-                output, state, attn = net.forward(frame, objs, state, device)
-    
+    # initialize hidden states
+    states = net.init_states(device)
+    with open('outputs/1.txt', 'w') as f:
+        start_time = time.time()
+        # for each timestep
+        for t in range(sequence_len):
+            frame = X_frames[t]
+            objs = X_objs[t]
+            output, states, attn = net.forward(frame, objs, states)
             output = F.softmax(output.squeeze(), dim=0)
             attn = attn.squeeze()
             print('output:', output.shape)
             print('attn:', attn.shape)
-            output = output.tolist()
-            attn = attn.tolist()
-            for item in output:
-                f.write(str(item) + ' ')
-            for item in attn:
-                f.write(str(item) + ' ')
-            f.write('\n')
-            fps = 1 / ((time.time() - start_time) + 1/30)
-            print('FPS:', fps)
+#            output = output.tolist()
+#            attn = attn.tolist()
+#            for item in output:
+#                f.write(str(item) + ' ')
+#            for item in attn:
+#                f.write(str(item) + ' ')
+#            f.write('\n')
+#            fps = 1 / ((time.time() - start_time) + 1/30)
+#            print('FPS:', fps)
 
 if __name__ == '__main__':
     main()

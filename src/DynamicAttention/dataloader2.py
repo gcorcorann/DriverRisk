@@ -18,30 +18,30 @@ class AppearanceDataset(Dataset):
 
     def __getitem__(self, idx):
         vid_path, labels = self.data[idx]
-        #obj_path = 'data/processed/objects/' + vid_path[22:-4] + '/'
+        obj_path = 'data/processed/objects/' + vid_path[22:-4] + '/'
         X_frames = np.load(vid_path)
         y = np.array(list(labels), dtype=int) - 1
         # YOLO objects
-        #X_objs = np.zeros((100, 20, 224, 224, 3), dtype=np.float32)
-        #for i in range(100):
-        #    s = obj_path + '{:02}'.format(i) + '-*.png'
-        #    objs = glob.glob(s)
-        #    objs.sort()
-        #    x_objs = [cv2.resize(cv2.imread(x), (224,224)) for x in objs]
-        #    # store in array
-        #    if len(x_objs) is not 0:
-        #        X_objs[i][:len(x_objs)] = x_objs
+        X_objs = np.zeros((100, 10, 224, 224, 3), dtype=np.float32)
+        for i in range(100):
+            s = obj_path + '{:02}'.format(i) + '-*.png'
+            objs = glob.glob(s)
+            objs.sort()
+            # TODO remove if statement and just read 10 objects
+            x_objs = [cv2.resize(cv2.imread(x), (224,224)) for i, x in
+                    enumerate(objs) if i < 10]
+            # store in array
+            if len(x_objs) is not 0:
+                X_objs[i][:len(x_objs)] = x_objs
 
-        #X_objs = X_objs.reshape(-1, 224, 224, 3)
         # transform data
         if self.transform:
             X_frames = self.transform(X_frames)
             #TODO don't transform all objects (since a lot of zeros)
-            #X_objs = self.transform(X_objs)
-            #X_objs = X_objs.reshape(100, 20, 3, 224, 224)
+            X_objs = self.transform(X_objs.reshape(-1, 224, 224, 3))
+            X_objs = X_objs.reshape(100, 10, 3, 224, 224)
 
-        return X_frames, y
-        #return X_frames, X_objs, y
+        return X_frames, X_objs, y
 
 class CenterCrop():
     """Crop frames in video sequence at the center.
@@ -99,7 +99,7 @@ class Normalize():
         video = np.transpose(video, (0, 3, 1, 2))
         return video
 
-def get_loader(data_path, batch_size, num_workers):
+def get_loader(data_path, batch_size, num_workers, shuffle=True):
     data_transforms = transforms.Compose([
         CenterCrop((224,224)),
         Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
@@ -115,12 +115,16 @@ def test():
     import time
 
     data_path = 'data/labels.txt'
-    batch_size = 1
-    num_workers = 2
+    batch_size = 2
+    num_workers = 0
     data_loader, dataset_size = get_loader(data_path, batch_size, num_workers)
     start = time.time()
     for data in data_loader:
-        X_frames, y = data
+        X_frames, X_objs, y = data
+        print('X_frames:', X_frames.shape)
+        print('X_objs:', X_objs.shape)
+        print('y:', y.shape)
+        break
 
     elapsed_time = time.time() - start
     print('Elapsed time:', elapsed_time)
