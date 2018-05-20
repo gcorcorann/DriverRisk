@@ -5,6 +5,12 @@ import torch.nn.functional as F
 from dataloader2 import get_loader
 from model2 import DynamicAttention
 
+# set seed for reproducibility
+seed = 0
+torch.manual_seed(seed)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(seed)
+
 def main():
     """MAIN FUNCTION."""
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
