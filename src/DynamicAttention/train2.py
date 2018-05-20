@@ -82,6 +82,8 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
         # store stats
         losses.append(epoch_loss)
         accuracies.append(epoch_acc)
+        # increase patience
+        patience += 1
         # save best accuracy
         if epoch_acc > best_acc:
             best_acc = epoch_acc
