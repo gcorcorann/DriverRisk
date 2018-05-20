@@ -44,9 +44,9 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
         # iterate over data
         for i, data in enumerate(dataloader):
             # get the inputs and labels, reshape [seq_len, batch_size, *]
-            X_frames, _, y = data
+            X_frames, X_objs, y = data
             X_frames = X_frames.transpose(0, 1).to(device)
-            #X_objs = X_objs.transpose(0, 1).to(device)
+            X_objs = X_objs.transpose(0, 1).to(device)
             y = y.transpose(0, 1).to(device)
             # zero the parameter gradients
             optimizer.zero_grad()
@@ -59,10 +59,9 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
             correct = 0
             for i in range(sequence_len):
                 frame = X_frames[i]
-                #objs = X_objs[i]
+                objs = X_objs[i]
                 # forward pass
-                output = net.forward(frame, states)
-#                output, states, _ = net.forward(frame, objs, states)
+                output, states, _ = net.forward(frame, objs, states)
                 # loss + prediction
                 loss += criterion(output, y[i])
                 _, y_pred = torch.max(output, 1)

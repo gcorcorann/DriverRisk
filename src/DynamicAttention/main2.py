@@ -40,13 +40,11 @@ def main():
     print('Dataset Size:', dataset_size)
 
     # create network object
-    net = SingleStream(hidden_size, rnn_layers, pretrained)
-    #net = DynamicAttention(hidden_size, rnn_layers, pretrained)
+    net = DynamicAttention(hidden_size, rnn_layers, pretrained)
     # create optimizer
-    p = list(net.lstm.parameters()) + list(net.fc.parameters())
-#    p = list(net.embedding.parameters()) + list(net.attn.parameters()) \
-#            + list(net.attn_combine.parameters()) \
-#            + list(net.lstm.parameters()) + list(net.fc.parameters())
+    p = list(net.embedding.parameters()) + list(net.attn.parameters()) \
+            + list(net.attn_combine.parameters()) \
+            + list(net.lstm.parameters()) + list(net.fc.parameters())
     optimizer = torch.optim.Adam(p, learning_rate)
 
     # train the network

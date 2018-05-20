@@ -36,27 +36,25 @@ def main():
     net.load_state_dict(torch.load('data/net_params.pkl'))
 
     # initialize hidden states
-    states = net.init_states(device)
+    states = net.init_states(batch_size, device)
     with open('outputs/1.txt', 'w') as f:
-        start_time = time.time()
         # for each timestep
         for t in range(sequence_len):
+            start_time = time.time()
             frame = X_frames[t]
             objs = X_objs[t]
             output, states, attn = net.forward(frame, objs, states)
             output = F.softmax(output.squeeze(), dim=0)
             attn = attn.squeeze()
-            print('output:', output.shape)
-            print('attn:', attn.shape)
-#            output = output.tolist()
-#            attn = attn.tolist()
-#            for item in output:
-#                f.write(str(item) + ' ')
-#            for item in attn:
-#                f.write(str(item) + ' ')
-#            f.write('\n')
-#            fps = 1 / ((time.time() - start_time) + 1/30)
-#            print('FPS:', fps)
+            output = output.tolist()
+            attn = attn.tolist()
+            for item in output:
+                f.write(str(item) + ' ')
+            for item in attn:
+                f.write(str(item) + ' ')
+            f.write('\n')
+            fps = 1 / ((time.time() - start_time) + 1/30)
+            print('FPS:', fps)
 
 if __name__ == '__main__':
     main()
