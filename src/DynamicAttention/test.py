@@ -34,6 +34,8 @@ def main():
     net = DynamicAttention(hidden_size, rnn_layers, pretrained).to(device)
     # load weights
     net.load_state_dict(torch.load('data/net_params.pkl'))
+    # set to evaluation mode
+    net = net.eval()
 
     # initialize hidden states
     states = net.init_states(batch_size, device)
@@ -43,11 +45,14 @@ def main():
             start_time = time.time()
             frame = X_frames[t]
             objs = X_objs[t]
+            print('objs:', objs[0, :, 0, 100, 100])
             output, states, attn = net.forward(frame, objs, states)
             output = F.softmax(output.squeeze(), dim=0)
             attn = attn.squeeze()
             output = output.tolist()
             attn = attn.tolist()
+            print('output:', output)
+            print('attn:', attn)
             for item in output:
                 f.write(str(item) + ' ')
             for item in attn:
@@ -55,6 +60,7 @@ def main():
             f.write('\n')
             fps = 1 / ((time.time() - start_time) + 1/30)
             print('FPS:', fps)
+            print()
 
 if __name__ == '__main__':
     main()
