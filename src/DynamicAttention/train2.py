@@ -57,15 +57,19 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
             # for each timestep
             loss = 0
             correct = 0
-            for i in range(sequence_len):
-                frame = X_frames[i]
-                objs = X_objs[i]
+            for t in range(sequence_len):
+                frame = X_frames[t]
+                objs = X_objs[t]
                 # forward pass
-                output, states, _ = net.forward(frame, objs, states)
+                output, states, attn = net.forward(frame, objs, states)
+                if i == 0 and t == 10:
+                    print('objs:', objs[:, :, 0, 100, 100])
+                    print('attn:', attn)
+                    print()
                 # loss + prediction
-                loss += criterion(output, y[i])
+                loss += criterion(output, y[t])
                 _, y_pred = torch.max(output, 1)
-                correct += (y_pred == y[i]).sum().item()
+                correct += (y_pred == y[t]).sum().item()
 
             # backwards + optimize
             loss.backward()
@@ -89,7 +93,7 @@ def train_network(net, dataloader, dataset_size, criterion, optimizer,
             best_net_wts = copy.deepcopy(net.state_dict())
             patience = 0
 
-        if patience == 5:
+        if patience == 10:
             break
 
     # print elapsed time
