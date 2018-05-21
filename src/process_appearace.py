@@ -16,7 +16,7 @@ def extract_objects(obj_dir, frame, frame_idx, objs):
 
 def process_video(vid_path):
     # make new directory for all objects in this video
-    obj_dir = 'data/processed/objects/' + vid_path[12:-4]
+    obj_dir = 'data/processed/appearance/objects/' + vid_path[12:-4]
     os.system('mkdir ' + obj_dir)
     # open video
     cap = cv2.VideoCapture(vid_path)
@@ -43,18 +43,19 @@ def process_video(vid_path):
         X.append(frame)
 
     X = np.array(X)
-    save_path = 'data/processed/videos/' + vid_path[12:-3] + 'npy'
+    save_path = 'data/processed/appearance/videos/' + vid_path[12:-3] + 'npy'
     np.save(save_path, X)
 
 def make_directories():
-    # create folders for processed videos
-    os.system('rm -fr data/processed')
-    os.system('mkdir data/processed')
-    os.system('mkdir data/processed/objects data/processed/videos')
-    os.system('mkdir data/processed/videos/positive')
-    os.system('mkdir data/processed/videos/negative')
-    os.system('mkdir data/processed/objects/positive')
-    os.system('mkdir data/processed/objects/negative')
+    # create folders for processed objects and videos
+    os.system('rm -fr data/processed/appearance')
+    os.system('mkdir data/processed/appearance')
+    os.system('mkdir data/processed/appearance/objects')
+    os.system('mkdir data/processed/appearance/videos')
+    os.system('mkdir data/processed/appearance/videos/positive')
+    os.system('mkdir data/processed/appearance/videos/negative')
+    os.system('mkdir data/processed/appearance/objects/positive')
+    os.system('mkdir data/processed/appearance/objects/negative')
 
 def main():
     """Main Function."""
@@ -67,7 +68,7 @@ def main():
     # make processed data directories
     make_directories()
 
-    # process video
+    # process each video
     for i, vid_path in enumerate(all_vids):
         print('i =', i)
         process_video(vid_path)
