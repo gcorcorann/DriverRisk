@@ -106,7 +106,7 @@ def get_loader(data_path, batch_size, num_workers, shuffle=True):
         ])
     dataset = AppearanceDataset(data_path, data_transforms)
     dataset_size = len(dataset)
-    dataloader = DataLoader(dataset, batch_size, shuffle=True,
+    dataloader = DataLoader(dataset, batch_size, shuffle=shuffle,
             num_workers=num_workers)
     return dataloader, dataset_size
 

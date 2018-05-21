@@ -5,6 +5,12 @@ from model2 import SingleStream, DynamicAttention
 from train2 import train_network
 import matplotlib.pyplot as plt
 
+# set seed for reproducibility
+seed = 0
+torch.manual_seed(seed)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(seed)
+
 def plot_data(losses, accuracies):
     accuracies = [acc * 100 for acc in accuracies]
 
@@ -23,7 +29,7 @@ def plot_data(losses, accuracies):
 def main():
     """Main Function."""
     # dataloader parameters
-    data_path = 'data/labels.txt'
+    data_path = 'data/labels2.txt'
     batch_size = 2
     num_workers = 1
     # network parameters
@@ -36,7 +42,8 @@ def main():
     criterion = nn.CrossEntropyLoss()
 
     # get dataloader
-    dataloader, dataset_size = get_loader(data_path, batch_size, num_workers)
+    dataloader, dataset_size = get_loader(data_path, batch_size, num_workers,
+            shuffle=True)
     print('Dataset Size:', dataset_size)
 
     # create network object
