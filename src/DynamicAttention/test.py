@@ -14,7 +14,7 @@ if torch.cuda.is_available():
 def main():
     """MAIN FUNCTION."""
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    data_path = 'data/labels.txt'
+    data_path = 'data/labels2.txt'
     batch_size = 1
     num_workers = 0
     sequence_len = 100
@@ -26,47 +26,48 @@ def main():
 
     # get mini-batch
     it = iter(dataloader)
-    batch = next(it)
-    # extract data
-    X_frames, X_objs, y = batch
-    X_frames = X_frames.transpose(0, 1).to(device)
-    X_objs = X_objs.transpose(0, 1).to(device)
-    y = y.transpose(0, 1).to(device)
+    for i, batch in enumerate(dataloader):
+        # extract data
+        X_frames, X_objs, y = batch
+        X_frames = X_frames.transpose(0, 1).to(device)
+        X_objs = X_objs.transpose(0, 1).to(device)
+        y = y.transpose(0, 1).to(device)
 
-    # create network
-    hidden_size = 512
-    rnn_layers = 2
-    pretrained = True
-    net = DynamicAttention(hidden_size, rnn_layers, pretrained).to(device)
-    # load weights
-    net.load_state_dict(torch.load('data/net_params.pkl'))
-    # set to evaluation mode
-    net = net.eval()
+        # create network
+        hidden_size = 512
+        rnn_layers = 2
+        pretrained = True
+        net = DynamicAttention(hidden_size, rnn_layers, pretrained).to(device)
+        # load weights
+        net.load_state_dict(torch.load('data/net_params.pkl'))
+        # set to evaluation mode
+        net = net.eval()
 
-    # initialize hidden states
-    states = net.init_states(batch_size, device)
-    with open('outputs/1.txt', 'w') as f:
-        # for each timestep
-        for t in range(sequence_len):
-            start_time = time.time()
-            frame = X_frames[t]
-            objs = X_objs[t]
-            print('objs:', objs[0, :, 0, 100, 100])
-            output, states, attn = net.forward(frame, objs, states)
-            output = F.softmax(output.squeeze(), dim=0)
-            attn = attn.squeeze()
-            output = output.tolist()
-            attn = attn.tolist()
-            print('output:', output)
-            print('attn:', attn)
-            for item in output:
-                f.write(str(item) + ' ')
-            for item in attn:
-                f.write(str(item) + ' ')
-            f.write('\n')
-            fps = 1 / ((time.time() - start_time) + 1/30)
-            print('FPS:', fps)
-            print()
+        # initialize hidden states
+        states = net.init_states(batch_size, device)
+        s = 'outputs/{}.txt'.format(i+1)
+        with open(s, 'w') as f:
+            # for each timestep
+            for t in range(sequence_len):
+                start_time = time.time()
+                frame = X_frames[t]
+                objs = X_objs[t]
+                print('objs:', objs[0, :, 0, 100, 100])
+                output, states, attn = net.forward(frame, objs, states)
+                output = F.softmax(output.squeeze(), dim=0)
+                attn = attn.squeeze()
+                output = output.tolist()
+                attn = attn.tolist()
+                print('output:', output)
+                print('attn:', attn)
+                for item in output:
+                    f.write(str(item) + ' ')
+                for item in attn:
+                    f.write(str(item) + ' ')
+                f.write('\n')
+                fps = 1 / ((time.time() - start_time) + 1/30)
+                print('FPS:', fps)
+                print()
 
 if __name__ == '__main__':
     main()
