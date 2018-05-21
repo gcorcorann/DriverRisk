@@ -24,10 +24,10 @@ def draw_graph(w,h, label):
         graph[2*h//4:, :] = (0, 255, 255)
         graph[3*h//4:, :] = (150, 215, 215)
 
-
     cv2.line(graph, (0, h//4), (300,h//4), (0,0,0), 2)
     cv2.line(graph, (0, 2*h//4), (300,2*h//4), (0,0,0), 2)
     cv2.line(graph, (0, 3*h//4), (300,3*h//4), (0,0,0), 2)
+    cv2.line(graph, (0, h), (300,h), (0,0,0), 2)
     cv2.putText(graph, 'Low Risk', (75,7*h//8),
             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2)
     cv2.putText(graph, 'Moderate Risk', (40,5*h//8),
@@ -40,22 +40,24 @@ def draw_graph(w,h, label):
 
 def draw_objects(frame, objs, attn, color_map):
     attn = 1 - attn
-    attn *= 255
+    attn *= 160
+    attn += 255-160
     attn = attn.astype(np.uint8)
+    print(attn)
     attn = cv2.applyColorMap(attn, color_map)
-    blend = 0.8
+    print('objs:', len(objs))
     for i, bb in enumerate(objs):
         left, top, right, bot = bb
         a = attn[i][0].astype(float)
-        # alpha blending
-        frame[top:bot, left:right] = a * blend + (1-blend) * frame[top:bot,
-                left:right]
+        cv2.rectangle(frame, (left,top), (right,bot), a, 5)
+        if i == 9:
+            break
 
 def draw_legend(w, h, color_map):
-    legend = np.ones((h, 300, 3), dtype=np.uint8) * 255
+    legend = np.ones((h, 300, 3), dtype=np.uint8) * 150
     # color scale
     r = np.arange(1, h*7//9+1)
-    r = r / np.max(r) * 255
+    r = r / np.max(r) * 160 + 255-160
     r = r.astype(np.uint8)
     r = cv2.applyColorMap(r, color_map)
     legend[h//9:h*8//9, 300//5:300*4//5] = r
@@ -65,11 +67,10 @@ def draw_legend(w, h, color_map):
             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2)
     cv2.putText(legend, 'Low Attention', (40,h*16//17), 
             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2)
-    
     return legend
 
 def draw_plots(h, w, probs_list):
-    grid = np.ones((260, w, 3), dtype=np.uint8) * 255
+    grid = np.ones((260, w, 3), dtype=np.uint8) * 150
 
     text_size = 0.75
     thickness = 2
@@ -113,58 +114,61 @@ def draw_labels(grid, probs_list):
 
 def main():
     """Main Function."""
-    fps = 10
+    fps = 23
     color_map = cv2.COLORMAP_HOT
-    vid_path = 'data/videos/positive/000155.mp4'
-    print('Video Path:', vid_path)
+    with open('data/labels2.txt', 'r') as f:
+        for i, line in enumerate(f):
+            vid_path, _ = line.split()
+            vid_path = vid_path.replace("processed/", "")
+            vid_path = vid_path.replace("npy", "mp4")
 
-    objs_path = 'data/objects/' + vid_path[12:-3] + 'txt'
-    with open(objs_path, 'r') as f:
-        objs_data = f.read().split('\n')[:-1]
+            print('iteration: {}, Video Path: {}'.format(i+1, vid_path))
 
-    with open('outputs_positive_000155.txt', 'r') as f:
-        out_data = f.read().split('\n')[:-1]
-
-    attn_scale = [1, 5, 50, 100]
-    #attn_scale = [0.25, 0.50, 0.75, 1.0]
-    probs_list = []
-    # open video
-    cap = cv2.VideoCapture(vid_path)
-    for i in range(100):
-        _, frame = cap.read()
-        h, w = frame.shape[:2]
-        # inputs from algorithm
-        frame_data = np.float32(out_data[i].split())
-        probs = frame_data[:4]
-        #probs = F.softmax(torch.randn(1, 4).squeeze(), dim=0).numpy()
-        print(probs)
-        # store in list
-        probs_list.append(probs)
-        # label
-        y_pred = np.argmax(probs)
-        # attention
-        attn = frame_data[4:]
-#        attn = torch.randn(1, 20)
-#        attn = attn.sigmoid()
-        #TODO attention levels are mostly all zeros
-        attn *= attn_scale[y_pred]
-        print(attn)
-
-        # draw labels graph
-        graph = draw_graph(w,h,y_pred+1)
-        # draw YOLO objects
-        objs = np.array(objs_data[i].split(), dtype=int).reshape(-1, 4)
-        draw_objects(frame, objs, attn, color_map)
-        # draw scale legend
-        legend = draw_legend(w, h, color_map)
-        frame = np.hstack((legend, frame, graph))
-
-        # draw probability plots
-        plot = draw_plots(*frame.shape[:2], probs_list)
-        frame = np.vstack((frame, plot))
-        cv2.imshow('Frame', frame)
-        #cv2.waitKey(int(1/fps*1000))
-        cv2.waitKey(0)
+            objs_path = 'data/objects/' + vid_path[12:-3] + 'txt'
+            with open(objs_path, 'r') as f:
+                objs_data = f.read().split('\n')[:-1]
+        
+            s = 'outputs/{}.txt'.format(i+1)
+            with open(s, 'r') as f:
+                out_data = f.read().split('\n')[:-1]
+        
+            #attn_scale = [1,1,1,1]
+            attn_scale = [0.25, 0.50, 0.75, 1.0]
+            probs_list = []
+            # open video
+            cap = cv2.VideoCapture(vid_path)
+            for i in range(100):
+                print('Frame Index: {}'.format(i+1))
+                _, frame = cap.read()
+                h, w = frame.shape[:2]
+                # inputs from algorithm
+                frame_data = np.float32(out_data[i].split())
+                probs = frame_data[:4]
+                #probs = F.softmax(torch.randn(1, 4).squeeze(), dim=0).numpy()
+                # store in list
+                probs_list.append(probs)
+                # label
+                y_pred = np.argmax(probs)
+                # attention
+                attn = frame_data[4:]
+                attn *= attn_scale[y_pred]
+                print(attn)
+        
+                # draw labels graph
+                graph = draw_graph(w,h,y_pred+1)
+                # draw YOLO objects
+                objs = np.array(objs_data[i].split(), dtype=int).reshape(-1, 4)
+                draw_objects(frame, objs, attn, color_map)
+                # draw scale legend
+                legend = draw_legend(w, h, color_map)
+                frame = np.hstack((legend, frame, graph))
+        
+                # draw probability plots
+                plot = draw_plots(*frame.shape[:2], probs_list)
+                frame = np.vstack((frame, plot))
+                cv2.imshow('Frame', frame)
+                cv2.waitKey(int(1/fps*1000))
+                #cv2.waitKey(0)
 
 if __name__ == '__main__':
     main()
