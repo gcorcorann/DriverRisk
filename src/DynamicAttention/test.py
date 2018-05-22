@@ -2,7 +2,7 @@
 import time
 import torch
 import torch.nn.functional as F
-from dataloader2 import get_loader
+from dataloader2 import get_loaders
 from model2 import DynamicAttention
 
 # set seed for reproducibility
@@ -14,19 +14,20 @@ if torch.cuda.is_available():
 def main():
     """MAIN FUNCTION."""
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    data_path = 'data/labels2.txt'
+    train_path = 'data/train_data.txt'
+    valid_path = 'data/valid_data.txt'
     batch_size = 1
     num_workers = 0
     sequence_len = 100
 
     # get DataLoader object
-    dataloader, dataset_size = get_loader(data_path, batch_size, num_workers,
-            shuffle=False)
-    print('Dataset size:', dataset_size)
+    dataloaders, dataset_sizes = get_loaders(train_path, valid_path, 
+            batch_size, num_workers, shuffle=False)
+    print('Dataset size:', dataset_sizes)
 
     # get mini-batch
     it = iter(dataloader)
-    for i, batch in enumerate(dataloader):
+    for i, batch in enumerate(dataloaders['Valid']):
         # extract data
         X_frames, X_objs, y = batch
         X_frames = X_frames.transpose(0, 1).to(device)

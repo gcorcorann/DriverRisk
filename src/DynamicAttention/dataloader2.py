@@ -99,27 +99,32 @@ class Normalize():
         video = np.transpose(video, (0, 3, 1, 2))
         return video
 
-def get_loader(data_path, batch_size, num_workers, shuffle=True):
+def get_loaders(train_path, valid_path, batch_size, num_workers, shuffle=True):
     data_transforms = transforms.Compose([
         CenterCrop((224,224)),
         Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ])
-    dataset = AppearanceDataset(data_path, data_transforms)
-    dataset_size = len(dataset)
-    dataloader = DataLoader(dataset, batch_size, shuffle=shuffle,
-            num_workers=num_workers)
-    return dataloader, dataset_size
+    datasets = {
+            'Train': AppearanceDataset(train_path, data_transforms),
+            'Valid': AppearanceDataset(valid_path, data_transforms)
+            }
+    dataset_sizes = {x: len(datasets[x]) for x in ['Train', 'Valid']}
+    dataloaders = {x: DataLoader(datasets[x], batch_size, shuffle=shuffle,
+        num_workers=num_workers) for x in ['Train', 'Valid']}
+    return dataloaders, dataset_sizes
 
 def test():
     """Test Function."""
     import time
 
-    data_path = 'data/labels.txt'
+    train_path = 'data/train_data.txt'
+    valid_path = 'data/valid_data.txt'
     batch_size = 2
     num_workers = 0
-    data_loader, dataset_size = get_loader(data_path, batch_size, num_workers)
+    data_loaders, dataset_sizes = get_loaders(train_path, valid_path, 
+            batch_size, num_workers)
     start = time.time()
-    for data in data_loader:
+    for data in data_loaders['Valid']:
         X_frames, X_objs, y = data
         print('X_frames:', X_frames.shape)
         print('X_objs:', X_objs.shape)
