@@ -28,8 +28,7 @@ class AppearanceDataset(Dataset):
             objs = glob.glob(s)
             objs.sort()
             # TODO remove if statement and just read 10 objects
-            x_objs = [cv2.resize(cv2.imread(x), (224,224)) for i, x in
-                    enumerate(objs) if i < 10]
+            x_objs = [cv2.resize(cv2.imread(x), (224,224)) for x in objs]
             # store in array
             if len(x_objs) is not 0:
                 X_objs[i][:len(x_objs)] = x_objs

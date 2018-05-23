@@ -13,6 +13,9 @@ def extract_objects(obj_dir, frame, frame_idx, objs):
         save_path = obj_dir + '/{:02}'.format(frame_idx) + '-{:02}'.format(i) \
                 + '.png'
         cv2.imwrite(save_path, img_obj)
+        # only store up to 10 objects
+        if i == 9:
+            break
 
 def process_video(vid_path):
     # make new directory for all objects in this video

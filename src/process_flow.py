@@ -13,6 +13,9 @@ def extract_objects(obj_dir, frame, frame_idx, objs):
         save_path = obj_dir + '/{:02}'.format(frame_idx) + '-{:02}'.format(i) \
                 + '.png'
         cv2.imwrite(save_path, img_obj)
+        # only store up to 10 objects
+        if i == 9:
+            break
 
 def process_video(vid_path):
     # make new directory for all objects in this video
@@ -61,10 +64,11 @@ def process_video(vid_path):
         flow_img[:, :, 2] = np.uint8(mag)
 
         # extrack objects in frame
-        extract_objects(obj_dir, flow_img, i, frame_objs)
+        #extract_objects(obj_dir, flow_img, i, frame_objs)
 
         # store copy
-        X_flow.append(np.copy(flow_img))
+        flow_img_resized = cv2.resize(flow_img, (256,256))
+        X_flow.append(np.copy(flow_img_resized))
         # set current image to previous
         gray1 = gray2
 
