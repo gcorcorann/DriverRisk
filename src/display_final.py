@@ -114,9 +114,9 @@ def draw_labels(grid, probs_list):
 
 def main():
     """Main Function."""
-    fps = 23
+    fps = 10
     color_map = cv2.COLORMAP_HOT
-    with open('data/labels2.txt', 'r') as f:
+    with open('data/valid_data.txt', 'r') as f:
         for i, line in enumerate(f):
             vid_path, _ = line.split()
             vid_path = vid_path.replace("processed/", "")
