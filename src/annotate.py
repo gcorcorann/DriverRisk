@@ -217,7 +217,7 @@ class Annotate:
         """Run video annotator."""
         num_videos = len(self.video_paths)
         # current video index
-        while self.vid_idx is not num_videos:
+        while self.vid_idx is not num_videos-1:
             print('Video index: {}/{}'.format(self.vid_idx+1, num_videos))
             self.print_message()
             # annotate current video
