@@ -110,6 +110,4 @@ def train_network(net, dataloaders, dataset_sizes, criterion, optimizer,
         time_elapsed // 60, time_elapsed % 60))
     # load best network
     net.load_state_dict(best_net_wts)
-    # save to disk
-    torch.save(net.state_dict(), 'data/net_params.pkl')
-    return best_acc, losses, accuracies
+    return net, best_acc, losses, accuracies
