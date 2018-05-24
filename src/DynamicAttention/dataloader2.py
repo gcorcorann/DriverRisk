@@ -18,7 +18,8 @@ class AppearanceDataset(Dataset):
 
     def __getitem__(self, idx):
         vid_path, labels = self.data[idx]
-        obj_path = 'data/processed/objects/' + vid_path[22:-4] + '/'
+        print(vid_path)
+        obj_path = vid_path[:26] + 'objects/' + vid_path[33:-4] + '/'
         X_frames = np.load(vid_path)
         y = np.array(list(labels), dtype=int) - 1
         # YOLO objects
@@ -27,7 +28,6 @@ class AppearanceDataset(Dataset):
             s = obj_path + '{:02}'.format(i) + '-*.png'
             objs = glob.glob(s)
             objs.sort()
-            # TODO remove if statement and just read 10 objects
             x_objs = [cv2.resize(cv2.imread(x), (224,224)) for x in objs]
             # store in array
             if len(x_objs) is not 0:
@@ -118,7 +118,7 @@ def test():
 
     train_path = 'data/train_data.txt'
     valid_path = 'data/valid_data.txt'
-    batch_size = 2
+    batch_size = 1
     num_workers = 0
     data_loaders, dataset_sizes = get_loaders(train_path, valid_path, 
             batch_size, num_workers)
