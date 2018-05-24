@@ -18,12 +18,11 @@ class AppearanceDataset(Dataset):
 
     def __getitem__(self, idx):
         vid_path, labels = self.data[idx]
-        print(vid_path)
         obj_path = vid_path[:26] + 'objects/' + vid_path[33:-4] + '/'
         X_frames = np.load(vid_path)
         y = np.array(list(labels), dtype=int) - 1
         # YOLO objects
-        X_objs = np.zeros((100, 10, 224, 224, 3), dtype=np.float32)
+        X_objs = np.zeros((100, 10, 224, 224, 3), dtype=np.uint8)
         for i in range(100):
             s = obj_path + '{:02}'.format(i) + '-*.png'
             objs = glob.glob(s)
@@ -36,7 +35,6 @@ class AppearanceDataset(Dataset):
         # transform data
         if self.transform:
             X_frames = self.transform(X_frames)
-            #TODO don't transform all objects (since a lot of zeros)
             X_objs = self.transform(X_objs.reshape(-1, 224, 224, 3))
             X_objs = X_objs.reshape(100, 10, 3, 224, 224)
 
@@ -91,9 +89,9 @@ class Normalize():
         Returns:
             ndarray: Normalized video.
         """
-        video = video / 255
-        video = (video - self.mean) / self.std
-        video = np.asarray(video, dtype=np.float32)
+        video = np.divide(video, 255, dtype=np.float32)
+        np.subtract(video, self.mean, out=video, dtype=np.float32)
+        np.divide(video, self.std, out=video, dtype=np.float32)
         # reformat [numChannels x Height x Width]
         video = np.transpose(video, (0, 3, 1, 2))
         return video
@@ -128,10 +126,9 @@ def test():
         print('X_frames:', X_frames.shape)
         print('X_objs:', X_objs.shape)
         print('y:', y.shape)
-        break
 
     elapsed_time = time.time() - start
-    print('Elapsed time:', elapsed_time)
+    print('Elapsed time:', elapsed_time, ' seconds.')
 
 if __name__ == '__main__':
     test()
