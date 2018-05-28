@@ -10,45 +10,33 @@ class AppearanceDataset(Dataset):
 
     Args:
         data_path (string):     path to text file with annotations
-        window_size (int):      length of sequence in window
         transform (callable):   transform to be applied to image
 
     Returns:
         torch.utils.data.Dataset:   dataset object
     """
 
-    def __init__(self, data_path, window_size, transform=None):
+    def __init__(self, data_path, transform=None):
         # read video paths and labels
         with open(data_path, 'r') as f:
             data = f.read().split()
             data = np.array(data).reshape(-1, 2)
 
         self.data = data
-        self.window_size = window_size
         self.transform = transform
 
     def __len__(self):
         return len(self.data)
 
     def __getitem__(self, idx):
-        # read video path
-        vid_path = self.data[idx, 0]
-        # load video and read label
-        X = np.load(vid_path)
-        y = self.data[idx, 1]
-        # convert string to array of ints [0-3]
-        y = np.array(list(y), dtype=int) - 1
-        # grab random window
-        start = np.random.randint(X.shape[0] - self.window_size)
-        X = X[start: start+self.window_size]
-        y = y[start: start+self.window_size]
+        vid_path, labels = self.data[idx]
+        X_frames = np.load(vid_path)
+        y = np.array(list(labels), dtype=int) - 1
         # transform data
         if self.transform:
-            X = self.transform(X)
+            X_frames = self.transform(X_frames)
 
-        # store in sample
-        sample = {'X': X, 'y': y}
-        return sample
+        return X_frames, y
 
 class CenterCrop():
     """Crop frames in video sequence at the center.
@@ -60,7 +48,7 @@ class CenterCrop():
         assert isinstance(output_size, tuple)
         self.output_size = output_size
 
-    def __call__(self, video):
+    def __call__(self, X_frames):
         """
         Args:
             video (ndarray): Video to be center-cropped.
@@ -69,13 +57,13 @@ class CenterCrop():
             ndarray: Center-cropped video.
         """
         # video dimensions
-        h, w = video.shape[1:3]
+        h, w = X_frames.shape[1:3]
         new_h, new_w = self.output_size
         top = (h - new_h) // 2
         left = (w - new_w) // 2
         # center-crop each frame
-        video_new = video[:, top:top+new_h, left:left+new_w, :]
-        return video_new
+        X_frames = X_frames[:, top:top+new_h, left:left+new_w, :]
+        return X_frames
 
 class RandomCrop():
     """Crop randomly the frames in a video sequence.
@@ -86,7 +74,7 @@ class RandomCrop():
         assert isinstance(output_size, tuple)
         self.output_size = output_size
 
-    def __call__(self, video):
+    def __call__(self, X_frames):
         """
         Args:
             video (ndarray): Video to be cropped.
@@ -94,13 +82,13 @@ class RandomCrop():
             ndarray: Cropped video.
         """
         # video dimensions
-        h, w = video.shape[1:3]
+        h, w = X_frames.shape[1:3]
         new_h, new_w = self.output_size
         top = np.random.randint(0, h - new_h)
         left = np.random.randint(0, w - new_w)
         # randomly crop each frame
-        video_new = video[:, top:top+new_h, left:left+new_w, :]
-        return video_new
+        X_frames = X_frames[:, top:top+new_h, left:left+new_w, :]
+        return X_frames
 
 class RandomHorizontalFlip():
     """Horizontally flip a video sequence.
@@ -110,7 +98,7 @@ class RandomHorizontalFlip():
     def __init__(self, p=0.5):
         self.p = p
 
-    def __call__(self, video):
+    def __call__(self, X_frames):
         """
         Args:
             video (ndarray): Video to be flipped.
@@ -120,10 +108,10 @@ class RandomHorizontalFlip():
         # check to perform flip
         if np.random.random_sample() < self.p:
             # flip video
-            video_new = np.flip(video, 2)
-            return video_new
+            video_new = np.flip(X_frames, 2)
+            return X_frames
 
-        return video
+        return X_frames
 
 class RandomRotation():
     """Rotate video sequence by an angle.
@@ -135,25 +123,23 @@ class RandomRotation():
         assert isinstance(degrees, numbers.Real)
         self.degrees = degrees
 
-    def __call__(self, video):
+    def __call__(self, X_frames):
         """
         Args:
             video (ndarray): Video to be rotated.
         Returns:
             ndarray: Randomly rotated video.
         """
-        # hold transformed video
-        video_new = np.zeros_like(video)
-        h, w = video.shape[1:3]
+        h, w = X_frames.shape[1:3]
         # random rotation
         angle = np.random.uniform(-self.degrees, self.degrees)
         # create rotation matrix with center point at the center of frame
         M = cv2.getRotationMatrix2D((w//2,h//2), angle, 1)
         # rotate each frame
-        for idx, frame in enumerate(video):
-            video_new[idx] = cv2.warpAffine(frame, M, (w,h))
+        for i, frame in enumerate(X_frames):
+            X_frames[i] = cv2.warpAffine(frame, M, (w,h))
         
-        return video_new
+        return X_frames
 
 class Normalize():
     """Normalize video with mean and standard deviation.
@@ -170,61 +156,54 @@ class Normalize():
         self.mean = np.array(mean, dtype=np.float32)
         self.std = np.array(std, dtype=np.float32)
 
-    def __call__(self, video):
+    def __call__(self, X_frames):
         """
         Args:
             video (ndarray): Video to be normalized
         Returns:
             ndarray: Normalized video.
         """
-        video = video / 255
-        video = (video - self.mean) / self.std
-        video = np.asarray(video, dtype=np.float32)
+        X_frames = np.divide(X_frames, 255, dtype=np.float32)
+        np.subtract(X_frames, self.mean, out=X_frames, dtype=np.float32)
+        np.divide(X_frames, self.std, out=X_frames, dtype=np.float32)
         # reformat [numChannels x Height x Width]
-        video = np.transpose(video, (0, 3, 1, 2))
-        return video
+        X_frames = np.transpose(X_frames, (0, 3, 1, 2))
+        return X_frames
 
-def get_loader(data_path, sample_rate, batch_size, num_workers):
-    """Return dataloader for custom dataset.
-
-    Args:
-        data_path (string):     path to data annotations
-        sample_rate (int):      sample every ith frame
-        batch_size (int):       number of instances in mini-batch
-        num_workers (int):      number of subprocessed used for data loading
-
-    Returns:
-        torch.utils.data.DataLoader:    dataloader for custom dataset
-        int:                            dataset size
-    """
-    # data augmentation
-    data_transforms = transforms.Compose([
-        RandomCrop((224,224)),
-        RandomHorizontalFlip(),
-        RandomRotation(15),
-        Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-        ])
-    # create dataset object
-    dataset = AppearanceDataset(data_path, sample_rate, data_transforms)
-    dataset_size = len(dataset)
-    # create dataloader
-    dataloader = DataLoader(dataset, batch_size, shuffle=True,
-            num_workers=num_workers)
-    return dataloader, dataset_size
+def get_loaders(train_path, valid_path, batch_size, num_workers, shuffle=True):
+    mean = [0.485, 0.456, 0.406]
+    std = [0.229, 0.224, 0.225]
+    data_transforms = {
+            'Train': transforms.Compose([
+                CenterCrop((224,224)),
+                Normalize(mean, std)
+                ]),
+            'Valid': transforms.Compose([
+                CenterCrop((224,224)),
+                Normalize(mean, std)
+                ])
+            }
+    datasets = {
+            'Train': AppearanceDataset(train_path, data_transforms['Train']),
+            'Valid': AppearanceDataset(valid_path, data_transforms['Valid'])
+            }
+    dataset_sizes = {x: len(datasets[x]) for x in ['Train', 'Valid']}
+    dataloaders = {x: DataLoader(datasets[x], batch_size, shuffle=shuffle,
+        num_workers=num_workers) for x in ['Train', 'Valid']}
+    return dataloaders, dataset_sizes
 
 def main():
     """Main Function."""
     from torchvision import utils
     import matplotlib.pyplot as plt
     
-    data_path = 'data/labels_done.txt'
-    window_size = 20
-    batch_size = 2
-    num_workers = 2
-
-    dataloader, dataset_size = get_loader(data_path, window_size, batch_size, 
-            num_workers)
-    print('Dataset size:', dataset_size)
+    train_path = 'data/train_data.txt'
+    valid_path = 'data/valid_data.txt'
+    batch_size = 1
+    num_workers = 0
+    data_loaders, dataset_sizes = get_loaders(train_path, valid_path, 
+            batch_size, num_workers)
+    print('Dataset size:', dataset_sizes)
 
     def imshow(grid):
         grid = grid.numpy().transpose((1,2,0))
@@ -237,11 +216,10 @@ def main():
         plt.tight_layout()
         plt.show()
 
-    batch = next(iter(dataloader))
-    data, labels = batch['X'], batch['y']
-    print('data:', data.shape)
-    print('labels:', labels.shape)
-    grid = utils.make_grid(data[0])
+    X_frames, y = next(iter(data_loaders['Train']))
+    print('X_frames:', X_frames.shape)
+    print('y:', y.shape)
+    grid = utils.make_grid(X_frames[0])
     imshow(grid)
 
 if __name__ == '__main__':
