@@ -58,8 +58,6 @@ def train_network(net, dataloaders, dataset_sizes, criterion, optimizer,
                 optimizer.zero_grad()
                 # input size
                 sequence_len, batch_size = X_frames.shape[:2]
-                # initialize hidden states
-                states = net.init_states(batch_size, device)
                 # for each timestep
                 loss = 0
                 correct = 0
@@ -68,11 +66,9 @@ def train_network(net, dataloaders, dataset_sizes, criterion, optimizer,
                     # forward pass
                     outputs = net.forward_batch(X_frames)
                     # loss + prediction
-                    loss += criterion(outputs, y)
-                    _, y_pred = torch.max(outputs, 1)
+                    loss += criterion(outputs.view(-1, 4), y.view(-1))
+                    _, y_pred = torch.max(outputs, 2)
                     correct += (y_pred == y).sum().item()
-                    print('loss:', loss.item())
-                    print('correct:', correct)
 
                     # backwards + optimize only if in training phase
                     if phase == 'Train':
@@ -80,7 +76,7 @@ def train_network(net, dataloaders, dataset_sizes, criterion, optimizer,
                         optimizer.step()
 
                 # statistics
-                running_loss += loss.item() * batch_size / sequence_len
+                running_loss += loss.item() * batch_size
                 running_correct += correct / sequence_len
                         
             epoch_loss = running_loss / dataset_sizes[phase]
@@ -99,8 +95,8 @@ def train_network(net, dataloaders, dataset_sizes, criterion, optimizer,
                     best_net_wts = copy.deepcopy(net.state_dict())
                     patience = 0
     
-                if patience == 10:
-                    break
+        if patience == 5:
+            break
 
     # print elapsed time
     time_elapsed = time.time() - start
