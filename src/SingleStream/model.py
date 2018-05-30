@@ -45,6 +45,30 @@ class SingleStream(nn.Module):
             self.cnn = nn.Sequential(
                     *list(self.cnn.children())[:-1]
                     )
+        elif model is 'ResNet50':
+            self.cnn = models.resnet50(pretrained)
+            num_fts = self.cnn.fc.in_features
+            self.cnn = nn.Sequential(
+                    *list(self.cnn.children())[:-1]
+                    )
+        elif model is 'ResNet101':
+            self.cnn = models.resnet101(pretrained)
+            num_fts = self.cnn.fc.in_features
+            self.cnn = nn.Sequential(
+                    *list(self.cnn.children())[:-1]
+                    )
+        elif model is 'ResNet152':
+            self.cnn = models.resnet152(pretrained)
+            num_fts = self.cnn.fc.in_features
+            self.cnn = nn.Sequential(
+                    *list(self.cnn.children())[:-1]
+                    )
+        elif model is 'Inception':
+            self.cnn = models.inception_v2(pretrained)
+            num_fts = self.cnn.fc.in_features
+            self.cnn = nn.Sequential(
+                    *list(self.cnn.children())[:-1]
+                    )
         else:
             print('Please input correct model architecture')
             return
@@ -87,9 +111,11 @@ class SingleStream(nn.Module):
 
 def main():
     """Test Function."""
+    model = 'AlexNet'
     hidden_size = 8
     rnn_layers = 2
-    net = SingleStream(hidden_size, rnn_layers, pretrained=False)
+    net = SingleStream(model, hidden_size, rnn_layers, pretrained=False,
+            finetuned=False)
     print(net)
 
 if __name__ == '__main__':
