@@ -37,39 +37,48 @@ def main():
     # dataloader parameters
     train_path = 'data/train_data.txt'
     valid_path = 'data/valid_data.txt'
-    batch_size = 3
+    batch_size = 1
     num_workers = 2
     # network parameters
-    hidden_size = 512
-    rnn_layers = 2
+    models = ['VGGNet11', 'VGGNet16', 'VGGNet19', 'ResNet18', 'ResNet34']
+    hidden_size = 128
+    rnn_layers = 1
     pretrained = True
+    finetuned = False
     # training parameters
     learning_rate = 1e-4
-    max_epochs = 2
+    max_epochs = 100
     criterion = nn.CrossEntropyLoss()
 
     # for each hyper-parameter
-    best_acc = 0
-    # get dataloaders
-    dataloaders, dataset_sizes = get_loaders(train_path, valid_path, 
-            batch_size, num_workers, shuffle=True)
-    print('Dataset Sizes:', dataset_sizes)
-
-    # create network object
-    net = SingleStream(hidden_size, rnn_layers, pretrained)
-    # create optimizer
-    p = list(net.lstm.parameters()) + list(net.fc.parameters())
-    optimizer = torch.optim.Adam(p, learning_rate)
-
-    # train the network
-    net, valid_acc, losses, accuracies = train_network(net, dataloaders,
-            dataset_sizes, criterion, optimizer, max_epochs)
-    # plot statistics
-    print('Best Validation Accuracy:', round(valid_acc*100,2))
-    plot_data(losses, accuracies, 'outputs/{}.png'.format(i))
-    # save best network to disk
-    if valid_acc > best_acc:
-        torch.save(net.state_dict(), 'outputs/net_params.pkl')
+    for i, model in enumerate(models):
+        print('Model:', model)
+        best_acc = 0
+        # get dataloaders
+        dataloaders, dataset_sizes = get_loaders(train_path, valid_path, 
+                batch_size, num_workers, shuffle=True)
+        print('Dataset Sizes:', dataset_sizes)
+    
+        # create network object
+        net = SingleStream(model, hidden_size, rnn_layers, pretrained,
+                finetuned)
+        # create optimizer
+        p = list(net.lstm.parameters()) + list(net.fc.parameters())
+        optimizer = torch.optim.Adam(p, learning_rate)
+    
+        # train the network
+        net, valid_acc, losses, accuracies = train_network(net, dataloaders,
+                dataset_sizes, criterion, optimizer, max_epochs)
+        # plot statistics
+        print('Best Validation Accuracy:', round(valid_acc*100,2))
+        plot_data(losses, accuracies, 
+                'outputs/SingleStream-{}.png'.format(i))
+        print()
+        # save best network to disk
+        if valid_acc > best_acc:
+            torch.save(net.state_dict(), 
+                    'outputs/SingleStream-net_params.pkl')
 
 if __name__ == '__main__':
     main()
+
