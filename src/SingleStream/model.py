@@ -4,19 +4,53 @@ import torch.nn as nn
 import torchvision.models as models
 
 class SingleStream(nn.Module):
-    def __init__(self, hidden_size, rnn_layers, pretrained):
+    def __init__(self, model, hidden_size, rnn_layers, pretrained, finetuned):
         super().__init__()
         self.hidden_size = hidden_size
         self.rnn_layers = rnn_layers
-        # cnn
-        self.cnn = models.alexnet(pretrained)
-        num_fts = self.cnn.classifier[4].in_features
-        self.cnn.classifier = nn.Sequential(
-                *list(self.cnn.classifier.children())[:-3]
-                )
+
+        if model is 'AlexNet':
+            self.cnn = models.alexnet(pretrained)
+            num_fts = self.cnn.classifier[4].in_features
+            self.cnn.classifier = nn.Sequential(
+                    *list(self.cnn.classifier.children())[:-3]
+                    )
+        elif model is 'VGGNet11':
+            self.cnn = models.vgg11_bn(pretrained)
+            num_fts = self.cnn.classifier[3].in_features
+            self.cnn.classifier = nn.Sequential(
+                    *list(self.cnn.classifier.children())[:-4]
+                    )
+        elif model is 'VGGNet16':
+            self.cnn = models.vgg16_bn(pretrained)
+            num_fts = self.cnn.classifier[3].in_features
+            self.cnn.classifier = nn.Sequential(
+                    *list(self.cnn.classifier.children())[:-4]
+                    )
+        elif model is 'VGGNet19':
+            self.cnn = models.vgg19_bn(pretrained)
+            num_fts = self.cnn.classifier[3].in_features
+            self.cnn.classifier = nn.Sequential(
+                    *list(self.cnn.classifier.children())[:-4]
+                    )
+        elif model is 'ResNet18':
+            self.cnn = models.resnet18(pretrained)
+            num_fts = self.cnn.fc.in_features
+            self.cnn = nn.Sequential(
+                    *list(self.cnn.children())[:-1]
+                    )
+        elif model is 'ResNet34':
+            self.cnn = models.resnet34(pretrained)
+            num_fts = self.cnn.fc.in_features
+            self.cnn = nn.Sequential(
+                    *list(self.cnn.children())[:-1]
+                    )
+        else:
+            print('Please input correct model architecture')
+            return
 
         for param in self.cnn.parameters():
-            param.requires_grad = False
+            param.requires_grad = finetuned
 
         # add lstm layer
         self.lstm = nn.LSTM(num_fts, hidden_size, rnn_layers)
@@ -24,6 +58,7 @@ class SingleStream(nn.Module):
         self.fc = nn.Linear(hidden_size, 4)
         
     def forward_batch(self, inp):
+        #TODO introduce dropout layers to help with generalization
         sequence_len, batch_size = inp.shape[:2]
         # reshape for CNN [batch_size*sequence_len, num_channels, width, height]
         inp = inp.contiguous().view(-1, *inp.shape[2:])
